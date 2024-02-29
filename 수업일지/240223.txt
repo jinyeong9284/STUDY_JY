@@ -1,0 +1,12 @@
+포토샵
+
+Auto-Select가 체크가 안되어있을 경우 Ctrl키를 누르고 오브젝트를 클릭하면 그 오브젝트가 선택됨.
+Ctrl + T : Free TransForm
+Ctrl + Delete나 Alt + Delete : 배경색 채우기
+SmartObject를 한 경우에는 원본 이미지를유지를 잘해주며 더블클릭 후 수정해야 반영이 됨.
+History 패널을 사용해 원본파일까지 수정한 이력으로 돌아갈 수 있음. 다만 설정한 값까지만.
+레이어 패널에서 Rasterize Layer을 클릭시 스마트오브젝트가 풀림
+Edit -> Puppet Wrap : 구부리는 작업을 할 수 있음 (예 : 기린 목을 구부림)
+라쏘툴로 늘리지 않을 영역을 선택한후 오른쪽 마우스를 클릭후 Save Selection 클릭하면 선택영역이 지정됨
+Edit -> ContentAware Scale : 선택영역만 빼고 다른 영역을 확장가능
+레이어 마스크 및 그라이언트 작업

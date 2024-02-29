@@ -1,0 +1,14 @@
+일러스트 - 색상 대비 관련 내용 공부 및 펜툴 사용 및 일러스트의 기본개념 숙지
+
+GIT - INIT, Touch, Add, Commit, Commit -am, Add ., Status, Log, clear, mkdir, 사용자 정보 등록 등의 개념 공부
+git init : git 파일 생성
+touch "" : 파일을 생성
+git commit -m "" : git에 내용을 추가함
+git commit -am "" : 한번 commit을 하면 가능한 명령어로 add와 commit을 합친 명령어
+git add : commit 전 단계로서 파일을 인식해준다.
+git status : 저장소안에 현재 상태 확인
+git log : 파일의 변경 내용 확인
+git log --oneline : 파일의 변경 내용 확인 한줄로
+clear : 내용 지우기
+mkdir : 파일생성
+

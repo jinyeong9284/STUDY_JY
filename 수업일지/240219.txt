@@ -1,0 +1,19 @@
+일러스트
+
+클리핑 마스크 하는 법 & 컴파운드 패스 이용, Image Trace, Blend Tool, 원하는 캐릭터 만들어보기(과제)
+Object -> Expend : 폰트를 일반 패스로 변경해줌 (=Type -> Create Outline : Shift + Ctrl + O)
+모양과 폰트가 같이 있을 경우 페스파인더에서 Unite를 클릭하고 Object -> ComPound Path를 만들고
+이미지 클리핑 마스크를 하면 가능
+이미지 색상바꾸기 : Image 클릭후 Image Trace 클릭후 Expend 하고 매직툴로 색상 입히기
+
+GIT
+최종 정리 (깃허브를 통한 작업)
+
+HTML
+주석문 작성, Title,br,
+<!--_--> : 주석문
+<br> : 줄바꿈 <br/> : 예전버전이나 리액트 사용시 사용하는 <br>태그
+<titel></title> : HTML 파일과 XML의 차이 HTML은 <Title>태그안에 내용이 꼭 있어야 함
+<Meta> : 문서의 정보
+"utf-8" : 한국어
+<body> : 실질적인 작업이 들어가는 태그

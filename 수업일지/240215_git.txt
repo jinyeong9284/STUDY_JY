@@ -1,0 +1,29 @@
+일러스트
+
+- 펜툴 연습 및 패스 연습 (이모티콘 하트 만들기)
+- STROKE 사용법, 지우개, 가위 툴 사용법, 도형 만들기, 직접 선택 툴 사용법, 패스파인더 사용법
+- 과제 : 우산, 조개, 트럭, 야자수나무, 배,구름, 파도 이모티콘 만들기
+- CTRL + D : 앞선 동작 반복
+- CTRL + J : 기준점 연결
+- [,]  : 브러쉬 크기 조절
+- CTRL + Y : 라인만 볼 수 있음
+
+Git
+- : wq : 빠져나오기
+- rmdir : 파일 삭제
+- git branch _ : 브랜치 만들기
+- git branch --list : 브랜치 확인
+- git branch -d _ : 합쳐졌을때 삭제
+- git branch -D _ : 합쳐지지 않았을때 강제로 삭제
+- git branch -m _ : 공간 이름 바꾸기
+- git switch _ : 공간 변경
+- git switch -(하이픈) : 그전 공간으로 돌아가기
+- git switch -c _ : 공간을 만듬과 동시에 그 공간으로 이동
+- git status -s : 간결하게 상태 확인
+- git merge _ : 공간 병합
+- echo "_" : 문서안에 내용이 저장됨
+- remote add origin _ : 온라인에 있는 저장소
+- git push -u origin _ : 온라인에 _을 올리겠다
+- git config --unset --global user.name : 사용자 이름 제거
+- git config --unset --global user.email : 사용자 이메일 제거
+- git remote rm origin : 연결된 오리진 저장소 정보 삭제

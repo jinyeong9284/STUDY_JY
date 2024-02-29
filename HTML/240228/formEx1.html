@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>formEx1</title>
+  </head>
+  <body>
+    <h1>form 연습 1</h1>
+    <!-- <fieldset disabled>을 사용하게 되면 그 부분의 값을 입력할 수 없음 -->
+    <fieldset>
+      <legend>상세정보</legend>
+      <p><label>이름 : <input type="text" id="user_name" name="userName"></label></p>
+      <p><label>이메일 : <input type="email" id="user_email" name="userEmail"></label></p>
+    </fieldset>
+    <fieldset>
+      <legend>리뷰</legend>
+      <label for="menu">사이트를 알게 된 경위는?</label><br>
+      <select name="menu" id="menu">
+      <optgroup label="광고">
+        <option value="">이곳에서 선택해 주세요</option>
+        <option value="신문광고" selected>신문광고</option>
+        <option value="티비광고">티비광고</option>
+        <option value="라디오광고">라디오광고</option>
+      </optgroup>
+    </select>
+    <hr>
+    <p>다시 방문하시겠습니까</p>
+    <input type="radio" value="yes" name="choice" id="yes"><label for="yes">네</label>
+    <input type="radio" value="no" name="choice" id="no" checked><label for="no">아니요</label>
+    <input type="radio" value="molla" name="choice" id="molla"><label for="molla">모름</label>
+    <hr>
+    <label for="opinion">의견 : </label><textarea name="texBox" id="opinion" cols="30" rows="3" placeholder="여러 줄의 텍스트 박스"></textarea>
+    <hr>
+    <input type="checkbox" value="email" name="join" id="emailjoin" checked><label for="emailjoin">이메일 업데이트에 가입</label>
+    <hr>
+    <button type="submit">리뷰 전송</button>
+    <button type="reset">전송 취소</button>
+    </fieldset>
+  </body>
+</html>

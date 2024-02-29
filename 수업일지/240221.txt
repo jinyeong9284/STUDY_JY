@@ -1,0 +1,13 @@
+일러스트
+3D로 컵 만들기, 반지 만들기, 배너만들기
+Effect 효과주기(3D, Symbols, Distort, Stylize - Scribble)
+Effect 효과시 패스에는 아무 영향이 없기 때문에 Expend를 해야 패스가 생김
+Object -> Path -> Add Anchor Points 개수 배로 늘리기
+Object -> Envelope Distor -> Make with Wrap : 텍스트 둥글게
+
+HTML
+id는 html 코드안에 한개만 가능, class는 여러개 선언 가능
+HTML 예전 코드 실습 및 문단 만들기
+<div>, <span>, <ul>, <li>, <nav>, <article>, <header>, <main>, <section>, <footer>, <ol>
+<article>과 <section> 태그는 제목태그인 <h1>~<h6> 태그가 꼭 들어있어야 함
+<li>는 <main>태그빼고 다양한 태그들을 사용가능

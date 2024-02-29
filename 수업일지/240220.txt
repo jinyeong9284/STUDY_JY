@@ -1,0 +1,16 @@
+일러스트
+TEXT 배열 및 자간 등 바꾸는 작업, 배너만들기
+Object -> Path -> Clean Up : 비어있는 오브젝트를 제거함
+Object -> Text Wrap -> Make : 도형과 글씨가 있을 경우 가려진 글씨가 도형을 기준으로 배치됨
+
+HTML
+Ctrl + / : 주석이 가능
+<h1>~<h6>, <p>, <br>, <hr>, <blockquote>, <cite>, <pre>, <strong>
+<h1>~<h6> : 제목 태그
+<p> : 문단 태그
+<br> : 줄바꿈 태그
+<hr> : 구분선 태그
+<blockquote cite="https://www."> : 인용 태그 / cite : 출처를 정의하는 속성
+<cite> : 작품의 제목 등을 정의하는 요소
+<pre> : 그대로 구현되는 태그
+<strong> : 글씨 굵게

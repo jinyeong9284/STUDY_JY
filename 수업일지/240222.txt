@@ -1,0 +1,12 @@
+포토샵
+
+기린, 연꽃 이미지 펜툴 사용하여 누끼따기
+기본툴 사용법(레이어, lasso Tool, Selection Tool, Pen Tool),배경 넣는법
+Select Inverse ( Ctrl + Shift + i) : 반전
+Ctrl + Art + C : 캔버스 사이즈
+
+html
+
+<a>태그 절대경로/상대경로, <li>복습
+../ = 상위폴더로 감.
+./ = 같은 파일 안에 경로

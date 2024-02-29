@@ -1,0 +1,22 @@
+일러스트
+패스파인더 사용하기, 패스파인더를 활용한 아이폰 어플 아이콘 만들기, 정렬, 반전, 회전
+
+- trim은 개체마다 모두 나눠짐
+- merge는 개체가 다르지만 같은 색상끼리 나눠짐
+- intersect는 제일 위에있는건 남음 아래쪽에 겹쳐있는 라인에 맞춰서 잘려나감
+- outline : 선색을 기준으로 나뉨 (면색은 날라감)
+- Minus Back : 겹치지 않는 부분에 제일 위에 있는 부분만 남음
+- shape builder tool : 패스파인더 기능과 같음. 마우스로 드래그시 합쳐지고 ALT키를 누르면 삭제
+- Object -> Expand : 개체로 만듬
+- 선과 면을 이용한 패스파인더 : Object -> Path -> Outline Stroke
+- CTRL + SHIFT + G : 그룹해제
+
+GIT
+
+Git Hub로 Repository 생성
+cd ../ : 현재 위치보다 더 먼저 위치로 이동
+git clone _ : 깃허브에서 작성한 파일로 이동
+git pull origin _ : 깃허브에서 작성한 내용을 로컬에서 확인할 수 있는 작업
+main|merging 해결방법 : 메모장으로 열어서 내용을 확인하여 내용을 수정해주고 다시 commit하기
+cd +Tab키 _ : _로 시작하는 이름의 공간으로 이동
+git log --list --graph : 그래프로 확인 가능

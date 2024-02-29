@@ -50,4 +50,5 @@ HTML : &lt;form&gt;, &lt;input&gt;, &lt;button&gt;, &lt;option&gt;, &lt;optgroup
 &lt;audio&gt;, &lt;favicon&gt; 태그 학습
 
 <h1>240229</h1>
-포토샵 : 웹 첫페이지 만드는 작업(시험)
+포토샵 : 웹 첫페이지 만드는 작업(시험)<br>
+HTML : &lt;meta&gt;태그 학습, 오픈그래피

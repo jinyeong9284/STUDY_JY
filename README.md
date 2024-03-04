@@ -52,3 +52,7 @@ HTML : &lt;form&gt;, &lt;input&gt;, &lt;button&gt;, &lt;option&gt;, &lt;optgroup
 <h1>240229</h1>
 포토샵 : 웹 첫페이지 만드는 작업(시험)<br>
 HTML : &lt;meta&gt;태그 학습, 오픈그래피
+
+<h1>240304</h1>
+피그마 : 기본적인 사용법 및 전체 단축키|(ctrl+shift+/), constraints 기능사용, 그리드 사용방법 학습<br>
+HTML : css의 &lt;style&gt;태그의 개념 및 글자색 넣는 작업 학습

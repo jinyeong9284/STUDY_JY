@@ -1,0 +1,20 @@
+@charset "utf-8";
+body{
+  background-color: orange;
+}
+#one{
+  color: red;
+  background-color: aliceblue;
+}
+#two{
+  color:purple;
+  background-color: aliceblue;
+}
+#three{
+  color:blue;
+  background-color: aliceblue;
+}
+#four{
+  color:green;
+  background-color: aliceblue;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>text-shadow</title>
+    <meta charset="utf-8">
+    <style>
+      body{
+        text-align:center;
+      }
+      .title1{
+        font-family: '카페24 빛나는별';
+        text-transform: uppercase;
+        font-size: 40px;
+        text-shadow: 10px 10px 10px #999; /*x축 y축 번짐 색상 */
+      }
+      .title2{
+        font-family: '휴먼편지체';
+        text-transform: inherit;
+        font-size: 40px;
+        text-shadow: -10px -10px 10px orange; 
+      }
+      .title3{
+        font-size: 30px;
+        font-family: '학교안심 돋보기';
+        text-shadow: 0 10px 0 #666; /* x축 y축 번짐 색상 */
+      }
+      .title4{
+        font-family: 'sandoll 삼립호빵체 TTF Outline';
+        font-size:40px;
+        text-shadow: 0 -10px skyblue; /* x축 y축 색상 */
+      }
+      .title5{
+        font-size: 50px;
+        font-family: '카페24 슈퍼매직';
+        text-shadow: 0 10px; /* x축 y축. 번짐 생략. 색상 생략시 글자 색을 따라 감 */
+      }
+      .title6{
+        font-size:30px;
+        font-family: '온글잎 밑미';
+        text-shadow: 0 0 10px #999,
+        10px 10px 10px red,
+        -10px -10px 10px hotpink,
+        0 0 10px orange;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title1">text-shadow 서체 그림자</h2>
+    <h2 class="title2">text-shadow 서체 그림자</h2>
+    <h2 class="title3">text-shadow 서체 그림자</h2>
+    <h2 class="title4">text-shadow 서체 그림자</h2>
+    <h2 class="title5">text-shadow 서체 그림자</h2>
+    <h2 class="title6">text-shadow 서체 그림자</h2>
+  </body>
+</html>

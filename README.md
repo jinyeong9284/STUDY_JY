@@ -60,3 +60,7 @@ CSS : css의 &lt;style&gt;태그의 개념 및 글자색 넣는 작업 및 배�
 <h1>240305</h1>
 피그마 : constraints 기능 사용하여 실습하기, conponent 만들어보기, auto layout, 마스크 씌우기<br>
 CSS : Font와 Text의 여러 특성들 (align, weight, shadow, transform, indent, decoration, letter-spacing, line-height, overflow)
+
+<h1>240306</h1>
+피그마 : properties -> variant 기능사용하여 버튼 만들기, 스피너 학습<br>
+CSS : form을 사용한 &lt;style&gt;태그,width, height 내용 학습

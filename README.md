@@ -69,3 +69,7 @@ CSS : form을 사용한 &lt;style&gt;태그,width, height 내용 학습
 피그마 : 앱 화면 와이어프레임 만들어보는 실습, 아이폰 탭바를 이용한 앱 화면 프로토타입 만들기<br>
 CSS : vertical-align, border에 여백주는 코드(padding, margin), border에 스타일 및 크기조절, outline과 비교,emmet 사용하기
 [Ctrl+Spacebar는 코드 보는 방법]
+
+<h1>240308</h1>
+피그마 : prototype에서 scroll behavior ->stichy 및 interactions에서 navigate to 기능 학습, 일전에 했던 앱화면 HTML 코드로 나태나는 실습<br>
+CSS : 둥근 모서리(border-radius), magin 및 padding을 사용한 실습, magin&padding의 실제크기 비교

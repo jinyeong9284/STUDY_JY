@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>box-sizingEx</title>
+  <style>
+    .box{
+      width:400px;
+      height: 200px;
+      margin: 20px auto 30px auto;
+      padding:20px 30px 20px 30px;
+      border-top:10px solid red;
+      border-bottom: 5px solid red;
+      border-right: 10px solid red;
+      border-left: 10px solid red;
+    }
+    .box1{
+      /* 요소의 실제 크기 계산 방식 설정 */
+      box-sizing: content-box; /* 기본값 width+margin+padding+border */
+    }
+    .box2{
+      box-sizing: border-box; /* width(padding+border)+margin */
+    }
+  </style>
+</head>
+<body>
+  <h1>box-sizingEx</h1>
+  <div class="box box1">
+    <h3>box-sizing:content-box</h3>
+    <p>w400+m0+p60+b20=480</p>
+  </div>
+  <div class="box box2">
+    <h3>box-sizing:border-box</h3>
+    <p>w400+m0=400</p>
+</body>
+</html>

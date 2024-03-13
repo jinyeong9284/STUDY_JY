@@ -73,3 +73,15 @@ CSS : vertical-align, border에 여백주는 코드(padding, margin), border에 
 <h1>240308</h1>
 피그마 : prototype에서 scroll behavior ->stichy 및 interactions에서 navigate to 기능 학습, 일전에 했던 앱화면 HTML 코드로 나태나는 실습<br>
 CSS : 둥근 모서리(border-radius), magin 및 padding을 사용한 실습, magin&padding의 실제크기 비교
+
+<h1>240311</h1>
+피그마 : PC 디자인을 했던 사이트 앱 화면 만들기<br>
+HTML : box-sizing, overflow 기능 및 border의 실제 크기 학습
+
+<h1>240312</h1>
+피그마 : 외부 사이트 앱 버전 리뉴얼하기<br>
+HTML : form 스타일 및 table에 스타일 기능 사용하여 실습하기
+
+<h1>240313</h1>
+피그마 : 외부 사이트 PC 버전 리뉴얼하기<br>
+HTML : display 기능 사용

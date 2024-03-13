@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>요소의 실제 크기 2</title>
+  <style>
+    body{
+      /* 어절 기준 줄바꿈 */
+      word-break:normal;
+      word-break: break-all; /* 어절에 맞취 줄바꿈 영어 한정 */
+      word-break: keep-all; /* 어절을 유지하며 줄바꿈. 한글 적용 */
+    }
+    .box{
+      font-weight: bold;
+      background-color: #ddd;
+      font-size: 20px;
+    }
+    .box1{
+      background-color: pink;
+      color: white;
+      width:400px; height: 300px;
+      outline: 10px solid hotpink;
+      margin: 50px auto;
+    }
+    .box2{
+      border: solid 3px green;
+      width:300px;
+      height: 300px;
+      margin: 0 auto;
+      padding-top: 100px;
+      padding-left: 20px;
+    }
+    .box3{
+      background-color: orange;
+      outline: 4px solid brown;
+      width:300px;
+      height:400px;
+      margin: 20px auto 0;
+      padding:20px 10px 0 30px;
+    }
+    .box4{
+      background-color: plum;
+      border:dotted 2px purple;
+      border-top:none;
+      width:400px;
+      height:200px;
+      outline:peru 30px solid;
+      margin:20px auto 0;
+      padding:10px 20px 0 0;
+    }
+    .box5{
+      /* 가로 600, 세로 250
+      안쪽 여백 위 아래 50
+      안쪽 여백 좌 우 20
+      테두리 위 10, 오른쪽 5 아래 10 왼쪽 5
+      */
+      width:600px;
+      height:250px;
+      padding:50px 20px 50px 20px;
+      border-top:10px solid pink;
+      border-right:5px solid pink;
+      border-left:5px solid pink;
+      border-bottom:10px solid pink;
+    }
+    .box6{
+      width:150px;
+      height: 200px;
+      margin:50px auto 0;
+      padding:10px 50px 50px 50px;
+      border-top:10px solid yellowgreen;
+      border-right: 4px solid yellowgreen;
+      border-bottom: 5px solid yellowgreen;
+      border-left:4px solid yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>요소의 실제 크기2</h1>
+  <div class="box box1">
+    <p>너비:w400+m0+m0+p0+p0+b0+b0=400</p>
+    <p>높이:h300+m50+m50+p0+p0+b0+b0=400</p>
+  </div>
+  <div class="box box2">
+    <p>너비:w300+m0+m0+p20+p0+b3+b3=326</p>
+    <p>높이:h300+m0+m0+p100+p0+b3+b3=406</p>
+  </div>
+  <div class="box box3">
+    <p>너비:w300+m0+m0+p10+p30+b0+b0=340</p>
+    <p>높이:h400+m20+m0+p20+p0+b0+b0=440</p>
+  </div>
+  <div class="box box4">
+    <p>너비:w400+m0+m0+p20+p0+b2+b2=424</p>
+    <p>높이:h200+m20+m0+p10+p0+b0+b2=232</p>
+  </div>
+  <div class="box box5">
+    <p>너비:w600+m0+m0+p20+p20+b5+b5=650</p>
+    <p>높이:h250+m0+m0+p50+p50+b10+b10=370</p>
+  </div>
+  <div class="box box6">
+    <p>너비:w150+m0+m0+p50+p50+b4+b4=258</p>
+    <p>높이:h200+m50+m0+p10+p50+b10+b5=325</p>
+    <p>국회의원이 회기전에 체포 또는 구금된 때에는 현행범인이 아닌 한 국회의 요구가 있으면 회기중 석방된다. 국회의원은 법률이 정하는 직을 겸할 수 없다.
+      국무회의는 정부의 권한에 속하는 중요한 정책을 심의한다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다.</p>
+  </div>
+</body>
+</html>

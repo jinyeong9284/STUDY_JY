@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>tableEx3</title>
+  <style>
+    body{
+      text-align: center;
+    }
+    table{
+      background-color: blue;
+      border-collapse: collapse;
+      margin: 0px auto;
+      color:aliceblue;
+    }
+    table caption {
+      text-align: left;
+    }
+    table caption span {
+      padding-left: 10%;
+    }
+    table td{
+      border:1px solid black;
+      text-align: center;
+      padding:10px 30px;
+    }
+    .box5{
+      background-color: orange;
+    }
+    .box4{
+      background-color: white;
+    }
+    .box3{
+      padding:none;
+    }
+    caption{
+      border-radius: 10px 0px 0px 0px;
+      background-color: skyblue;
+      color:aliceblue;
+      padding:10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>테이블 스타일 연습 2</h1>
+  <table>
+    <caption>귀<span>귀</span></caption>
+    <thead>
+    <tr>
+      <td>소머리</td>
+      <td>목심</td>
+      <td clss="box3">등심<br>(살치살·<a href="https://terms.naver.com/entry.naver?docId=1993029&cid=48180&categoryId=48246">꽃등심</a>)</td>
+      <td>채끝살</td>
+      <td>우둔<br>(홍두께살)</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4" class="box4"></td>
+      <td rowspan="2">앞다리<br>(부채살)</td>
+      <td class="box3">갈비<br>(안창살·제비추리)</td>
+      <td>안심</td>
+      <td rowspan="2">설도<br>(도가니살)</td>
+    </tr>
+    <tr>
+      <td colspan="2">양지<br>(차돌박이·우삼겹)</td>
+    </tr>
+    <tr>
+      <td>사태</td>
+      <td rowspan="2" colspan="2" class="box4"></td>
+      <td>사태<br>(아롱사태)</td>
+    </tr>
+    <tr class="box5">
+      <td>우족</td>
+      <td>우족</td>
+    </tr>
+  </tbody>
+  </table>
+</body>
+</html>

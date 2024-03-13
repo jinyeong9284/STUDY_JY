@@ -1,0 +1,77 @@
+@charset "utf-8";
+form{
+  background-color: #ddd;
+  font-family: "맑은 고딕",돋움,sans-serif;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    color:#353535;
+    font-style: normal;
+    /* font-weight : thin; */
+    max-width: 500px; /* 최대 500이상으로는 커지지 않음 */
+    min-width: 300px; /* 최소 300이하로는 작아지지 않음 */
+    margin:10px auto;
+    overflow:hidden;
+}
+/* 
+  마진상쇄 현상 : 일반적인 흐름에서,
+  자식의 margin-top과 부모의 margin-top이 만나면 둘 중 큰 값이 부모에게 적용
+  해결방법->부모 요소에 overflow:hidden;
+*/
+form fieldset{
+  border: 3px purple solid;
+  border-radius: 20px;
+  width:70%;
+  margin:50px auto;
+  text-align: right;
+  padding:4% 8%;
+}
+form legend{
+  text-align: left;
+  background-color: purple;
+  color:white;
+  padding:2px 10px;
+  width:40%;
+  box-sizing: border-box;
+}
+/* input은 인라인 width가 먹음 */
+form fieldset input{
+  width:70%;
+  padding:4px 8px;
+  border:2px solid transparent;
+  border-bottom:2px solid purple;
+  margin-bottom:10px;
+  outline:none; /*크롬, 엣지, 웨일 등 모던 브라우저에서 생기는 현상으로 포커스 상태일 때 테두리 없앰 */
+  font-family: inherit; /* 상속 */
+  color:inherit;
+}
+/* 
+텍스트 필드 : 마우스 이벤트
+ㄴ 기본일 때는 border-bottom만 있고
+ㄴ 마우스를 올렸을 때는 border 전부가 있고
+ㄴ 클릭 했을 때는 배경색
+버튼 : 마우스 이벤트
+*/
+/* 속성(특성) 선택자 : 요소[속성], 요소[속성=값], [속성] */
+form fieldset input[type]:hover{
+  border:2px solid purple;
+}
+form fieldset input[name=userEmail]:focus{
+  background-color: pink;
+  border:2px solid transparent;
+}
+form fieldset [required]:focus{
+  background-color: bisque;
+  border:2px solid transparent;
+}
+form button{
+  background-color: purple;
+  color:white;
+  border:none;
+  font-weight: 400;
+  font-family: inherit;
+  padding:4px 20px;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: pink;
+}

@@ -84,4 +84,8 @@ HTML : form 스타일 및 table에 스타일 기능 사용하여 실습하기
 
 <h1>240313</h1>
 피그마 : 외부 사이트 PC 버전 리뉴얼하기<br>
-HTML : display 기능 사용
+HTML : display 기능 사용, accent-color 사용하기, before+after 기능 사용 학습
+
+<h1>240314</h1>
+UI/UX : 안드로이드와 IOS 기반 이론 수업<br>
+HTMl : em과 rem, vw 단위 명령어 학습, flex-container 및 flex-item의 특성 학습

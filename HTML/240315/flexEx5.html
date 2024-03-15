@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>flexEx5</title>
+  <style>
+    body{
+      margin:0;
+      text-align: center;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    label{
+      display: flex;
+      flex-direction: row;
+    }
+    p{
+      background-color: gainsboro;
+      display: flex;
+      width:200px;
+      font-size: 20px;
+      text-align: right;
+      justify-content: end;
+      padding:10px;
+    }
+    input{
+      margin:10px;
+      width:250px;
+    }
+  </style>
+</head>
+<body>
+  <h1>각 폼 제목의 세로 중앙 정렬</h1>
+  <form>
+    <label class="channel"><p>채널 키워드</p>
+      <input type="text" name="keyword" placeholder="플렉스 적용하기">
+    </label><br>
+    <label class="channel"><p>채널 키워드</p>
+      <input type="text" name="keyword" placeholder="플렉스 적용하기">
+    </label><br>
+    <label class="channel"><p>채널 키워드 채널 <br>키워드</p>
+      <input type="text" name="keyword" placeholder="플렉스 적용하기">
+    </label><br>
+    <label class="channel"><p>채널 키워드 channel <br>keyword</p>
+      <input type="text" name="keyword" placeholder="플렉스 적용하기">
+    </label><br>
+    <label class="channel"><p>channel keyword 채널 <br>키워드</p>
+      <input type="text" name="keyword" placeholder="플렉스 적용하기">
+    </label>
+  </form>
+</body>
+</html>

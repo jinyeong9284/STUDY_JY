@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>flexEx9</title>
+  <style>
+    body{
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .gallery{
+      list-style: none;
+      margin:0 auto; padding:0;
+      border:3px solid black;
+      width:80vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: space-evenly;
+    }
+    .gallery li{
+      background-color: #ddd;
+      width:31.33333%;
+      margin:1%;
+    }
+    .gallery li img{
+      vertical-align: bottom; /* 인라인이라면 다 가지고 있는 기능, 틈이 생기는 이유 : line-height로 인해 */
+      width:100%;
+    }
+    .gallery li h3{
+      background-color: black;
+      color: aliceblue;
+      padding:10px;
+      margin:0;
+    }
+  </style>
+</head>
+  
+<body>
+  <h1>가로 세로 비율을 유지하는 반응형 박스</h1>
+  <ul class="gallery">
+    <li>
+      <img src="https://placehold.co/300x200/58A399/fff?text=img1&font=oswald" alt="img1">
+      <h3>title1</h3>
+    </li>
+    <li>
+      <img src="https://placehold.co/300x200/496989/fff?text=img2&font=oswald" alt="img2">
+      <h3>title2</h3>
+    </li>
+    <li>
+      <img src="https://placehold.co/300x200/A8CD9F/fff?text=img3&font=oswald" alt="img3">
+      <h3>title3</h3>
+    </li>
+    <li>
+      <img src="https://placehold.co/300x200/E2F4C5/fff?text=img4&font=oswald" alt="img4">
+      <h3>title4</h3>
+    </li>
+    <li>
+      <img src="https://placehold.co/300x200/007F73/fff?text=img5&font=oswald" alt="img5">
+      <h3>title5</h3>
+    </li>
+    <li>
+      <img src="https://placehold.co/300x200/4CCD99/fff?text=img6&font=oswald" alt="img6">
+      <h3>title6</h3>
+    </li>
+  </ul>
+</body>
+</html>

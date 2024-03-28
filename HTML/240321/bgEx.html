@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>bgEx</title>
+  <style>
+    fieldset{
+      border:4px solid black;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      width:500px;
+      margin: 50px auto;
+      padding:30px;
+    }
+    input{
+      width:300px;
+      border-radius: 20px;
+      margin:5px auto;
+      height: 30px;
+      padding-left:40px;
+      font-size: 15px;
+    }
+    ::placeholder{
+      color:red;
+      font-weight: bold;
+    }
+    #userName{
+      background-image: url(./image/user-solid.svg);
+      background-repeat: no-repeat;
+      background-position: 15px;
+      background-size: 6%;
+    }
+    #userEmail{
+      background-image: url(./image/envelope-solid.svg);
+      background-repeat: no-repeat;
+      background-position: 15px;
+      background-size: 6%;
+    }
+    #userNumber{
+      background-image: url(./image/mobile-button-solid.svg);
+      background-repeat: no-repeat;
+      background-position: 15px;
+      background-size: 6%;
+    }
+    input:hover{
+      background-color: rgba(255, 217, 0,0.5);
+    }
+  </style>
+</head>
+<body>
+    <form>
+      <fieldset>
+      <input type="text" name="userName" id="userName" placeholder="이름을 입력하세요">
+      <input type="email" name="userEmail" id="userEmail" placeholder="이메일을 입력하세요">
+      <input type="tel" name="userNumber" id="userNumber" placeholder="연락처를 입력하세요">
+      </fieldset>
+    </form>
+</body>
+</html>

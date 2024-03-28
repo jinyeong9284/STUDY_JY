@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>flexItemEx1</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .container{
+      color:aliceblue;
+      margin:0;
+    }
+    .container1{
+      background-color: blue;
+      height:10vh;
+    }
+    .container2:nth-child(1){
+      background-color: orange;
+      flex-grow: 1;
+    }
+    .container3:nth-child(2){
+      background-color: brown;
+      flex-grow: 2;
+    }
+    .container4{
+      display: flex;
+      height:90vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="container container1">header</div>
+  <div class="container4"><p class="container container2">aside</p>
+  <p class="container container3">contents</p></div>
+</body>
+</html>

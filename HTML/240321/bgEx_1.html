@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>bgEx</title>
+  <style>
+    form{
+      border:3px solid black;
+      margin:50px auto;
+      padding:30px;
+      border-radius: 50px;
+      min-width:300px; /* 300px 이하로 줄어들지 말아라 */
+      max-width: 500px; /* 500px 이상으로 커지지 말아라 */
+      /* display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;  */
+    }
+    form input{
+      outline: none;
+      display: block;
+      margin:10px auto;
+      width:80%;
+      border:1px solid black;
+      border-radius: 50px;
+      padding:10px;
+      font-size: 1.1rem;
+      /* background-repeat: no-repeat; 
+      background-size: 20px;
+      background-position: 20px 50%; */
+      background: no-repeat 20px 50% / 20px;
+      /* padding:10px 10px 10px 50px;
+      box-sizing: border-box; */
+      padding:10px;
+      text-indent: 40px; /* 들여쓰기 */
+    }
+    form input::placeholder{
+      color:red;
+    }
+    form input:hover, form input:focus{
+      background-color: rgb(255, 104, 104);
+    }
+    /* form input[type="text"]{
+      background-image: url(./image/user-solid.svg);
+    } */
+    [autofocus]{
+      background-image: url(./image/user-solid.svg);
+    }
+    form input[type="email"]{
+      background-image: url(./image/envelope-solid.svg);
+    }
+    [name=userTel]{
+      background-image: url(./image/mobile-button-solid.svg);
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <input type="text" name="userName" id="userName" placeholder="이름을 입력하세요" autofocus>
+    <input type="email" name="userEmail" id="userEmail" placeholder="이메일을 입력하세요">
+    <input type="tel" name="userTel" id="userTel" placeholder="연락처를 입력하세요"> 
+  </form>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>layout</title>
+  <style>
+    body{
+      background-image: url(./assets/images/webEx.jpg);
+    }
+    .box1{
+      width:785px; height:692px;
+      border:1px solid antiquewhite;
+      margin:50px auto;
+    }
+    .box1 .header{
+      background-color: purple;
+      height:112px;
+      margin:0;
+      color:white;
+    }
+    .box1 .mid{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgb(255, 208, 0);
+      height:40px;
+      line-height: 40px;
+      margin:0; padding:0;
+      font-weight: bold;
+    }
+    .box1 .mid a{
+      color:purple;
+      text-decoration: none;
+      display: flex;
+      height: 40px;
+      line-height: 40px;
+      padding:0px 15px 0px 15px;
+    }
+    .box2{
+      display: flex;
+      flex-direction: row;
+      height:508px;
+    }
+    .article{
+      background-color: #ddd;
+      width:545px;
+      margin:0;
+    }
+    .aside{
+      background-color: white;
+      width:240px;
+      margin:0;
+      border-left: 1px solid red;
+    }
+    .box2 .aside .aside2{
+      list-style: none;
+      padding:0;
+    }
+    .box2 .aside .aside2 li{
+      border-bottom: 2px solid red;
+      width:200px;
+      padding:10px 20px;
+      font-weight: bold;
+    }
+    .box2 .aside p{
+      padding:5px 20px;
+      font-weight: bold;
+    }
+    h2{
+      padding:10px 20px;
+      color:red;
+    }
+    .footer{
+      background-color: purple;
+      color:white;
+      margin:0;
+      height:32px;
+      display: flex;
+      align-items: center;
+      padding-left:15px;
+    }
+    .box1 li:hover a{
+      background-color: rgb(187, 74, 187);
+      color:rgb(255, 208, 0);
+    }
+    .article .one{
+      padding-left:20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .article .two{
+      padding-left:20px;
+      color:red;
+      font-weight: bold;
+    }
+    .article .three{
+      padding-left:20px;
+    }
+    img{
+      width:200px;
+    }
+    figure{
+      border:1px solid black;
+      width:210px;
+    }
+    figcaption{
+      text-align: right;
+    }
+    .imgcontainer{
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+  
+<body>
+  <div class="box1">
+  <p class="header">Kims-'s Kitchen</p>
+  <ul class="mid">
+    <li><a href="#">홈</a></li>
+    <li><a href="#">소개</a></li>
+    <li><a href="#">교실</a></li>
+    <li><a href="#">케이터링</a></li>
+    <li><a href="#">연락처</a></li>
+  </ul>
+  <div class="box2">
+  <div class="article">
+    <div class="imgcontainer">
+    <figure>
+      <img src="https://placehold.co/300x200/007F73/fff?text=img1&font=oswald" alt="img1">
+       <figcaption>title1</figcaption>
+     </figure>
+    <p class="one">채식주의자</p>
+    <p class="two">런던에서의 5주 코스</p>
+    <p class="three">5주간 채식주의자 음식에 대해 소개하고 쌀과 국수 요리를 가르친다.</p>
+  </div>
+    <p class="one">소스 마스터클래스</p>
+    <p class="two">1일 워크샵</p>
+    <p class="three">1일 집중 코스에서는 다양한 요리에서 사용할 수 있는 가장 맛있는 소스를 만드는 방법을 살펴본다.</p>
+  </div>
+  <div class="aside">
+    <h2>인기요리법</h2>
+    <ul class="aside2">
+      <li>후라이드</li>
+      <li>고추바사삭</li>
+      <li>양념치킨</li>
+      <li>뿌링클</li>
+    </ul>
+    <h2>연락처</h2>
+    <p>경기 수원시 팔달구 매산동</p>
+  </div>
+  </div>
+  <p class="footer">ⓒKim's Kitchen</p>
+  </div>
+</body>
+</html>

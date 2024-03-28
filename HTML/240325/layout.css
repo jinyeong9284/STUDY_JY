@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* common */
+img {
+  vertical-align: top;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'GmarketSans',-apple-system, BlinkMacSystemFont,"Malgun Gothic","맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  background: #351a11 url(./assets/images/dark-wood.jpg);
+}
+
+/***** container *****/
+.container {
+  border: 4px solid #eeb0b0;
+  width: 940px; 
+  max-width: 48.958vw; /* 940/1920 */
+  min-width: 940px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+/***** header *****/
+.container header h1{
+  color:#fff;
+  font-family: "Twinkle Star", Georgia, Times, 'Times New Roman', cursive;
+  background: purple url(./assets/images/logo.png) no-repeat 25px 50% / 90px;
+  font-size: 30px;
+  height: 130px;
+  padding:35px 0 0 130px;
+  line-height: 1;
+}
+.container header h1 em{
+  display: block;
+  font-family: "Norican", Georgia, Times, 'Times New Roman', cursive;
+}
+.container header .global_menu{
+  background-color: rgb(255, 230, 0);
+  color:purple;
+  font-weight: 500;
+  display: flex;
+}
+.container header .global_menu li a{
+  width:100px; height: 46px;
+  display: block;
+  text-align: center;
+  line-height: 46px;
+}
+.container header .global_menu li a:hover{
+  background-color: red;
+  color: white;
+}
+/***** contents *****/
+.container .contnets{
+  display: flex;
+}
+.container .contnets article{
+  background-color: #f1eee9;
+  width:648px;
+  width:69.528%; /* 648/932*100 */
+  padding:30px 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .contnets article figure{
+  background-color: white;
+  border:1px solid red;
+  text-align: right;
+  color:#9f9b9c;
+  font-style: italic;
+  font-size: 14px;
+  padding: 8px;
+  margin-right:20px;
+  margin-bottom: 40px;
+}
+.container .contnets article figure figcaption{
+  margin-top:8px;
+}
+.container .contnets article .txt_wrapper{
+  width:280px;
+}
+.container .contnets article .txt_wrapper h2{
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.container .contnets article .txt_wrapper h3{
+  font-weight: 500;
+  color: red;
+  margin:5px 0;
+}
+
+.container .contnets aside{
+  /* width:284px; */
+  flex-grow: 1;
+}
+.container .contnets aside h2{
+  color:red;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin:30px 20px;
+}
+.container .contnets aside .recipe li a{
+  height: 60px;
+  line-height: 60px;
+  text-indent: 20px;
+  border-bottom: 1px solid red;
+  display: block;
+  font-size: 1.3rem;
+}
+.recipe li:hover a{
+  background-color: red;
+  display: flex;
+  color:white;
+}
+.container .contnets aside address{
+  padding-left:20px;
+  font-weight: 500;
+  font-style: normal;
+}
+/***** footer *****/
+.container footer{
+  background-color: purple;
+  color: white;
+  font-size: 14px;
+  padding-left: 35px;
+  padding-top:9px;
+  padding-bottom:8px;
+}

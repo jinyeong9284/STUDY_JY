@@ -1,0 +1,10 @@
+@charset "utf-8";
+/***** footer *****/
+.container footer{
+  background-color: purple;
+  color: white;
+  font-size: 14px;
+  padding-left: 35px;
+  padding-top:9px;
+  padding-bottom:8px;
+}

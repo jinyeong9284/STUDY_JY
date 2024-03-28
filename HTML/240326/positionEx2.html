@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>positionEx2</title>
+  <style>
+    .blank{
+      height: 300vh;
+    }
+    p{
+      width:400px;
+    }
+    em{
+      background-color: bisque;
+      font-weight: 700;
+      font-style:normal;
+      font-size: 18px;
+    }
+   .btn{
+      position:fixed;
+      bottom:0;
+      right:0;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      width:80px;
+      height:80px;
+      line-height: 80px;
+      border-radius: 50%;
+      background-color: black;
+      color:antiquewhite;
+    }
+    a:hover{
+      background-color: blueviolet;
+      position:fixed;
+      bottom:10px;
+    }
+  </style>
+</head>
+<body>
+  <h2 id="top">positionEx2</h2>
+  <p>fixed 값을 사용하는 요소 역시 absolute 값을 사용하는
+    요소처럼 문서 흐름과는 상관없이 좌표로 위치를 결정
+    하지만, 기준이 되는 요소가 <em>부모 요소가 아니라 브라우저가 기준</em>이 된다</p>
+  <p>한번 배치되면 fixed라는 이름처럼 브라우저 창을
+    스크롤하더라도 계속 고정되어 표시된다.</p>
+    <div class="blank"></div>
+    <a href="#top" class="btn">위로</a>
+</body>
+</html>

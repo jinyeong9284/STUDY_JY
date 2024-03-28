@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>position_sticky</title>
+  <style>
+    body{
+      line-height: 1.5;
+    }
+    h1{
+      background-color: lightskyblue;
+      padding:10px 20px;
+
+      margin-top:200px;
+      top:0; /* 고정할 곳의 위치 */
+      /* 해당 요소가 위치 특성 값이 지정한 곳에 도달하면 고정 위치의 포지션으로 성격이 바뀜
+      1. 부모 요소들 중 하나라도 overflw:hidden이 적용되어 있으면 동작하지 않음
+      2. height 값이 %로 설정된 경우 동작하지 않음
+      3. top, right, left, bottom 중 반드시 하나만 작성되어야하며 작성하지 않으면 relative와 동일한 성격을 가짐 */
+      position:sticky;
+    }
+    p{
+      width:400px;
+      text-align: justify;
+      font-size: 1.1rem;
+    }
+    p:last-of-type{
+      height: 200vh;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>position:sticky</h1>
+  <h2>사용자 스크롤 기준 포지션</h2>
+  <h3>상대 위치처럼 움직이지만 지정된 위치 값에 도달하면 고정 위치 성격을 가짐</h3>
+  <p>Woo Ah Woah 내 맘을 전해줘
+    저 멀리 그대에게 닿도록
+    Woo Ah Woah 내 바람이 스칠 때
+    행복을 느낄 수 있게
+    긴 하루의 끝에 또 너를 생각해
+    오늘 넌 어떻게 하루를 보냈을까
+    시간은 빠르게 도는데
+    여전히 내 맘은 똑같아
+    넌 별일 없기를 오늘도 바라
+    행복하고 잘 지내길 바라
+    진심이야 I'm not lying
+    맘을 담아 너를 응원해
+    To your future endeavors yeah
+    우리 Happily ever after
+    바람과 사라졌지만
+    I still wish you the best
+    Cuz I love whenever you smile</p>
+  <p>Woo Ah Woah 내 맘을 전해줘
+    저 멀리 그대에게 닿도록
+    Woo Ah Woah 내 바람이 스칠 때
+    행복을 느낄 수 있게
+    Everybody say WAW
+    Yayayaya
+    나의 바람 갈 수 있게 WAW
+    Yayayaya
+    날 느낄 수 있게
+    가끔은 허전해 어딘가 모르게
+    그래도 행복해 괜찮아 모든 게
+    아름답던 우리 추억이
+    꽤 힘이 되곤 해 Yeah
+    너도 그러길 오늘도 바라
+    네가 그리울 땐 눈을 감아
+    살랑살랑 두 뺨을 간지럽히는 바람
+    어느새 귀에 걸린 입꼬리
+    산뜻하게 흥얼거림 허밍 Errbody say</p>
+    <p>(Um-um-um-um) Say
+    (Um-um-um-um) For a better day
+    너의 숨결을 느낄 때 다시 나아갈 수가 있기에
+    넌 계속 행복해 줘
+    늘 그렇게 빛나줘
+    너의 바람 느껴질 때
+    그때 웃을 수 있게
+    Woo Ah Woah 내 맘을 전해줘
+    저 멀리 그대에게 닿도록
+    Woo Ah Woah 내 바람이 스칠 때
+    사랑을 느낄 수 있게
+    Everybody say WAW
+    Yayayaya
+    나의 바람 갈 수 있게 WAW
+    Yayayaya
+    날 느낄 수 있게
+    Say WAW 접기</p>
+    <p>난 지금 네게 가고 있는 길이야
+    봄의 끝보다 훨씬 빠르게
+    할 말이 있는 걸 말하지 않으면
+    평생을 후회하며 살 것 같아
+    아마도 살 것 같아 너랑 숨 쉬면
+    정신 못 차리겠어 눈이 감기고
+    I just want you to know
+    I'm the real one that you're looking for
+    걱정은 불안함 안에 가둬 건너편에 다 놔두고
+    이제부터 우리 사진 주워 담아
+    네 손아귀 안에 아기자기 걸어 둘 거야
+    어디든지 보이게 해줘 나 없인 안 된다 해줘
+    너 없인 안 된다 난 너여야 한다
+    아무리 생각해도 난 결국 너야
+    후회하긴 싫다 너를 사랑한다</p>
+    <p>Cuz u r the only one
+    나는 너뿐이라는 걸
+    Hah ah ah ah ah ah ah
+    Let's get it on let's get it on
+    Hah ah ah ah ah ah
+    Why don't you be my girl
+    Hah ah ah ah ah ah ah
+    Let's get it on let's get it on
+    Cuz u r the only one for me
+    아직도 네게 가고 있는 길이야
+            여름밤 공기보다 뜨겁게
+            그리워했던 널 붙잡지 못하면
+            평생을 후회하며 살 것 같아
+            네가 너무 보고 싶어서 Yeah yeah yeah
+            Girl I swear this ain't no booty call nah nah nah
+            그냥 생각나서 하는 것도 아니야 (Nope)
+            드디어 정신 차렸어 너 없인 안 된다는 걸
+            Now I know now I know
+            다시 시작해 볼 생각 있으면 처음처럼
+            만날 생각이 있으면 Lemme know
+            Let's give it a go</p>
+            <p>너 없인 안 된다 난 너여야 한다
+              아무리 생각해도 난 결국 너야
+              후회하긴 싫다 너를 사랑한다
+              Cuz u r the only one for me
+              나의 여름 널 어떻게 하겠니
+              해를 몇 번을 넘겨도 You and me
+              너를 사랑해 사랑해 또 말하고 말해도
+              오직 너여야만 I can live
+              우리 뜨겁게 잡은 손 꽉 잡아 더
+              여름밤의 Love 꽉 안아 더
+              두근두근 우린 구름 구름 위
+              이대로 우리 둘 2
+              너 없인 안 된다 난 너여야 한다
+              아무리 생각해도 난 결국 너야
+              후회하긴 싫다 너를 사랑한다
+              Cuz u r the only one
+              나는 너뿐이라는 걸</p>
+              <p>Hah ah ah ah ah ah ah
+                Let's get it on let's get it on
+                Hah ah ah ah ah ah
+                Why don't you be my girl
+                Hah ah ah ah ah ah ah
+                Let's get it on let's get it on
+                Cuz u r the only one for me</p>
+</body>
+</html>

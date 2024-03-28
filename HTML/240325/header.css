@@ -1,0 +1,31 @@
+@charset "utf-8";
+/***** header *****/
+.container header h1{
+  color:#fff;
+  font-family: "Twinkle Star", Georgia, Times, 'Times New Roman', cursive;
+  background: purple url(./assets/images/logo.png) no-repeat 25px 50% / 90px;
+  font-size: 30px;
+  height: 130px;
+  padding:35px 0 0 130px;
+  line-height: 1;
+}
+.container header h1 em{
+  display: block;
+  font-family: "Norican", Georgia, Times, 'Times New Roman', cursive;
+}
+.container header .global_menu{
+  background-color: rgb(255, 230, 0);
+  color:purple;
+  font-weight: 500;
+  display: flex;
+}
+.container header .global_menu li a{
+  width:100px; height: 46px;
+  display: block;
+  text-align: center;
+  line-height: 46px;
+}
+.container header .global_menu li a:hover{
+  background-color: red;
+  color: white;
+}

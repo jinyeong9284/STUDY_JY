@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>transform-origin</title>
+  <style>
+    img{
+     width:100%;
+     border:3px solid red;
+     box-sizing: border-box;
+     transition:0.5s;
+     transform: rotate(45deg);
+   }
+   .box{
+     border:6px solid black;
+     margin:100px auto;
+     width:600px; height: 600px;
+   }
+   .box1:hover img{
+     transform-origin:50%; /* 기본값 50% 50% */
+   }
+   .box2:hover img{
+    transform-origin:center center;
+   }
+   .box3:hover img{
+    transform-origin:0 0;
+   }
+   .box4:hover img{
+    transform-origin:100% 100%;
+   }
+   .box5:hover img{
+    transform-origin: 20px 100px;
+   }
+   /* 
+   이동 가능한 css 속성 : 
+   ㄴ margin : 여백을 만들어서 이동. 레이아웃에 영향을 줌. 옆에 다른 요소가 있음 밀림
+   ㄴ position : 독자적인 흐름을 갖는 경우
+   ㄴ translate() : 독자적인 흐름. 자기 자신을 기준으로 이동
+   */
+ </style>
+</head>
+<body>
+ <h1>transform-origin 기준축</h1>
+ <div class="box box1"><img src="./images/금수저_비하인드1_09.jpg" alt="img"></div>
+ <div class="box box2"><img src="./images/금수저_비하인드1_12.jpg" alt="img"></div>
+ <div class="box box3"><img src="./images/금수저_비하인드1_17.jpg" alt="img"></div>
+ <div class="box box4"><img src="./images/금수저_비하인드1_27.jpg" alt="img"></div>
+ <div class="box box5"><img src="./images/금수저_비하인드1_27.jpg" alt="img"></div>
+</body>
+</html>

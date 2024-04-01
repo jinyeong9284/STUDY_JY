@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>transform2_rotate</title>
+  <style>
+     img{
+      width:100%;
+      border:3px solid red;
+      box-sizing: border-box;
+      transition:0.5s;
+    }
+    .box{
+      border:6px solid black;
+      margin:100px auto;
+      width:600px; height: 600px;
+    }
+    .box1:hover img{
+      transform: rotate(45deg);
+    }
+    .box2:hover img{
+      transform: rotate(-360deg);
+    }
+    .box3:hover img{
+      transform: rotateX(45deg);
+    }
+    .box4:hover img{
+      transform: rotateY(-45deg);
+    }
+  </style>
+</head>
+<body>
+  <h1>transform:rotate() 회전</h1>
+  <div class="box box1"><img src="./images/금수저_비하인드1_09.jpg" alt="img"></div>
+  <div class="box box2"><img src="./images/금수저_비하인드1_12.jpg" alt="img"></div>
+  <div class="box box3"><img src="./images/금수저_비하인드1_17.jpg" alt="img"></div>
+  <div class="box box4"><img src="./images/금수저_비하인드1_27.jpg" alt="img"></div>
+</body>
+</html>

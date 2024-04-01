@@ -1,0 +1,75 @@
+@charset "utf-8";
+body{
+  font-family: 'SpoqaHanSans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+main{
+  height: 300vh;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 300px;
+}
+h1{
+  background-color: rgb(180, 0, 0);
+  color:white;
+  height: 100px;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 대메뉴 */
+.main-menu{
+  position:sticky;
+  top:0;
+  background-color: rgb(199, 63, 63);
+  color:white;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+.main-menu li{
+  /* flex-grow: 1; */
+  width:150px;
+}
+.main-menu > li > a{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  border-right:1px solid white;
+}
+.main-menu li:last-child a{
+  border-right:none;
+}
+.main-menu > li > a:hover{
+  background-color: rgb(160, 18, 18);
+  color:rgb(255, 213, 213)
+}
+/* 각각의 소메뉴 */
+.main-menu li .sub-menu{
+  display: none;
+}
+/* 각 대메뉴에 마우스를 올리면, 해당 대메뉴의 소메뉴가 나타남 */
+.main-menu li:hover .sub-menu {
+  display: block;
+}
+.main-menu li .sub-menu a{
+  display: block;
+  background-color: rgb(228, 136, 136);
+  font-size: 1.2rem;
+  font-weight: 300;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid white;
+}
+.main-menu li .sub-menu a:hover{
+  background-color: rgb(240, 190, 190);
+}
+.main-menu li .sub-menu li:last-child a{
+  border-bottom: none;
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>navEx2</title>
+  <style>
+    body,h1,ul{
+      margin: 0;
+    }
+    h1{
+      text-align: center;
+      height: 10vh;
+      line-height: 10vh;
+      background-color: blueviolet;
+      color:white;
+    }
+    ul{
+      list-style: none;
+    }
+    .small{
+      display: none;
+    }
+    .bigg{
+      display: flex;
+      background-color: rgb(207, 156, 255);
+      height:50px;
+      line-height: 50px;
+      justify-content: center;
+    }
+    a{
+      height:50px;
+      line-height: 50px;
+      text-align: center;
+      display: block;
+      width:140px;
+      border-right: 1px solid white;
+      color:black;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .container{
+      width:100%;
+      position:sticky;
+      top:0;
+    }
+    li:hover a{
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(236, 215, 255);
+      color:white;
+    }
+    .big4{
+      border-right:none;
+    }
+    p{
+      height: 300vh;
+      text-align: center;
+      font-weight: bold;
+      font-size: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Css Navigation</h1>
+  <div class="container">
+  <ul class="bigg">
+    <li><a href="#" class="big big1">대메뉴1</a>
+    <ul class="small">
+      <li><a href="#" class="smal">소메뉴1-1</a></li>
+      <li><a href="#" class="smal">소메뉴1-2</a></li>
+      <li><a href="#" class="smal">소메뉴1-3</a></li>
+    </li>
+    </ul>
+    <li><a href="#" class="big big2">대메뉴2</a>
+    <ul class="small">
+      <li><a href="#" class="smal">소메뉴2-1</a></li>
+      <li><a href="#" class="smal">소메뉴2-2</a></li>
+      <li><a href="#" class="smal">소메뉴2-3</a></li>
+      <li><a href="#" class="smal">소메뉴2-4</a></li>
+      <li><a href="#" class="smal">소메뉴2-5</a></li>
+    </li>
+    </ul>
+    <li><a href="#" class="big big3">대메뉴3</a>
+    <ul class="small">
+      <li><a href="#" class="smal">소메뉴3-1</a></li>
+      <li><a href="#" class="smal">소메뉴3-2</a></li>
+    </li>
+    </ul>
+    <li><a href="#" class="big big4">대메뉴4</a>
+    <ul class="small">
+      <li><a href="#" class="smal">소메뉴4-1</a></li>
+      <li><a href="#" class="smal">소메뉴4-2</a></li>
+      <li><a href="#" class="smal">소메뉴4-3</a></li>
+    </li>
+    </ul>
+  </ul>
+</div>
+<p>Main</p>
+</body>
+</html>

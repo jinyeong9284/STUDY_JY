@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>transEx1</title>
+  <style>
+    .container{
+      border:3px solid black;
+      padding:10px;
+      padding-top:0;
+      width:90vw;
+      height:220px;
+    }
+    .item{
+      width:100px;
+      height: 100px;
+      text-align: center;
+      color:white;
+      font-weight: 700;
+      margin-top:10px;
+      transition-duration: 0.5s;
+    }
+    .item:nth-of-type(1){
+      background-color: blue;
+    }
+    .item:nth-of-type(2){
+      background-color: rgb(92, 92, 255);
+      transition-delay: 0.5s;
+    }
+    .container:hover .item{
+      transform:translate(710%) rotate(1080deg);
+      transition-timing-function: ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <h1>trans 연습1</h1>
+  <!-- 마우스를 영역 위에 올리면 -->
+  <div class="container">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+  </div>
+</body>
+</html>

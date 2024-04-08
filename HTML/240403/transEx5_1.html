@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>transEx5</title>
+  <style>
+    h1{
+      text-align: center;
+    }
+    .products{
+      list-style: none;
+      padding: 0;
+      margin:0 auto;
+      border:3px solid black;
+      display: flex;
+      width:80vw;
+      max-width: 1200px;
+      background-color: beige;
+    }
+    .products .item{
+      width:33.3333%;
+      /* flex-grow: 1; */
+      /* aspect-ratio: 1/1; */
+      /* flex-basis: 33.3333%; */
+      margin:1vw;
+      overflow: hidden;
+      aspect-ratio: 1/1;
+    }
+    .products .item img{
+      width:100%;
+      /* display: block; */
+      vertical-align: top;
+    }
+    .products .item .txt-box{
+      background-color: rgba(0, 0, 0, 0.8);
+      color:white;
+      transition:0.3s;
+      padding:1vw;
+      aspect-ratio: 1/1;
+      text-align: center;
+    }
+    .products .item:hover .txt-box{
+      transform: translateY(-100%);
+    }
+  </style>
+</head>
+<body>
+  <h1>🎤BTOB PlayList🎤</h1>
+  <ul class="products">
+    <li class="item">
+      <img src="./images/그리워하다.jfif" alt="img1">
+      <div class="txt-box">
+        <h3>그리워하다</h3>
+        <p>2017.10.16</p>
+        <p>그리움을 노래하는 가을 남자로 돌아온 비투비</p>
+      </div>
+    </li>
+    <li class="item">
+      <img src="./images/나의바람.jfif" alt="img2">
+      <div class="txt-box">
+        <h3>나의바람</h3>
+        <p>2023.05.02</p>
+        <p>사랑하는 사람들의 행복과 안녕을 바라는 마음</p>
+      </div>
+    </li>
+    <li class="item">
+      <img src="./images/너없인안된다.jfif" alt="img3">
+      <div class="txt-box">
+        <h3>너 없인 안 된다</h3>
+        <p>2018.06.18</p>
+        <p>때론 가슴이 뛰고, 하늘을 날 것처럼 설렘</p>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>transEx5</title>
+  <style>
+    .products{
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      background-color: beige;
+      width:680px;
+      height: 230px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border:2px solid black;
+      transition:all;
+    }
+    h1{
+      text-align: center;
+    }
+    img{
+      width:200px;
+      height: 200px;
+    }
+    p{
+      text-align: center;
+      color:white;
+      margin-top:10px;
+    }
+    .content{
+      background-color: rgba(2, 2, 2, 0.3);
+      width:180px;
+      height: 180px;
+      padding:10px;
+      transform: translate(0px,-105px);
+      display: none;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in;
+    }
+    li:hover .content{
+      display: block;
+    }
+    li:hover img{
+      transform: translateY(100px);
+    }
+  </style>
+</head>
+<body> 
+  <h1>transEx5</h1>
+  <ul class="products">
+    <li><img src="./images/그리워하다.jfif" alt="img1">
+      <div class="content">
+      <p>그리워하다</p>
+      <p>2017.10.16</p>
+      <p>그리움을 노래하는 가을 남자로 돌아온 비투비</p>
+      </div>
+      </li>
+    <li><img src="./images/나의바람.jfif" alt="img2">
+    <div class="content">
+    <p>나의바람</p>
+    <p>2023.05.02</p>
+    <p>사랑하는 사람들의 행복과 안녕을 바라는 마음</p>
+    </div>
+    </li>
+    <li><img src="./images/너없인안된다.jfif" alt="img3">
+      <div class="content">
+    <p>너 없인 안 된다</p>
+    <p>2018.06.18</p>
+    <p>때론 가슴이 뛰고, 하늘을 날 것처럼 설렘</p>
+  </div>
+    </li>
+  </ul>
+</body>
+</html>

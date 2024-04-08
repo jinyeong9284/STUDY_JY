@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>aniEx2</title>
+  <style>
+    body,p{
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    .box{
+      font-size: 10rem;
+      display: flex;
+      font-weight: 700;
+      justify-content: center;
+      color:white;
+    }
+    p{
+      margin:0 20px;
+    }
+    p:hover{
+      animation:ani1 infinite 0.3s;
+    }
+    @keyframes ani1{
+      0%{
+        text-shadow: 5px 5px blue, -5px -10px skyblue;
+      }50%{
+        text-shadow: -5px -5px blue, 5px 10px skyblue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p class="c">C</p>
+    <p class="S">S</p>
+    <p class="S">S</p>
+    <p class="3">3</p>
+  </div>
+</body>
+</html>

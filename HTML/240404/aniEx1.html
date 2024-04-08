@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>aniEx1</title>
+  <style>
+    body{
+      background-image: linear-gradient(-120deg,black,red);
+      height: 100vh;
+      margin:0;
+      text-align: center;
+      animation-name: ani1;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+      animation-direction:alternate;
+    }
+    .btn{
+      border:1px solid white;
+      padding:10px 40px;
+      line-height: 100vh;
+      color:white;
+      text-decoration: none;
+    }
+    @keyframes ani1{
+      100%{
+      background-image:linear-gradient(-72deg,skyblue,yellow);
+      background-size: 400%;
+    }
+  }
+  </style>
+</head>
+<body>
+  <!-- 
+      1. 움직이는 그라디언트 배경
+      2. 중앙 정렬 된 고스트 버튼
+  -->
+  <a href="#" class="btn">aniEx1</a>
+</body>
+</html>

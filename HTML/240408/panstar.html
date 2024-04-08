@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>panstar</title>
+  <style>
+    body{
+      margin:0;
+    }
+    .container1{
+     display: flex;
+     height: 900px;
+    }
+    .logo{
+      height:30px;
+      margin-top:25px;
+      margin-left:35px;
+    }
+    .topmenu{
+      display: flex;
+      font-size: 1.1rem;
+      margin-left:250px;
+      margin-right: 250px;
+    }
+    ul{
+      list-style: none;
+      margin:0;
+      padding:0;
+    }
+    .righttop{
+      display: flex;
+      margin-top:25px;
+      font-size: 0.9rem;
+    }
+    .top{
+      color:white;
+      text-decoration: none;
+      display: block;
+    }
+    .top1{
+      width:100px;
+      margin:25px;
+    }
+    .ship{
+      background-color: orange;
+      height:30px;
+      line-height: 30px;
+      padding-left: 40px;
+      padding-right: 20px;
+      border-radius: 50px;
+      background-image: url(./images/main_reserve_icon2_2108.png);
+      background-repeat: no-repeat;
+      background-size: 25px;
+      background-position: 10px;
+      margin-top:-5px;
+    }
+    .right1{
+      margin-right:30px;
+    }
+    iframe{
+      position: absolute;
+    }
+    .menu{
+      z-index: 999;
+      background-color: rgba(53, 53, 53, 0.4);
+      height:8vh;
+      color:white;
+      font-weight: bold;
+      border-bottom: 1px solid white;
+      display: flex;
+      width:1920px;
+      position: fixed;
+    }
+    .over{
+      font-size: 3rem;
+      z-index: 9999;
+      position:absolute;
+      margin:50px;
+      color:rgb(0, 0, 0);
+      margin-top:400px;
+      font-weight: bold;
+      text-indent: 20px;
+    }
+    .create{
+      font-size: 3rem;
+      z-index: 9999;
+      position:absolute;
+      margin:50px;
+      color:rgb(0, 0, 0);
+      margin-top:450px;
+      font-weight: bold;
+    }
+    .go{
+      font-size: 1rem;
+      z-index: 9999;
+      position:absolute;
+      margin:50px;
+      color:rgb(0, 0, 0);
+      margin-top:520px;
+      font-weight: bold;
+      text-indent: 20px;
+    }
+    .pan{
+      font-size: 1rem;
+      z-index: 9999;
+      position:absolute;
+      margin:50px;
+      color:rgb(0, 0, 0);
+      margin-top:540px;
+      font-weight: bold;
+      text-indent: 20px;
+    }
+    .kok{
+      font-size: 0.7rem;
+      z-index: 9999;
+      position:absolute;
+      margin-left:1700px;
+      color:white;
+      margin-top:400px;
+      font-weight: bold;
+      background-color: rgba(22, 22, 22,0.5);
+      text-align: center;
+      width:100px;
+      height: 100px;
+      border-radius: 50px;
+      display: flex;
+      flex-flow: column;
+    }
+    .tracking{
+      text-decoration: none;
+      color:white;
+      display: block;
+      align-content:center;
+      width:100px;
+      height: 100px;
+    }
+    .img2{
+      width:50px;
+      margin-top:10px;
+    }
+    .kok:hover{
+      background-image: url(./images/main_reserve_ov_bg.png);
+    }
+    .yeah{
+      font-size: 0.7rem;
+      z-index: 9999;
+      position:absolute;
+      margin-left:1700px;
+      color:white;
+      margin-top:520px;
+      font-weight: bold;
+      background-color: rgba(22, 22, 22,0.5);
+      text-align: center;
+      width:100px;
+      height: 100px;
+      border-radius: 50px;
+      display: flex;
+      flex-flow: column;
+    }
+    .yeah:hover{
+      background-image: url(./images/main_reserve_ov_bg.png);
+    }
+    .o{
+      color: orange;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bold;
+    }
+    h2{
+      text-align: center;
+      font-size: 2rem;
+    }
+    .continue{
+      color:gray;
+      text-align: center;
+      font-weight: 700;
+    }
+    .container2{
+      display: flex;
+      justify-content: center;
+      margin-top:50px;
+    }
+    .con{
+      border-right: 1px solid gainsboro;
+      text-align: center;
+      width:400px;
+      padding:30px;
+    }
+    .blue{
+      color:rgb(0, 0, 121);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-top:-40px;
+    }
+    .fon{
+      font-weight: 700;
+      font-size: 4rem;
+      margin: 0;
+      padding: 0;
+    }
+    .m{
+      margin-top:-20px;
+      padding:0;
+      font-size: 3rem;
+    }
+    .imgg{
+      width:30px;
+    }
+    .fontt{
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    .font2{
+      margin-top: 50px;
+      margin-left: 5px;
+    }
+    .gray{
+      margin-top:-15px;
+      color:gray;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    .con:last-of-type{
+      border-right:none;
+    }
+    .con2{
+      display: flex;
+      margin:0;
+    }
+    .con3{
+      color:rgb(44, 44, 44);
+      text-decoration: none;
+      display: block;
+      font-size: 0.9rem;
+      padding:20px;
+      height:20px;
+    }
+    .container3{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .container4{
+      background-color: rgb(233, 233, 233);
+      width:1000px;
+      padding-left: 100px;
+      padding-top:50px;
+    }
+    .con4{
+      text-align: center;
+    }
+    .gogo{
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .text5{
+      margin-top: 50px;
+      font-size: 0.8rem;
+    }
+    .imggg{
+      margin-top: 50px;
+    }
+    .image{
+      margin-right: 30px;
+    }
+    li:hover .con3{
+      border-top:2px solid orange;
+    }
+    .more{
+      background-color: orange;
+      transform: translate(730px,-250px);
+      width:100px;
+      height: 40px;
+      line-height: 40px;
+      color:white;
+      font-weight: 700;
+      padding-right:20px;
+      padding-left: 20px;
+    }
+    .more:hover{
+      border-radius: 20px;
+    }
+    .container5{
+      display: flex;
+      margin:0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    .con5{
+      text-decoration: none;
+      color:black;
+      font-weight: 700;
+      display: block;
+      padding:20px;
+    }
+    .con5:hover{
+      color:orange;
+    }
+    .map{
+      background-image: url(./images/bg_worldmap.png);
+    }
+    .more1{
+      background-color: orange;
+      width:100px;
+      height: 40px;
+      line-height: 40px;
+      color:white;
+      font-weight: 700;
+      padding-right:20px;
+      padding-left: 30px;
+      margin:20px auto;
+    }
+    .more1:hover{
+      border-radius: 20px;
+    }
+    .container6{
+      display: flex;
+      justify-content: center;
+      margin-top:50px;
+      justify-content: space-evenly;
+      margin-left:150px;
+    }
+    .notice{
+      display: flex;
+      flex-direction: column;
+    }
+    .notice1{
+      display: flex;
+    }
+    .notice2{
+      border:1px solid rgb(177, 177, 177);
+      height: 30px;
+      width: 100px;
+      line-height: 30px;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      transform: translate(250px,30px);
+      color:black;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .notice2:hover{
+      border-radius: 20px;
+    }
+    .notice3{
+      border-bottom: 1px solid gainsboro;
+      padding-bottom: 10px;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      color:gray;
+      text-decoration: none;
+    }
+    .recruit{
+      color:orange;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    .pan2{
+      margin-top: -30px;
+      font-weight: bold;
+    }
+    .ok{
+      background-color: orange;
+      color:white;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-weight: bold;
+      transform: translate(70px,230px);
+      display: block;
+      text-decoration: none;
+    }
+    .re{
+      transform: translate(-320px);
+    }
+    .ok:hover{
+      border-radius: 20px;
+    }
+    .img10{
+      width:1855px;
+    }
+    .logos{
+      background-color: gainsboro;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      margin-top:100px;
+      padding-top:10px;
+    }
+    .bottom{
+      margin-left:30px;
+    }
+    .bottom:first-child{
+      margin:0;
+    }
+    .container7{
+      background-color: rgb(49, 49, 49);
+      color:gray;
+      height: 15vw;
+      display: flex;
+    }
+    .bottomlogo{
+      width:250px;
+      margin-top:50px;
+      margin-left: 150px;
+    }
+    .seoul{
+      margin-left: 150px;
+      margin-top:50px;
+    }
+    .copy{
+      margin-left: 150px;
+      font-size: 0.8rem;
+      color: rgb(87, 87, 87);
+    }
+    .con7{
+      display: flex;
+      flex-direction: column;
+    }
+    .goji{
+      margin-top:50px;
+      margin-left: 350px;
+      font-size: 0.9rem;
+    }
+    .goji1{
+      color:gray;
+      text-decoration: none;
+      padding:20px;
+    }
+    .img20{
+      width:598px;
+    }
+  </style>
+</head>
+<div>
+  <div class="container1">
+    <div class="menu">
+    <a href="./panstar.html"><img src="./images/logo1.png" alt="logo1" class="logo"></a>
+    <ul class="topmenu">
+      <li><a href="#" class=" top top1">팬스타소개</a></li>
+      <li><a href="#" class=" top top1">사업분야</a></li>
+      <li><a href="#" class="top top1">고객지원</a></li>
+      <li><a href="#" class="top top1">미디어센터</a></li>
+      <li><a href="#" class="top top1">인재채용</a></li>
+    </ul>
+    <ul class="righttop">
+      <li><a href="http://cargo.panstar.co.kr/main" class="top right1 ship">e SHIPPING</a></li>
+      <li><a href="#" class="top right1">FAMILY SITE▼</a></li>
+      <li><a href="#" class="top right1">KOR▼</a></li>
+    </ul>
+  </div>
+    <p class="over">OVER THE NETWORK</p>
+    <p class="create">CREATE NEW VALUES</p>
+    <p class="go">고객을 위한 새로운 가치를 만들어 가기 위해</p>
+    <p class="pan">펜스타는 먼저 생각하고 먼저 움직입니다</p>
+    <div class="kok">
+      <a href="https://www.panstar.co.kr/business/express/tracking"  class="tracking"><img src="./images/main_reserve_icon1_2108.png" alt="img2" class="search img2"><br>
+    국제특송<br>예약/조회</a></div>
+    <div class="yeah">
+      <a href="https://www.panstarcruise.com/main/contents.html"  class="tracking"><img src="./images/main_reserve_icon2_2108.png" alt="img2" class="searchimg2"><br>
+    팬스타크루즈<br>예약/조회</a></div>
+    <iframe width="1855" height="900" src="https://www.youtube.com/embed/P5gCEeBAn0s?si=UoNUuODvBo88_RnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <p class="o">/</p>
+    <h2>At a Glance</h2>
+    <p class="continue">해운과 물류를 넘어 네트워크를 통해 새로운 가치를 창조해 가는 팬스타<br>
+      팬스타의 도전과 혁신은 오늘도 계속되고 있습니다.</p>
+      <div class="container2">
+    <div class="con calendar">
+      <img src="./images/icon_mg_calendar.png" alt="img3" class="imgg">
+      <div class="fontt"><p class="fon">33</p><p class="font2">years</p></div>
+      <p class="m">-</p>
+      <p class="blue">팬스타 창립 33주년</p>
+      <p class="gray">SINCE  1990. 07. 12</p>
+    </div>
+    <div class="con user">
+      <img src="./images/icon_mg_user.png" alt="img4" class="imgg">
+      <div class="fontt"><p class="fon">1,525,241</p><p class="font2">명</p></div>
+      <p class="m">-</p>
+      <p class="blue">팬스타 오사카 크루즈페리</p>
+      <p class="gray">부산-오사카 총 승객수</p>
+    </div>
+    <div class="con clock">
+      <img src="./images/icon_mg_clock.png" alt="img5" class="imgg">
+      <div class="fontt"><p class="fon">40</p><p class="font2">HOURS</p></div>
+      <p class="m">-</p>
+      <p class="blue">팬스타코리아랜드브릿지</p>
+      <p class="gray">한-중-일 리드타임</p>
+    </div>
+    <div class="con cruize">
+      <img src="./images/icon_mg_ship.png" alt="img6" class="imgg">
+      <div class="fontt"><p class="fon">439</p><p class="font2">항차</p></div>
+      <p class="m">-</p>
+      <p class="blue">연안 & 국제 크루즈</p>
+      <p class="gray">정통 크루즈 운항 횟수</p>
+    </div>
+  </div>
+  <p class="o">/</p>
+    <h2>Business Area</h2>
+    <p class="continue">팬스타는 무한한 가능성의 바다에서 최초의 길을 만들어 왔습니다<br>
+      그리고 이제 고객을 위한 최고를 만들어 갑니다.</p>
+      <div class="container3">
+        <div class="container4">
+      <ul class="con2">
+        <li><a href="#" class="con3">고속화물페리</a></li>
+        <li><a href="#" class="con3">크루즈 여객</a></li>
+        <li><a href="#" class="con3">국제특송</a></li>
+        <li><a href="#" class="con3">자동차정비기기</a></li>
+        <li><a href="#" class="con3">친환경 선박기술</a></li>
+        <li><a href="#" class="con3">창고보관</a></li>
+      </ul>
+      <div class="con4">
+      <p class="gogo">고속화물페리</p>
+      <p class="text5">팬스타는 고속 Ro-Ro 페리를 이용한 해상운송으로 신속한 선적 및 하역, 내륙운송,<br>
+        현지 통관 면허를 보유하고 있는 일본 현지법인을 통해 일관해상운송체계를 구축<br>
+        해상화물의 리드타임을 항공화물에 준하도록 단축시키면서 운송비용은 대폭 절감시켜 드립니다.<br>
+        컨테이너화물은 물론 다양한 형태의 벌크화물, 건설장비/자재, 자동차 등 어떤 종류의 화물이라도<br>
+        컨테이너없이 바로 선내에 선적하여 빠르고 안젆나 운송을 보장합니다.<br>
+        더 빠르게, 더 안전하게, 더 편리하게 팬스타 고속화물페리가 책임집니다.</p>
+        <div class="imggg">
+        <img src="./images/mb_cargo_01.png" alt="img7" class="image">
+        <img src="./images/mb_cargo_02.png" alt="img8" class="image">
+        <img src="./images/mb_cargo_03.png" alt="img9" class="image">
+      </div>
+    <p class="more">More Detail</p></div></div>
+      <img src="./images/mb_cargo.png" alt="img9" class="image2">
+    </div>
+    
+    <p class="o">/</p>
+    <h2>Schedule</h2>
+    <p class="continue">팬스타고속화물페리는 빠르고 안전함은 물론, 뛰어난 정시성을 자랑합니다.<br>
+      주요 선박의 운항일정을 간편하게 확인해 보세요.</p>
+      <div class="map">
+      <ul class="container5">
+        <li><a href="#" class="con5">SANSTAR DREAM</a></li>
+        <li><a href="#" class="con5">PANSTAR GENIE</a></li>
+        <li><a href="#" class="con5">PANSTAR GENIE No.2</a></li>
+        <li><a href="#" class="con5">PANSTAR DREAM</a></li>
+      </ul>
+    <img src="./images/kakaomap.PNG" alt="map1" class="img10">
+    <p class="more1">More Detail</p>
+    </div>
+    <p class="o">/</p>
+    <h2>Contact Us</h2>
+    <p class="continue">오늘보다 내일이 더 새로운 팬스타의 최신 정보를 제공해 드립니다.</p>
+    <div class="container6">
+      <img src="./images/233089.jpg" alt="img10" class="img20">
+      <div class="notice">
+        <div class="notice1"><h2>Notice</h2>
+        <a href="https://www.panstar.co.kr/customer/notice" class="notice2">소식더보기</a>
+        </div>
+      <a class="notice3" href="https://www.panstar.co.kr/customer/notice/?type=view&idx=268">- [안내] 제6호 태풍 카눈 북상 관련 여객선 운항 일정 공지</a>
+      <a class="notice3" href="https://www.panstar.co.kr/customer/notice/?type=view&idx=222">- [안내] 팬스타크루즈 예약 시스템 점검 안내</a>
+      <a class="notice3" href="https://www.panstar.co.kr/customer/notice/?type=view&idx=216">- [입찰공고] 시스템 데이터 재구성 및 빅데이터 분석용 DW구축</a>
+      <a class="notice3" href="https://www.panstar.co.kr/customer/notice/?type=view&idx=190">- 디지털 전환 프로젝트 기반 작업 설계 전략 컨설팅-입찰 공고</a>
+      <a class="notice3" href="https://www.panstar.co.kr/customer/notice/?type=view&idx=10">- 2021년 선박 정기 점검으로 인한 휴항 안내(4/30~5/09)</a>
+    </div>
+    <img src="./images/bg_main_recruit.png" alt="notice">
+    <div class="re">
+    <p class="recruit">Recruit</p>
+    <p class="pan2">팬스타 채용안내</p>
+    <a href="https://www.panstar.co.kr/recruit/submit?page=list" class="ok">채용공고확인</a>
+    </div>
+    </div>
+    </div>
+    <div class="logos">
+      <img src="./images/logo-bngd.png" alt="img11" class="bottom">
+      <img src="./images/logo-enterprise.png" alt="img12" class="bottom">
+      <img src="./images/logo-line.png" alt="img13" class="bottom">
+      <img src="./images/logo-star.png" alt="img14" class="bottom">
+      <img src="./images/logo-tech.png" alt="img15" class="bottom">
+    </div>
+    <div class="container7">
+      <div class="con7">
+      <img src="./images/logo_ov.png" alt="logo" class="bottomlogo">
+      <p class="seoul">서울특별시 중구 무교로 20, 어린이재단빌딩 5층
+        부산광역시 중구 해관로 30, 팬스타크루즈 플라자 빌딩 3층
+        <br>대표전화[여객] 1577 - 9996   [화물] 051) 465 - 4500팩스051) 469 - 8208</p>
+        <p class="copy">COPYRIGHT© PANSTAR ALL RIGHTS RESERVED.</p>
+    </div>
+    <div class="goji">
+  <a href="#" class="goji1">법적고지</a>
+  <a href="#" class="goji1">개인정보처리방침</a>
+  <a href="#" class="goji1">이메일 수집거부</a>
+  </div>
+  </div>
+</body>
+</html>

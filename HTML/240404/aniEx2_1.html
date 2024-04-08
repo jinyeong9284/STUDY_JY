@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>aniEx2</title>
+  <style>
+    body{
+      background-color: black;
+      color:white;
+      text-align: center;
+      font-size: 13rem;
+      text-transform: uppercase;
+    }
+  .txt-wrapper span:hover{
+    animation: neon infinite 0.4s;
+    }
+    @keyframes neon{
+      0%{
+        text-shadow: 5px 5px green,-5px -6px greenyellow;
+      }25%{
+        text-shadow: -5px -1px green,5px 6px greenyellow;
+      }50%{
+        text-shadow: 5px 4px green,-8px -9px greenyellow;
+      }75%{
+        text-shadow: -8px -4px green,-5px -4px greenyellow;
+      }100%{
+        text-shadow: -5px -10px green,15ap -4px greenyellow;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="txt-wrapper">
+    <span>c</span>
+    <span>s</span>
+    <span>s</span>
+    <span>3</span>
+  </div>
+</body>
+</html>

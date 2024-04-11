@@ -3,6 +3,55 @@
 <head>
   <meta charset="utf-8">
   <title>gridBasic10</title>
+  <style>
+     body{
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .container{
+      width:80%;
+      margin:50px auto;
+      border:6px solid black;
+      display: grid;
+      gap:0.3rem;
+      grid-auto-rows: 100px;
+    }
+    .container .item{
+      display: grid;
+      place-items: center;
+      color:white;
+    }
+    .container .item:nth-child(odd){
+      background-color: blue;
+    }
+    .container .item:nth-child(even){
+      background-color: rgb(68, 68, 255);
+    }
+    .box1{
+      /* auto-fit : 아이템을 늘려 채움 */
+      grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+    .box2{
+      grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    }
+    .box3{
+      grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+    /* 
+      허용되지 않는 값
+      repeat(auto-fill, 1fr);
+      repeat(auto-fill, auto);
+      repeat(auto-fit, 1fr);
+      repeat(auto-fit, auto);
+
+      2열 이상일때
+      auto repeat(auto-fill,100px);
+      1fr repeat(auto-fill,100px);
+      auto repeat(auto-fit,100px);
+      1fr repeat(auto-fit,100px);
+    */
+  </style>
 </head>
 <body>
   <h1>gridBasic10</h1>

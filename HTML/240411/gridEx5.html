@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>gridEx5</title>
+  <style>
+    .container{
+      border:6px solid black;
+      width:80%;
+      margin:50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      height: 30vh;
+    }
+    .container .item:nth-child(odd){
+      background-color: purple;
+    }
+    .container .item:nth-child(even){
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <!-- 컨테이너의 크기가 커지면 여백없이 채우고 작아지면 아이템 자동 줄바꿈 -->
+  <div class="container">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+</body>
+</html>

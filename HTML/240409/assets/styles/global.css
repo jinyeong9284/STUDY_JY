@@ -47,12 +47,24 @@ body{
   margin:0px auto;
   color:#666;
 }
-.ghost-btn{
-  border:3px solid white;
-}
+
 .more-btn{
   background-color: orange;
   color:white;
+  position: absolute;
+  transition: 0.3s;
+  text-transform: capitalize;
+  padding:10px 30px;
+}
+.more-btn:hover{
+  border-radius: 30px;
+}
+/***** article *****/
+article{
+  padding-top:170px;
+}
+article:nth-of-type(1){
+  padding:0;
 }
 /***** header *****/
 header{
@@ -61,6 +73,7 @@ header{
   width:100%;
   background-color: rgba(119, 119, 119,0.7);
   color:white;
+  z-index: 999;
 }
 header .header-wrapper{
   /* background-color: orange; */
@@ -106,9 +119,6 @@ header .header-wrapper .global-utill{
   margin:0 3.15789%;
   font-size: 14px;
 }
-header .header-wrapper .global-utill li{
-
-}
 header .header-wrapper .global-utill li a{
   display: block;
   margin-left: 30px;
@@ -144,3 +154,69 @@ header .header-wrapper .global-utill li:not(:first-child) a::after{
   content: "";
 } */
 /***** footer *****/
+footer{
+  background-color: rgb(46, 46, 46);
+  color:white;
+  margin-top: 110px;
+}
+footer .footer-banner{
+  background-color: #ddd;
+  padding:30px 0;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+footer .footer-bottom{
+  max-width: 1600px;
+  margin:0 auto;
+  font-size: 12px;
+  padding:50px 0;
+}
+footer .footer-bottom .footer-bottom-box{
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer-bottom>.flex-wrapper{
+  align-items: flex-start;
+}
+footer .footer-bottom h2{
+  background: url(../images/logo.png) no-repeat 0 50% / contain;
+  /* css filter https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
+  filter: grayscale(100%) contrast(20%);
+  text-indent: -9999px;
+  width:300px;
+  height: 40px;
+}
+footer .footer-bottom .footer-utill{
+  gap:20px;
+  font-size: 14px;
+}
+footer .footer-bottom .footer-utill a:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+footer .footer-bottom address{
+  text-align: left;
+  font-style: normal;
+  line-height: 2;
+  margin:40px 0;
+}
+footer .footer-bottom .copyright{
+  color:#999;
+  margin-top: 20px;
+}
+footer .footer-bottom .family-site{
+  background-color: black;
+  padding:10px 20px;
+  width:180px;
+  text-align: left;
+  text-transform: capitalize;
+  justify-content: space-between;
+}
+footer .footer-bottom .family-site .icon{
+  width:10%;
+}
+footer .footer-bottom .family-site .icon svg{
+  fill:white;
+  transform: translateY(3px);
+
+}

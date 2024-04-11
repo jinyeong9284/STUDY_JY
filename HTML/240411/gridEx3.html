@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>gridEx3</title>
+  <style>
+    .container{
+      border:6px solid black;
+      width:500px;
+      margin:50px auto;
+      height: 50vh;
+      display: grid;
+    }
+    p{
+      margin: 0;
+    }
+    .span1{
+      background-color: yellowgreen;
+      grid-column: 1/15;
+    }
+    .span2{
+      background-color: brown;
+      grid-row: 4;
+      grid-column: 2/4;
+    }
+    .span3{
+      background-color: burlywood;
+      grid-row: 3/4;
+      grid-column: 1/5;
+    }
+    .span4{
+      background-color: beige;
+      grid-row:2;
+      grid-column: 3/8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="span1">span1</p>
+    <p class="span2">span2</p>
+    <p class="span3">span3</p>
+    <p class="span4">span4</p>
+  </div>
+</body>
+</html>

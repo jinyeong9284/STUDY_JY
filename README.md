@@ -1,3 +1,6 @@
+<h1>240412</h1>
+CSS : grid 예제 실습
+
 <h1>240411</h1>
 CSS : grid 관련 속성 / template, gap, justify-content, align-content, justify-items, align-items, row, column, grid-auto, place-self, order, auto-fill, auto-fit 학습
 

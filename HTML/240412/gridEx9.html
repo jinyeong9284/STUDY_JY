@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>gridEx9</title>
+  <style>
+    .container{
+      border:2px solid black;
+      display: grid;
+      grid-template-columns: repeat(15,1fr);
+      grid-template-rows: repeat(8,1fr);
+      width:70vw;
+      margin:0 auto;
+      height:80vh;
+      font-size: 2rem;
+      text-align: center;
+    }
+    header{
+      grid-column:1 / 16;
+      background-color: black;
+      color:white;
+    }
+    .menu{
+      grid-column: 1/2;
+      grid-row: 2/5;
+      background-color: blue;
+      display: grid;
+      grid-template-columns: 15px;
+    }
+    .grid{
+      grid-column: 2/15;
+      grid-row: 2/7;
+    }
+    .grid1{
+      background-color: black;
+      color:white;
+      width: 150px;
+      height: 70px;
+      line-height: 70px;
+      font-weight: 700;
+      position:absolute;
+      transform: translate(500px, -350px);
+    }
+    .item1{
+      grid-column: 15/16;
+      grid-row: 2/5;
+      background-color: rgb(255, 0, 119);
+    }
+    .box{
+      background-color: skyblue;
+      grid-column: 1/2;
+      grid-row: 5/8;
+    }
+    .item2{
+      grid-column: 15/16;
+      grid-row: 5/8;
+      background-color: rgb(255, 0, 119);
+    }
+    footer{
+      background-color: black;
+      color:white;
+      grid-row: 8/9;
+      grid-column: 1/16;
+    }
+    iframe{
+      width:100%;
+      aspect-ratio: 16/9;
+      z-index: -1;
+      border:2px solid black;
+    }
+    .item{
+      border:2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <header class="item">Header</header>
+  <div class="menu item">Menu1Menu2Menu3</div>
+  <div class="grid item">
+    <iframe src="https://www.youtube.com/embed/0cfLnbzORtw?si=YYTxBYU56zIRSvBp&loop=1&mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+  <p class="grid1 item">Grid</p>
+  </div>
+  <div class="item1 item">아이템1</div>
+  <span class="box item"></span>
+  <div class="item2 item">아이템2</div>
+  <footer>Footer</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>gridEx9</title>
+  <style>
+      .border-style{
+      border:3px solid black;
+      border-top:none;
+    }
+    .vertical-txt{
+      writing-mode: vertical-lr; /* 텍스트의 진행 방향의 가로, 세로 정렬. 상속 */
+      text-orientation: upright; /* writing-mode 작성시 영어의 글자 방향 */
+      letter-spacing: 2px;
+    }
+    .container{
+      font-weight: bold;
+      text-transform: capitalize;
+      width:90vw;
+      margin:20px auto;
+      display: grid;
+      /* 3열 */
+      grid-template-columns:minmax(auto,70px) 1fr minmax(auto,70px);
+      /* 4행 */
+      grid-auto-rows:70px minmax(200px, 30vh) minmax(200px,30vh) 70px;
+      color:white;
+    }
+    .container header, .container footer{
+      background-color: black;
+      color:white;
+      /* display:flex;
+        justify-content:center;
+        align-items:center;
+      */
+      display: grid;
+      place-items: center;
+      /* grid-column: span 3; */
+      grid-column: 1/-1;
+    }
+    .container .menu{
+      background-color:rgb(121, 2, 101);
+      list-style: none;
+      margin:0; padding:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:10px;
+    }
+    .container .blank{
+      background-color: rgb(101, 9, 104);
+      grid-column: 1/2;
+      border-bottom: none;
+    }
+    .container .video-wrapper{
+      background-color: blueviolet;
+      grid-column: 2/3;
+      grid-row: 2/4;
+      position:relative;
+      overflow: hidden;
+    }
+    .container .video-wrapper iframe{
+      object-fit: cover;
+      /* position:absolute;
+      left:50%;
+      transform: translateX(-50%); */
+      width:100%;
+      height:100%;
+      aspect-ratio: 16/9;
+    }
+    .container .video-wrapper h1{
+      background-color: black;
+      color:white;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      padding:6px 30px;
+      transition:0.3s;
+    }
+    .container .video-wrapper h1:hover{
+      border-radius: 30px;
+    }
+    .container aside{
+      background-color: plum;
+      /* grid-column: 3/4; */
+      grid-column: -1/-2;
+      grid-row:2/3;
+
+      display: grid;
+      place-items: center;
+ 
+    }
+    .container .item2{
+      grid-row: 3/4;
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>BTOB 노래</header>
+    <ul class="menu border-style vertical-txt">
+      <li>BTOB</li>
+      <li>MELODY</li>
+      <li>SING</li>
+    </ul>
+    <div class="blank border-style vertical-txt"></div>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/0cfLnbzORtw?si=YYTxBYU56zIRSvBp&loop=1&mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+      <h1>육성재</h1>
+    </div>
+    <aside class="item1 border-style vertical-txt">그리워하다</aside>
+    <aside class="item2 border-style vertical-txt">나의바람</aside>
+
+    <footer>서은광 이민혁 이창섭 임현식 프니엘 육성재</footer>
+  </div>
+</body>
+</html>

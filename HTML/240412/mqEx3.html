@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>mqEx3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            background-color: beige;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+            gap:5px;
+            padding:40px;
+        }
+        .item{
+            background-color: rgb(165, 165, 53);
+            width:90%;
+            height:30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .txt4{
+            display: none;
+        }
+        @media screen and (min-width:768px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+            .item{
+                background-color: rgb(226, 43, 128);
+            }
+            .txt10{
+                display: none;
+            }
+        }
+        @media screen and (min-width:1200px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+            }
+            .txt10{
+                background-color: rgb(255, 182, 255);
+                display: block;
+            }
+        }
+        @media screen and (min-width:1870px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+            }
+            .txt10{
+                background-color: rgb(255, 182, 255);
+                display: block;
+            }
+            .txt4{
+                display: block;
+            }
+            .container{
+                width:90%;
+                margin:0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="item txt1">txt1</div>
+    <div class="item txt2">txt2</div>
+    <div class="item txt3">txt3</div>
+    <div class="item txt4">txt4</div>
+    <div class="item txt5">txt5</div>
+    <div class="item txt6">txt6</div>
+    <div class="item txt7">txt7</div>
+    <div class="item txt8">txt8</div>
+    <div class="item txt9">txt9</div>
+    <div class="item txt10">txt10</div>
+   </div>
+</body>
+</html>

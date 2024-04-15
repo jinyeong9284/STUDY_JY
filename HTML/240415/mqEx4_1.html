@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>mqEx4</title>
+  <link rel="stylesheet" href="../assets/styles/reset.css">
+  <link rel="stylesheet" href="mqEx4.css">
+<!--   
+  <link rel="stylesheet" href="./mq4-t.css" media="(min-width:768px)">
+  <link rel="stylesheet" href="./mq4-pc.css" media="(min-width:1200px)"> -->
+  <link rel="stylesheet" href="./mqEx4-t.css">
+  <link rel="stylesheet" href="mqEx4-pc.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+</head>
+<body>
+  <nav>
+    <ul class="global-menu">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">SERVICE</a></li>
+      <li><a href="#">PRODUCT</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <a href="#" class="mobile-btn">MENU</a>
+  </nav>
+  <script>
+    const mobileBtn = document.querySelector(".mobile-btn");
+    const globalMenu = document.querySelector(".global-menu");
+
+    mobileBtn.addEventListener('click',() =>globalMenu.classList.toggle('active'));
+  </script>
+</body>
+</html>

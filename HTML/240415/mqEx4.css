@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* font-family */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: "Fira Sans",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  font-size: 3ch;
+  text-transform: uppercase;
+  background: url(./images/GKUM7CEbcAANkj_.jfif) no-repeat fixed 50% / cover;
+  color:white;
+}
+nav .global-menu{
+  display: none;
+  /* display: none; */
+  /* grid-auto-rows: 45px; */
+  
+}
+nav .global-menu.active{
+  display: grid;
+}
+nav a{
+  display: block;
+  border-bottom: 1px solid #fff;
+  height: 45px;
+  line-height: 45px;
+  padding-left:10px;
+}
+nav .mobile-btn{
+ background-color: white;
+ background: rgba(39, 39, 148,0.7) url(./images/ellipsis-vertical-solid.svg) no-repeat 98% 50% /7px;
+}

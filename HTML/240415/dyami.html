@@ -4,338 +4,135 @@
   <meta charset="utf-8">
   <title>dyami</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-  <style>
-    body{
-      margin:0;
-      padding:0;
-    }
-    header{
-      display: flex;
-    }
-    .logo{
-      height: 70px;
-      padding:15px;
-    }
-    .icon-menu{
-      width:20px;
-      position: absolute;
-      right:15px; top:35px;
-    }
-    .topimg{
-      width:100%;
-    }
-    .brand{
-      padding:0 25px;
-    }
-    .brand .line{
-      padding:7px 0;
-      border-bottom:1px solid gainsboro;
-      width:105%;
-      display: block;
-      transform: translateX(-10px);
-    }
-    .imgs{
-      background-color: rgba(248, 248, 248,0.7);
-    }
-    .imgs{
-      height:410px;
-      width: 100%;
-      position: relative;
-    }
-    .imges .white{
-      background-color: rgba(255, 255, 255,0.7);
-      font-size: 1.5rem;
-      font-weight: 600;
-      width:100%;
-      height: 410px;
-      text-align: center;
-      line-height: 410px;
-      position: absolute;
-      transform: translateY(-438px);
-      z-index: 999;
-    }
-    .img5{
-      width:100%;
-      height:25vh;
-    }
-    .img4{
-      width: 100%;
-      height: 25vh;
-    }
-    .md{
-      background-color: rgba(255, 255, 255,0.7);
-      font-size: 1.5rem;
-      font-weight: 600;
-      width:100%;
-      height: 25vh;
-      text-align: center;
-      line-height: 25vh;
-      position: absolute;
-      transform: translateY(-263px);
-      z-index: 999;
-    }
-    .img1{
-      margin-top: 15px;
-    }
-    .business{
-      font-size: 2.5rem;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom:25px;
-    }
-    .line1{
-      border: 1px solid black;
-      width:20%;
-      margin:0 auto;
-    }
-    .wara{
-      margin: 25px auto 0;
-      text-align: center;
-      width:75%;
-    }
-    .bsimg{
-      width:90%;
-      margin-top:25px;
-    }
-    .bsimg-container{
-      text-align: center;
-    }
-    .bsimg-container .one{
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-    .bsimg-container .two{
-      width: 70%;
-      margin: 0 auto;
-    }
-    .video{
-      background-color: rgb(240, 240, 240);
-      padding:20px;
-      margin-top:5px;
-    }
-    .video p:first-child{
-      font-weight: 700;
-      font-size: 2.5rem;
-      padding-top:10px;
-    }
-    .video iframe{
-      margin-top:40px;
-      width:100%;
-      height: 245px;
-    }
-    .ourS{
-      font-weight: 700;
-      font-size: 2.5rem;
-      padding-top:10px;
-      text-align: center;
-    }
-    .ourService img{
-      margin:55px auto 0;
-      display: block;
-      width:100%;
-    }
-    .ourService{
-      padding: 20px;
-    }
-    .ourService h3{
-      padding-left: 10px;
-    }
-    .ourService p{
-      padding-left: 10px;
-      margin-top:-10px;
-    }
-    .location{
-      display: flex;
-      border-bottom: 1px solid gainsboro;
-      width:80%;
-      margin: 0 auto;
-    }
-    .location a{
-      display: block;
-      font-weight: 700;
-      font-size:1.5rem;
-      text-align: center;
-      color: black;
-      text-decoration: none;
-      width:200px;
-      height: 40px;
-      line-height: 40px;
-      margin:0 auto;
-    }
-    .location .active{
-      border-bottom:3px solid black;
-      width:200px;
-    }
-    .container{
-      border:1px solid black;
-      height: 400px;
-      width:90%;
-      margin: 30px auto;
-    }
-    .address{
-      padding:10px 25px;
-    }
-    .address p{
-      margin-top:-15px;
-    }
-    .address h4{
-      margin-top:10px;
-    }
-    .line2{
-      border:1px solid gainsboro;
-    }
-    .line3{
-      border:2px solid gainsboro;
-    }
-    .mint img{
-      margin:100px auto 50px;
-      width:100%;
-      position: relative;
-    }
-    .minttalk{
-      margin-top:0px;
-      background-color: rgba(71, 202, 158,0.7);
-      width: 100%;
-      height: 450px;
-      text-align: center;
-      color: white;
-      transform: translateY(-435px);
-      position: absolute;
-    }
-    .mint .minttalk h3{
-      font-size: 1.9rem;
-      padding-top: 50px;
-    }
-    .mint .minttalk .herb{
-      width:70%;
-      font-size: 1.3rem;
-      margin: 0 auto;
-    }
-    .contact{
-      border:1px solid white;
-      width:150px;
-      height: 40px;
-      line-height: 40px;
-      margin:50px auto;
-      font-weight: 700;
-    }
-    .footerone{
-      height: 70vh;
-      background-color: rgb(235, 235, 235);
-      margin-top:15px;
-      padding: 20px;
-    }
-    .footerone img{
-      margin-top:50px;
-      margin-bottom:20px;
-    }
-    .footerone h4{
-      margin-top:50px;
-    }
-    ul{
-      list-style: none;
-      padding: 0;
-      margin:0;
-    }
-    .sns{
-      display: flex;
-      flex-direction: row;
-      margin-top:-50px;
-      padding-left: 20px;
-    }
-    .sns img:nth-of-type(1){
-      width:12px;
-      padding-right:30px;
-    }
-    .sns img:nth-of-type(2){
-      width:18px;
-      padding-right:30px;
-    }
-    .sns img:nth-of-type(3){
-      width:22px;
-      padding-right:30px;
-    }
-    .sns img:nth-of-type(4){
-      width:18px;
-      padding-right:30px;
-    }
-    .footer{
-      background-color: gray;
-      margin: 0;
-      padding:50px 20px;
-      text-align: center;
-    }
-    .footer p{
-      margin:0;
-    }
-  </style>
+  <link rel="stylesheet" href="./dyami_m.css">
+  <link rel="stylesheet" href="./dyami_pc.css">
 </head>
 <body>
   <header>
-  <img src="./images/logo.png" alt="logo" class="logo">
+  <h1><img src="./images/logo.png" alt="logo" class="logo"></h1>
   <img src="./images/bars-solid.svg" alt="icon" class="icon-menu">
+  <ul class="menu">
+  <li><a href="#">ABOUT</a></li>
+  <li><a href="#">SERVICE</a></li>
+  <li><a href="#">PORTFOLIO</a></li>
+  <li><a href="#">BOARD</a></li>
+  <li><a href="#">CONTACT</a></li>
+  </ul>
 </header>
+<div class="container3">
   <img src="./images/btob2.png" alt="topimg" class="topimg">
+  <ul class="container2">
+    <li class="con1"><a href="#" class="left"><img src="./images//chevron-down-solid.svg"></a></li>
+    <li class="con2"><a href="#" class="right"><img src="./images/chevron-down-solid.svg"></a></li>
+  </ul>
+</div>
   <div class="brand">
+    <div class="brands brand1">
     <h2>Branding</h2>
     <p>비상계엄하의 군사재판은 군인, 군무원의 범죄나 군사에 관한 간첩죄의 경우와 초병, 초소, 유독음식물공급, 포로에 관한 죄중 법률이 정한 경우에 한하여 단심으로 할 수 있다.</p>
     <div class="line"></div>
+    </div>
+    <div class="brands brand2">
     <h2>Development</h2>
     <p>국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.</p>
     <div class="line"></div>
+    </div>
+    <div class="brands brand3">
     <h2>Analysis</h2>
     <p>제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다.</p>
     <div class="line"></div>
+   </div>
+   <div class="brands brand4">
     <h2>Marketing</h2>
     <p>이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.</p>
-  </div>
+  </div></div>
   <div class="imges">
+    <div class="imges1">
     <img src="./images/1.jpg" alt="img1" class="imgs img1">
     <p class="white">Branding</p>
+    </div>
+    <div class="imges1">
     <img src="./images/2.jpg" alt="img2" class="imgs img2">
     <p class="white">Development</p>
+    </div>
+    <div class="imges1">
     <img src="./images/3.jpg" alt="img3" class="imgs img3">
     <p class="white">Analysis</p>
+    </div>
+    <div class="imges1">
     <img src="./images/4.jpg" alt="img4" class="img4">
     <p class="md">marketing</p>
+   </div>
+    <div class="imges1">
     <img src="./images/5.jpg" alt="img5" class="img5">
     <p class="md">Design</p>
+    </div>
+    <div class="imges1">
     <img src="./images/6.jpg" alt="img6" class="imgs img6">
     <p class="white">Strategy</p>
+    </div>
+    <div class="imges1">
     <img src="./images/7.jpg" alt="img7" class="imgs img7">
     <p class="white">Strategy</p>
+  </div>
   </div>
   <p class="business">Our Business</p>
   <div class="line1"></div>
   <p class="wara">와라희닷을 갠모 룬니노니앙이 에짱햇으로 춘즌홉아 우무개지 순읍으니까 겨즐겨듯이 월즌모를 딘에페어 뎀메녤개갠이.</p>
   <div class="bsimg-container">
+    <div class="bsimg1">
     <img src="./images/img-01.jpg" alt="bsimg1" class="bsimg bsimg1">
     <p class="one">Brokerage & Trading</p>
     <p class="two">This Theme Does Everything You Could Possibly Want To Do</p>
+   </div>
+   <div class="bsimg2">
     <img src="./images/img-02.jpg" alt="bsimg1" class="bsimg bsimg1">
     <p class="one">Investment Banking</p>
     <p class="two">This Theme Does Everything You Could Possibly Want To Do</p>
+    </div>
+    <div class="bsimg3">
     <img src="./images/img-03.jpg" alt="bsimg1" class="bsimg bsimg1">
     <p class="one">Contracts & Research</p>
     <p class="two">This Theme Does Everything You Could Possibly Want To Do</p>
+    </div>
+    <div class="bsimg4">
     <img src="./images/img-04.jpg" alt="bsimg1" class="bsimg bsimg1">
     <p class="one">Award Winning</p>
     <p class="two">This Theme Does Everything You Could Possibly Want To Do</p>
+    </div>
   </div>
   <div class="video">
+    <div class="ourvideo">
     <p>Our Youtube</p>
     <p>담아잰으로 브메인가믹츠다 힉헴 뎌시 시호타는 알시켜피 지드부급가기
       다 컬았과세 조은의 기세요. 롬두다 세납잤밖에 밉흠지 이몬접맨 전맨로머어.
       둘단청는 누말도 곡여큐일은 스딸온책다, 조새가.
-    </p>
+    </p></div>
     <iframe src="https://www.youtube.com/embed/wDkjWSt3HOM?si=KEwMaqWExl2dmrTO&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
-  <div class="ourService">
   <p class="ourS">Our Service</p>
   <div class="line1"></div>
+  <div class="ourService">
+  <div class="ourimages ourimage1">
   <img src="./images/img-05.jpg" alt="ourImg">
   <h3>Branding</h3>
   <p>나는 별 하나에 계절이 계집애들의 묻힌 같이 차 멀리 까닭입니다.</p>
+  </div>
+  <div class="ourimages ourimageno">
+  <img src="./images/img-06.jpg" alt="ourImg">
+  <h3>Developmen</h3>
+  <p>가을로 불러 내린 별 흙으로 사랑과 밤을 말 못듯합니다.</p>
+  </div>
+  <div class="ourimages ourimageno">
+  <img src="./images/img-07.jpg" alt="ourImg">
+  <h3>Analysis</h3>
+  <p>이 이제 가을 하나에 내린 까닭이요, 듯합니다</p>
+  </div>
+  <div class="ourimages ourimageno">
+    <img src="./images/img-08.jpg" alt="ourImg">
+    <h3>Marketing</h3>
+    <p>된 별 불러 내일 노루, 밤을 별 있습니다</p>
+  </div>
 </div>
   <p class="ourS">Location</p>
   <div class="location">
@@ -367,19 +164,27 @@
   </div>
 </div>
 <div class="footerone">
-  <img src="./images/logo.png">
+  <img src="./images/logo.png" class="footerlogo">
+  <div class="footeronecontainer">
+  <div class="footer1 footerone1">
   <h4>CONTACT</h4>
   <p>02 1234 5678</p>
   <p>From.Yami@Gmail.Com</p>
+  </div>
+  <div class="footer1 footerone2">
   <h4>LOCATION</h4>
   <p>795 Folsom Ave, Suite 600</p>
   <p>San Francisco, CA 94107</p>
+  </div>
+  <div class="footer1 footerone3">
   <h4>SOCIAL</h4>
   <div class="sns">
   <img src="./images/facebook-f.svg">
   <img src="./images/square-instagram.svg">
   <img src="./images/youtube.svg">
   <img src="./images/tiktok.svg">
+</div>
+</div>
 </div>
 </div>
 <div class="footer">

@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+@media (min-width:900px){
+ .icon-menu{
+    display: none;
+  }
+  .menu{
+    display: block;
+    display: flex;
+    font-size: 1.3rem;
+    position:absolute;
+    right:10px;
+    top:35px;
+  }
+  .menu a{
+    display: block;
+    text-decoration: none;
+    color:black;
+    width:120px;
+    text-align: center;
+  }
+  .topimg{
+    height: 777px;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  .brand{
+    border-top:1px solid gainsboro;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding:30px;
+  }
+  .brand .line{
+    border:none;
+  }
+  .brands{
+    padding:30px;
+    border:0.5px solid rgba(230, 230, 230,0.5);
+  }
+  .brand2, .brand4{
+    border-right: none;
+  }
+  .brand1, .brand3{
+    border-left:none;
+  }
+  .brand3, .brand4{
+    border-bottom: none;
+  }
+  .brand1, .brand2{
+    border-top:none;
+  }
+  .imges .imges1 .white, .md{
+    display: none;
+  }
+  .imges{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows:repeat(3,1fr);
+  }
+  .imgs{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .img4{
+    height: 100%;
+  }
+  .img5{
+    height: 100%;
+  }
+  .img7{
+    display: none;
+  }
+  .bsimg-container{
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:70px;
+  }
+  .video{
+    margin-top:70px;
+    padding:20px 100px;
+  }
+  .ourvideo{
+    display: flex;
+  }
+  .ourvideo p:nth-child(2){
+    width: 50%;
+    position: relative;
+    right:-590px;
+    top:50px;
+  }
+  .line1{
+    width:40px;
+  }
+  .ourimageno{
+    display: block;
+  }
+  .ourService{
+    display: flex;
+  }
+  .ourService .ourimages{
+    box-shadow: 3px 3px 10px 2px rgb(146, 146, 146);
+    margin: 30px;
+  }
+  .ourService img{
+    margin: 0;
+  }
+  .ourService p, h3{
+    margin:20px 10px;
+  }
+  .location .active{
+    width:50%;
+  }
+  .address{
+    padding:20px 90px;
+  }
+  .minttalk{
+    aspect-ratio: 16/9;
+    height: 50vh;
+    position: absolute;
+    transform: translateY(-111%);
+  }
+  .mint img{
+    height: 50vh;
+  }
+  .footer p{
+    margin:0;
+  }
+  .footerone{
+    position:relative;
+    height: 20vh;
+    padding:0;
+  }
+  .footeronecontainer{
+    display: flex;
+    position: absolute;
+    right:0;
+    top:0;
+    padding-right:100px;
+  }
+  .footer1{
+    padding-right:200px;
+  }
+  .footerlogo{
+    padding-left:200px;
+  }
+}

@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+:root{
+  --color-mint:#8DECB4;
+  --color-pink:#F3D0D7;
+  --color-yellow:#FFFAB7;
+}
+body,p{
+  margin: 0;
+  padding: 0;
+}
+.container .clock{
+  display: none;
+}
+.wrapper{
+  background-color: rgb(255, 236, 236);
+  margin-top:5vh;
+  display: grid;
+  grid-template-rows: repeat(15,1fr);
+  padding:10px;
+  height: 80vh;
+}
+.container .wrapper span{
+  font-size: 2rem;
+}
+.container .wrapper span strong{
+  margin-right: 15px;
+}
+.container .container01 .ezen{
+  background-color: var(--color-mint);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 2/12;
+  padding:10px;
+}
+.container .container01 .after{
+  background-color: var(--color-pink);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 12/13;
+  padding:10px;
+}
+.container .container01 .star{
+  background-color: var(--color-yellow);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 13/16;
+  padding:10px;
+}
+.container .container02 .ezen{
+  background-color: var(--color-mint);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 2/12;
+  padding:10px;
+}
+.container .container02 .star{
+  background-color: var(--color-yellow);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 13/16;
+  padding:10px;
+}
+.container .container03 .ezen{
+  background-color: var(--color-mint);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 2/12;
+  padding:10px;
+}
+.container .container03 .star{
+  background-color: var(--color-yellow);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 13/16;
+  padding:10;
+}
+.container .container04 .ezen{
+  background-color: var(--color-mint);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 2/12;
+  padding:10px;
+}
+.container .container04 .after{
+  background-color: var(--color-pink);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 12/13;
+  padding:10px;
+}
+.container .container04 .star{
+  background-color: var(--color-yellow);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 13/16;
+  padding:10px;
+}
+.container .container05 .ezen{
+  background-color: var(--color-mint);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 2/12;
+  padding:10px;
+}
+.container .container05 .after{
+  background-color: var(--color-pink);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 12/13;
+  padding:10px;
+}
+.container .container05 .star{
+  background-color: var(--color-yellow);
+  border-radius: 5px;
+  border:1px solid rgb(204, 204, 204);
+  grid-row: 13/16;
+  padding:10px;
+}

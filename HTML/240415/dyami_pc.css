@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media (min-width:900px){
+@media (min-width:1200px){
  .icon-menu{
     display: none;
   }
@@ -101,7 +101,7 @@
     display: flex;
   }
   .ourService .ourimages{
-    box-shadow: 3px 3px 10px 2px rgb(146, 146, 146);
+    box-shadow: 1px 1px 25px 2px rgb(146, 146, 146);
     margin: 30px;
   }
   .ourService img{

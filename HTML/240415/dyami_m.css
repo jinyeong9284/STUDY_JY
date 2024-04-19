@@ -24,18 +24,27 @@ header{
   position: relative;
 }
 .container2{
-  width:20px;
-  top:50%;
   position:absolute;
+  width:100%;
+  top:50%;
+  display: flex;
+  justify-content: space-between;
+}
+.container2 li{
+  width:20px;
 }
 .container2 a{
   display: block;
+  width:20px;
 }
 .container2 .left{
   transform: rotate(90deg);
 }
 .container2 .right{
   transform:rotate(-90deg);
+}
+.dong{
+  width:20px;
 }
 .brand{
   padding:0 25px;

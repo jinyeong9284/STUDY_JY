@@ -1,22 +1,22 @@
-<h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240219">240419</h1></a>
+<h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240419">240419</h1></a>
 CSS : 15,16일날 한 사이트 실습 풀이, Grid를 활용한 예제 실습
 
-<h1>240418</h1>
+<h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240418">240418</h1></a>
 CSS : 변수 설정 학습, 15일, 16일날 한 사이트 실습 풀이
 
-<h1>240417</h1>
+<h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240417">240417</h1></a>
 리디자인한 홈페이지 모바일 버전 실습(시험)
 
-<h1>240416</h1>
+<h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240416">240416</h1></a>
 사이트 실습(viewport를 이용한 모바일 버전 및 웹 버전)
 
-<h1>240415</h1>
+<h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240415">240415</h1></a>
 CSS : 미디어쿼리 학습 및 예제 실습, 사이트 실습(viewport를 이용한 모바일 버전 및 웹 버전)
 
-<h1>240412</h1>
+<h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240412">240412</h1></a>
 CSS : grid 예제 실습, meta태그 viewport 및 미디어쿼리 학습
 
-<h1>240411</h1>
+<h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240411">240411</h1></a>
 CSS : grid 관련 속성 / template, gap, justify-content, align-content, justify-items, align-items, row, column, grid-auto, place-self, order, auto-fill, auto-fit 학습
 
 <h1>240410</h1>

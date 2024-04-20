@@ -7,18 +7,21 @@
 }
 body,p{
   margin: 0;
-  padding: 0;
+  padding: 0;height: 100%;
 }
 .container .clock{
   display: none;
+}
+.container{
+  
 }
 .wrapper{
   background-color: rgb(255, 236, 236);
   margin-top:5vh;
   display: grid;
-  grid-template-rows: repeat(15,1fr);
+  grid-template-rows: repeat(16,1fr);
+  height: 100%;
   padding:10px;
-  height: 80vh;
 }
 .container .wrapper span{
   font-size: 2rem;
@@ -30,7 +33,7 @@ body,p{
   background-color: var(--color-mint);
   border-radius: 5px;
   border:1px solid rgb(204, 204, 204);
-  grid-row: 2/12;
+  grid-row: 2/11;
   padding:10px;
 }
 .container .container01 .after{
@@ -51,35 +54,35 @@ body,p{
   background-color: var(--color-mint);
   border-radius: 5px;
   border:1px solid rgb(204, 204, 204);
-  grid-row: 2/12;
+  grid-row: 2/11;
   padding:10px;
 }
 .container .container02 .star{
   background-color: var(--color-yellow);
   border-radius: 5px;
   border:1px solid rgb(204, 204, 204);
-  grid-row: 13/16;
+  grid-row: 12/15;
   padding:10px;
 }
 .container .container03 .ezen{
   background-color: var(--color-mint);
   border-radius: 5px;
   border:1px solid rgb(204, 204, 204);
-  grid-row: 2/12;
+  grid-row: 2/11;
   padding:10px;
 }
 .container .container03 .star{
   background-color: var(--color-yellow);
   border-radius: 5px;
   border:1px solid rgb(204, 204, 204);
-  grid-row: 13/16;
-  padding:10;
+  grid-row: 12/15;
+  padding:10px;
 }
 .container .container04 .ezen{
   background-color: var(--color-mint);
   border-radius: 5px;
   border:1px solid rgb(204, 204, 204);
-  grid-row: 2/12;
+  grid-row: 2/11;
   padding:10px;
 }
 .container .container04 .after{
@@ -100,7 +103,7 @@ body,p{
   background-color: var(--color-mint);
   border-radius: 5px;
   border:1px solid rgb(204, 204, 204);
-  grid-row: 2/12;
+  grid-row: 2/11;
   padding:10px;
 }
 .container .container05 .after{
@@ -116,4 +119,36 @@ body,p{
   border:1px solid rgb(204, 204, 204);
   grid-row: 13/16;
   padding:10px;
+}
+@media (min-width:768px){
+  .container .clock{
+    display: grid;
+    justify-content: right;
+    background-color: #fff;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1fr repeat(5,4fr);
+    gap:5px
+  }
+  .container .wrapper span{
+    margin:-10px -25px 0 -10px;
+    font-size: 1.7rem;
+  }
+
+  .container .wrapper span strong{
+    display: block;
+    font-size: 3rem;
+    background-color: #fff;
+  }
+}
+@media (min-width:1200px){
+  .container .wrapper span{
+    font-size: 3rem;
+  }
+  .container .wrapper span strong{
+    display: inline;
+    font-size: 3rem;
+    background-color: rgb(255, 236, 236);
+  }
 }

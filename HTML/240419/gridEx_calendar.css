@@ -12,9 +12,6 @@ body,p{
 .container .clock{
   display: none;
 }
-.container{
-  
-}
 .wrapper{
   background-color: rgb(255, 236, 236);
   margin-top:5vh;

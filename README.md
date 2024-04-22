@@ -1,4 +1,4 @@
-<h1>240422</h1>
+<h1><href="https://github.com/jinyeong9284/STUDY_JY/tree/main/JAVASCRIPT/240422">240422</h1></a>
 자바스크립트 : codepen 사이트를 사용한 맛보기, 대입 문자열 산술 연산자, 변수, 데이터 타입 학습
 
 <h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240419">240419</h1></a>

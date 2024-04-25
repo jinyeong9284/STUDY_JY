@@ -1,0 +1,22 @@
+<body>
+  <h1>break키워드Ex</h1>
+  <script>
+   let total='';
+    let i=0;
+    /*
+    while(i<=100){
+      if(i>=40){
+        break;
+      }
+      total+=i+',';
+      i+=3;
+    } */
+    for(let i=0;i<=100;i+=3){
+      if(i>=40){
+        break;
+      }
+      total+=i+',';
+    }
+    document.body.innerHTML=total;
+  </script>
+</body>

@@ -1,0 +1,27 @@
+<body>
+  <h1>switchEx2</h1>
+  <script>
+    const num=prompt('1~4번까지 숫자를 입력하세요');
+    let url='';
+
+    switch(num){
+      case null:
+        url='<h2>취소 했습니다</h2>';
+        break;
+      case 1:
+        url=`<img src="./images/btob${num}.webp" alt="img${num}">`;
+      break;
+      case 2:
+        url=`<img src="./images/btob${num}.webp" alt="img${num}">`;
+      break;
+      case 3:
+        url=`<img src="./images/btob${num}.webp" alt="img${num}">`;
+      break;
+      case 4:
+        url=`<img src="./images/btob${num}.webp" alt="img${num}">`;
+      break;
+      default:
+        url=`<h2>해당 번호만 입력해 주세요</h2>`;
+    }
+  </script>
+</body>

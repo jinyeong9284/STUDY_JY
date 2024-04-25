@@ -1,0 +1,47 @@
+<body>
+  <h1>switchEx2</h1>
+  <script>
+    /* 
+    1~4 사이의 숫자를 입력하면 해당 번호의 이미지 출력
+    취소 버튼 클릭시 취소했습니다 출력
+    */
+   let num = prompt("1~4 사이의 숫자를 입력해주세요");
+  /*  switch(num){
+    case '1':
+      document.body.innerHTML+='<img src="./images/imh.webp" alt="img1">';
+    break;
+    case '2':
+      document.body.innerHTML+='<img src="./images/sek.webp" alt="img1">';
+    break;
+    case '3':
+      document.body.innerHTML+='<img src="./images/lcs.webp" alt="img1">';
+    break;
+    case '4':
+      document.body.innerHTML+='<img src="./images/ysj.webp" alt="img1">';
+    break;
+    default:
+      document.body.innerHTML+='취소했습니다';
+    break;
+   }
+ */
+   let image="";
+   switch(num){
+    case '1':
+      image= "./images/imh.webp";
+    break;
+    case '2':
+      image= "./images/sek.webp";
+    break;
+    case '3':
+      image= "./images/ysj.webp";
+    break;
+    case '4':
+      image= "./images/lcs.webp";
+    break;
+    default:
+      document.body.innerHTML+='취소했습니다';
+    break;
+   }
+   document.body.innerHTML+=`<img src=${image} alt="img">`;
+  </script>
+</body>

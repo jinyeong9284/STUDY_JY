@@ -1,0 +1,42 @@
+<body>
+  <h1>ifEx6</h1>
+  <script>
+    let score=prompt("점수를 입력해주세요");
+   /*  if(score===null){
+      document.body.innerHTML+=`<h2>입력이 취소되었습니다</h2>`;
+    }else if(score<=100 && 81 <= score){
+      document.body.innerHTML+=`<h2>${score}점은 '상'입니다</h2>`;
+    }else if(score<=80 && 61 <= score){
+      document.body.innerHTML+=`<h2>${score}점은 '중'입니다</h2>`;
+    }else if(score<=60 && 41 <= score){
+      document.body.innerHTML+=`<h2>${score}점은 '하'입니다</h2>`;
+    }else if(score<=40 && 0 <= score){
+      document.body.innerHTML+=`<h2>${score}점은 '탈락'입니다</h2>`;
+    }else{
+      document.body.innerHTML+=`점수만 입력하세요`;
+    } */
+    let grade=''; // 문자열로 초기화
+    if(score===null){
+      document.body.innerHTML+=`<strong>입력이 취소되었습니다</strong>`;
+    }else if(score<=100 && 81 <= score){
+      grade='상'; // 변수에 재할당
+    }else if(score<=80 && 61 <= score){
+      grade='중';
+    }else if(score<=60 && 41 <= score){
+      grade='하';
+    }else if(score<=40 && 0 <= score){
+      grade='탈락';
+    }else{
+      document.body.innerHTML+=`<h2>점수만 입력하세요</h2>`;
+    }
+   /*  if(grade){
+    document.body.innerHTML+=`<h2>${score}점은 ${grade}입니다</h2>`;
+    } else {
+      false
+    } */
+    // grade ? document.body.innerHTML += `<h2>${score}점은 ${grade}입니다</h2>` : false;
+
+    //단락구문평가
+    grade && (document.body.innerHTML += `<h2>${score}점은 ${grade}입니다</h2>`);
+  </script>
+</body>

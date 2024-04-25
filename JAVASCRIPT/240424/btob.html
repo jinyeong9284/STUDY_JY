@@ -1,0 +1,39 @@
+<body>
+  <h1>BTOB Question</h1>
+  <script>
+    let btob = prompt('비투비는 몇명인가요?');
+    if(btob){
+      if(btob==6){
+        alert('정답입니다.');
+      let btobmember = prompt('비투비 멤버 이름(서은광, 이민혁, 이창섭, 임현식, 프니엘, 육성재)을 입력하시오.');
+      switch(btobmember){
+        case '서은광':
+          document.body.innerHTML+='리더, 보컬';
+        break;
+        case '이민혁':
+          document.body.innerHTML+='래퍼';
+        break;
+        case '이창섭':
+          document.body.innerHTML+='보컬';
+        break;
+        case '임현식':
+          document.body.innerHTML+='보컬';
+        break;
+        case '프니엘':
+          document.body.innerHTML+='래퍼';
+        break;
+        case '육성재':
+          document.body.innerHTML+='보컬';
+        break;
+        default:
+        document.body.innerHTML+='잘못입력했습니다';
+          break;
+      }
+      }else{
+        alert('오답입니다');
+      }
+    }else{
+      alert('비투비를 공부하고 오세요');
+    }
+  </script>
+</body>

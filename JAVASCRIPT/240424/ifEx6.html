@@ -1,0 +1,21 @@
+<body>
+  <h1>ifEx6</h1>
+  <script>
+    let score=prompt("점수를 입력해주세요","여기에 입력해주세요");
+    if(score){
+    if(score<=100&&score>=81){
+      alert(`${score}은 상입니다.`);
+    }else if(score<=80&&score>=61){
+      alert(`${score}은 중입니다.`);
+    }else if(score<=60&&score>=41){
+      alert(`${score}은 하입니다.`);
+    }else if(score<=40&&score>=0){
+      alert(`${score}은 탈락입니다.`);
+    }else{
+      alert('점수만 입력하세요');
+    }
+  }else{
+    alert('입력이 취소되었습니다.');
+  }
+  </script>
+</body>

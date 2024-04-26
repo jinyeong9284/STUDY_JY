@@ -1,19 +1,13 @@
 <body>
   <script>
-    let cola=prompt('돈을 넣어주세요');
-    
     while(true){
+      let cola=prompt('돈을 넣어주세요');
     if(cola=== null){
       alert('콜라를 사지 않으셨습니다');
-      cola=0;
-      location.reload();
     }else if(cola<1){
       alert('돈을 넣지 않았습니다');
-     
      }else if(cola>=10000){
       alert('10000원 이상은 넣을 수 없습니다');
-      cola=0;
-      location.reload();
     }else if(cola<500&&cola>0){
       alert('500원 이상의 돈을 넣으십시오');
      }
@@ -23,8 +17,6 @@
      }
      else{
       alert('돈만 넣어주세요');
-      cola=0;
-     location.reload();
   }
 }
   </script>

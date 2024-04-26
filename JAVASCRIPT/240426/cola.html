@@ -1,0 +1,23 @@
+<body>
+  <h1>콜라 자판기</h1>
+  <script>
+    let cola=0;
+    while(true){
+      cola=prompt('돈을 넣어주세요');
+      if(cola ){
+        if(cola>=10000){
+          alert('10000원 이상은 넣을 수 없습니다');
+        }if(cola===null||cola==0){
+          alert('돈을 넣지 않았습니다');
+        }else if(cola<500){
+          alert('500원 이상의 돈을 넣으십시오');
+        }else{
+          alert('돈만 넣어주세요');
+        }
+      }else if(!cola){
+        alert('콜라를 사지 않으셨습니다');
+        break;
+      }
+    }
+  </script>
+</body>

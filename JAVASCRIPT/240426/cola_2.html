@@ -1,0 +1,14 @@
+<body>
+  <script>
+    let cola=prompt('돈을 넣어주세요');
+    while(true){
+      if(cola=== null){
+      alert('콜라를 사지 않으셨습니다');
+      }else if(cola>=10000){
+        alert('10000원 이상은 넣을 수 없습니다.');
+      }else if(cola<10000){
+        document.body.innerHTML+=`<img src="./image/cola.jpg" alt="img1"><p>거스름돈은 ${cola-500}원 입니다.`;
+      }
+    }
+  </script>
+</body>

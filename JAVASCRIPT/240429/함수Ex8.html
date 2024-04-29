@@ -1,0 +1,19 @@
+<body>
+  <script>
+    // 구구단 출력
+    const gugudan=(x,count=9)=>{
+      if(x>=2&&x<=9){
+      for(let i=1;i<=count;i++){
+        console.log(`${x}*${i}=${x*i}`);
+      }
+      }else{
+        console.log('2~9단까지 입력해주세요');
+      }
+    }
+    gugudan(9); // 9단 출력
+    gugudan(4,3); // 4단의 3개만 출력
+    gugudan(12,6); // 2~9단까지만 입력해 주세요
+    gugudan(18,5);
+    gugudan(5,5);
+  </script>
+</body>

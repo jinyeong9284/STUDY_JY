@@ -1,0 +1,36 @@
+<body>
+  <h1>배열Ex2</h1>
+  <h3 onclick="day()">버튼</h3>
+  <script>
+    // 조건문을 이용해 오늘의 요일을 한글로 출력. Date 객체
+    let today=new Date();
+    nowDay=today.getDay();
+
+    const day=()=>{
+    switch(nowDay){
+      case 0:
+        console.log('일요일');
+      break;
+      case 1:
+        console.log('월요일');
+      break;
+      case 2:
+        console.log('화요일');
+      break;
+      case 3:
+        console.log('수요일');
+      break;
+      case 4:
+        console.log('목요일');
+      break;
+      case 5:
+        console.log('금요일');
+      break;
+      default:
+        console.log('토요일');
+      break;
+    }
+  }
+  day();
+  </script>
+</body>

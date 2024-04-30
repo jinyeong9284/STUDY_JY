@@ -1,0 +1,36 @@
+<body>
+  <h1>배열Ex4</h1>
+  <script>
+    // 점수를 배열로 만들고 점수의 최대 점수, 최저 점수, 평균 출력
+    const score=[33,30,50,90,57];
+
+    // 최고 점수
+    const maxArr=()=>{
+        if(score[0]>score[1]&&score[0]>score[2]&&score[0]>score[3]&&score[0]>score[4]){
+          console.log(score[0]);
+        }else if(score[1]>score[0]&&score[1]>score[2]&&score[1]>score[3]&&score[1]>score[4]){
+          console.log(score[1]);
+        }else if(score[2]>score[0]&&score[2]>score[1]&&score[2]>score[3]&&score[2]>score[4]){
+          console.log(score[2]);
+        }else if(score[3]>score[0]&&score[3]>score[1]&&score[3]>score[2]&&score[3]>score[4]){
+          console.log(score[3]);
+        }else if(score[4]>score[0]&&score[4]>score[1]&&score[4]>score[2]&&score[4]>score[3]){
+          console.log(score[4]);
+        }
+      }
+
+    // 최저 점수
+    const minArr=()=>{}
+
+    // 평균 점수
+    const avgArr=(num)=>{
+    let result=0;
+    const nums=num=>result+=num;
+    score.map(nums);
+    }
+
+    console.log(`최고 점수:${score[3]}`);
+    console.log(`최저 점수:${minArr(score)}`);
+    console.log(`평균 점수:${avgArr()}`);
+  </script>
+</body>

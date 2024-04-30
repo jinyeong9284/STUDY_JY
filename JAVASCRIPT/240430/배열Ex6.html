@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>배열Ex6</title>
+</head>
+<body>
+  <h1>배열Ex6</h1>
+  <h2 class="title">현재 날짜와 시간</h2>
+  <!-- 
+    현재 년 월 일 요일 AM/PM 시: 분: 초
+    24시간제 X -> 12시간제
+
+    2024년 04월 30일 화요일 PM 05:01:15 <- 출력
+
+    1초에 한번씩 실행
+    setTimeout(function(){}, 시간); 지정 시간 후 한 번만 실행
+    setInterval(콜백함수, 시간); 지정 시간마다 실행
+
+   -->
+   <script>
+    let today=new Date();
+    let nowMonth=today.getMonth(),
+    nowDate=today.getDate(),
+    nowHours=today.getHours(),
+    nowMinutes=today.getMinutes(),
+    nowSeconds=today.getSeconds(),
+    nowYear=today.getFullYear();
+    const now=today.getDay();
+    const day=['일','월','화','수','목','금','토'];
+    const nowDay=`${day[now]}`;
+
+    let hours='';
+    if(nowHours<12){
+      hours='AM';
+    }else if(nowHours>12){
+      hours+='PM';
+    }
+    let con='';
+    switch(nowHours){
+      case 17:
+        con=6;
+      break;
+    }
+    document.querySelector('.title').innerText=nowYear+'년'+" "+(nowMonth+1)+'월' +" "+nowDate+'일'+" "+nowDay+'요일' + " "+hours+nowHours+":" +nowMinutes+":"+nowSeconds
+   </script>
+</body>
+</html>

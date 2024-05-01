@@ -32,16 +32,19 @@
 
     let hours='';
     if(nowHours<12){
-      hours='AM';
+      hours='AM 0';
     }else if(nowHours>12){
       hours+='PM';
+      hours=-12;
     }
-    let con='';
-    switch(nowHours){
-      case 17:
-        con=6;
-      break;
+
+    let seconds='';
+    if(nowSeconds<10){
+      seconds+='0';
+    }else{
+
     }
+
     document.querySelector('.title').innerText=nowYear+'년'+" "+(nowMonth+1)+'월' +" "+nowDate+'일'+" "+nowDay+'요일' + " "+hours+nowHours+":" +nowMinutes+":"+nowSeconds
    </script>
 </body>

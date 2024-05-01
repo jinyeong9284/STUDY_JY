@@ -26,5 +26,14 @@
           return "정상 몸무게보다 초과입니다";
         }
       }
+      var jang=new CheckWeight("장보리",168,62);
+      var park=new CheckWeight("박달재",180,88);
+      console.log(jang);
+      console.log(park);
+
+      document.write(jang.getInfo());
+      document.write(jang.getResult(),"<br>");
+
+      document.write(jang.getResult===park.getResult);
   </script>
 </body>

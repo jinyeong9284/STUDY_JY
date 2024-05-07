@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>prependTo+appendToEx2</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    ul{
+      list-style: none;
+      padding:0;
+      margin: 0;
+    }
+    .gallery{
+      width:500px;
+      height: 300px;
+      position: relative;
+      margin: 0 auto;
+    }
+    .btn-group{
+      position: absolute;
+      display: flex;
+      font-size: 3rem;
+      z-index: 9999;
+    }
+    .btn-group li{
+      width:50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: #000;
+      color:white;
+    }
+    .btn-group li:first-child{
+      position: absolute;
+      top:50%;
+    }
+    .img-wrapper img{
+      width:500px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .img-wrapper{
+      display: flex;
+      border:3px solid #000;
+      width:500px;
+      height: 300px;
+      overflow: hidden;
+      margin: 0 auto;
+      position: absolute;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <h1>prependTo+appendToEx2</h1>
+  <div class="gallery">
+    <ul class="btn-group">
+      <li>&lt;</li>
+      <li>&gt;</li>
+    </ul>
+    <ul class="img-wrapper">
+      <li><img src="./images/sun1.PNG" alt="sun1"></li>
+      <li><img src="./images/sun2.PNG" alt="sun2"></li>
+      <li><img src="./images/sun3.PNG" alt="sun3"></li>
+      <li><img src="./images/sun4.PNG" alt="sun4"></li>
+    </ul>
+  </div>
+  <script>
+
+  </script>
+</body>
+</html>

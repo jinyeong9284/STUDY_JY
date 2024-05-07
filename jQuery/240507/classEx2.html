@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>classEx2</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    .wrapper{
+      margin:60px 0;
+      position: relative;
+    }
+    .wrapper .txt-wrapper{
+      position: absolute;
+      opacity: 0;
+    }
+    .wrapper .txt-wrapper span{
+      color:purple;
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding:0;
+      margin: 0;
+    }
+    .wrapper .txt-wrapper h2{
+      font-size: 4rem;
+      color:pink;
+      margin:0;
+      padding: 0;
+    }
+    .wrapper .txt-wrapper.active{
+      transform: translateY(20%);
+      opacity: 1;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="txt-wrapper active">
+      <span>about</span>
+      <h2>think &<br>solution</h2>
+    </div>
+    <div class="txt-wrapper">
+      <span>skill</span>
+      <h2>html5&css3<br>javascript</h2>
+    </div>
+    <div class="txt-wrapper">
+      <span>contact</span>
+      <h2>jQuery</h2>
+    </div>
+  </div>
+  <script>
+     $(function(){
+      $('.wrapper .txt-wrapper').removeClass('active');
+      $('.wrapper .txt-wrapper').addClass('active');
+     });
+  </script>
+</body>
+</html>

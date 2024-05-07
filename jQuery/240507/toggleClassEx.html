@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>toggleClassEx</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    .box{
+      border:1px solid black;
+      width:90vw;
+      height: 40vh;
+      margin: 20px auto;
+      background-color: skyblue;
+      transition: 1s;
+    }
+    .btn{
+      border:3px solid black;
+      background-color: white;
+      width: 90px;
+      height: 40px;
+      font-weight: bold;
+    }
+    .box.style1 { background-color: orange; width: 500px;}
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function() {
+      $('.btn').on('click', () => {
+        $('.box').toggleClass('style1');
+      });
+    })
+  </script>
+</head>
+
+<body>
+  <h1>toggleClassEx</h1>
+  <button class="btn">toggle</button>
+  <div class="box"></div>
+  <script>
+    document.querySelector('.btn').innerHTML='토글';
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>animateEx4</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <style>
+    body{
+      margin:0;
+    }
+    .wrapper{
+      /* background-color: #ddd; */
+      width:250px;
+      height: 100%;
+      position: fixed;
+      left:-200px;
+    }
+    .wrapper .side-menu{
+      list-style: none;
+      background-color:lightblue;
+      margin:0;
+      padding: 100px 0 0 0;
+      width:200px;
+      height: 100%;
+      box-sizing: border-box;
+      font-size: 1.7rem;
+      font-weight: bold;
+      line-height: 2;
+      text-align: center;
+    }
+    .btn{
+      background-color: lightblue;
+      width:80px;
+      height: 80px;
+      position: absolute;
+      left:200px;
+      top:20px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      text-indent: -9999px;
+      background-image: url(./images/lock-solid.svg);
+      background-repeat: no-repeat;
+      background-size: 40px;
+      background-position: center;
+    }
+    .wrapper .btn.opened{
+      background-image: url(./images/lock-open-solid.svg);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="wrapper">
+    <ul class="side-menu">
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+    </ul>
+    <div class="btn">버튼</div>
+  </nav>
+  <script>
+    $('.btn').on('click',(e)=>{
+    $('.wrapper').animate({
+      left: $('.wrapper').css('left')==='0px'?'-200px':'0px'
+    });
+    $(e.target).toggleClass('opened')
+  });
+  </script>
+</body>
+</html>

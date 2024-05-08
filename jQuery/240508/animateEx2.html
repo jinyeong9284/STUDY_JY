@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>animateEx2</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    .container{
+      width:600px;
+      height: 400px;
+      position: relative;
+      margin: 0 auto;
+    }
+    .box{
+      list-style: none;
+      padding:0;
+      margin: 0;
+      border:2px solid #000;
+      width:600px;
+      height: 400px;
+      margin: 50px auto;
+      display: flex;
+      overflow: hidden;
+    }
+    .box li img{
+      vertical-align: top;
+      width:600px;
+      height: 400px;
+    }
+    .icon{
+      display: flex;
+      position: absolute;
+      bottom:0;
+      left:200px;
+    }
+    .icon li{
+      display: block;
+      width:20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255,0.8);
+      margin-right:5px;
+      cursor: pointer;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+  <ul class="icon">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <ul class="box">
+    <li><img src="./images/sun5.PNG" alt="sun5"></li>
+    <li><img src="./images/sun6.PNG" alt="sun5"></li>
+    <li><img src="./images/sun7.PNG" alt="sun5"></li>
+    <li><img src="./images/sun8.PNG" alt="sun5"></li>
+  </ul>
+  </div>
+  <script>
+    $('.icon li').last().on('click',()=>{
+      // 제일 처음에 있는 이미지가 제일 마지막으로 이동
+    });
+  </script>
+</body>
+</html>

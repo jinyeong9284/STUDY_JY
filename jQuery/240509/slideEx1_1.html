@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>slideEx1</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .simple-slide {
+      width: 100%;
+      margin: 0 auto;
+      height: 60vh;
+      position: relative;
+    }
+
+    .simple-slide .slide-wrapper {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .simple-slide .slide-wrapper .slide-item {
+      text-indent: -999px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: no-repeat 50%/cover;
+      transition: 0.4s;
+      opacity: 0;
+    }
+
+    .simple-slide .slide-wrapper #bg1 {
+      background-image: url(./images/sun1.PNG);
+    }
+
+    .simple-slide .slide-wrapper #bg2 {
+      background-image: url(./images/sun2.PNG);
+    }
+
+    .simple-slide .slide-wrapper #bg3 {
+      background-image: url(./images/sun3.PNG);
+    }
+
+    .simple-slide .slide-wrapper #bg4 {
+      background-image: url(./images/sun4.PNG);
+    }
+
+    .simple-slide .slide-button {
+      z-index: 999;
+      position: absolute;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .simple-slide .slide-button li {
+      cursor: pointer;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px 8px 10px;
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #fff;
+    }
+
+    .simple-slide .slide-button li:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .simple-slide .slide-wrapper .slide-item.active {
+      opacity: 1;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div class="simple-slide">
+    <ul class="slide-wrapper">
+      <li class="slide-item active" id="bg1">bg1</li>
+      <li class="slide-item" id="bg2">bg2</li>
+      <li class="slide-item" id="bg3">bg3</li>
+      <li class="slide-item" id="bg4">bg4</li>
+    </ul>
+    <ul class="slide-button">
+      <li id="prevBtn">&lt;</li>
+      <li id="nextBtn">&gt;</li>
+    </ul>
+  </div>
+  <script>
+    let idx = 0;
+    function nextSlide() {
+      $('.slide-wrapper .slide-item').eq(idx).removeClass('active');
+      idx++;
+      const slideItems = $('.slide-wrapper .slide-item').length;
+      if (idx >= slideItems) {
+        idx = 0; // 초기화. 0,1,2,31```````
+      }
+      console.log(idx);
+      $('.slide-wrapper .slide-item').eq(idx).addClass('active');
+    }
+    function prevSlide(){
+      $('.slide-wrapper .slide-item').eq(idx).removeClass('active');
+      idx--;
+      const slideItems = $('.slide-wrapper .slide-item').length;
+      if (idx < 0) {
+        idx=3; // 초기화. 0,1,2,31 $('.slide-wrapper .slide-item').length-1;
+      }
+      console.log(idx);
+      $('.slide-wrapper .slide-item').eq(idx).addClass('active');
+    }
+     // next 버튼 클릭시 이후 == 슬라이드 움직임과 동일
+    $('#nextBtn').on('click', nextSlide);
+
+    // prev 버튼 클릭시 이전
+    $('#prevBtn').on('click',prevSlide);
+    // setInterval(콜백함수,3000);
+    setInterval(nextSlide,3000);
+  </script>
+</body>
+
+</html>

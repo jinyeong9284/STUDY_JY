@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>slideEx3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="../assets/styles/reset.css">
+  <style>
+    body{
+      background-color: #000;
+    }
+    .slide-wrapper{
+      width:70vw;
+      height: 70vh;
+      margin: 50px auto;
+      position: relative;
+    }
+    .slide-wrapper .button-group{
+      position: absolute;
+      bottom:0;
+      display: flex;
+      font-size: 2rem;
+      right:0;
+      padding:0 10px;
+      background-color: #fff;
+      z-index: 99999;
+      cursor: pointer;
+    }
+    .slide-wrapper .button-group li{
+      padding:3px;
+    }
+    .slide-wrapper .button-group li:first-child::after{
+      content: '';
+      display: inline-block;
+      width:2px;
+      height: 20px;
+      background-color: #000;
+      margin-left:5px;
+    }
+    .slide-item{
+      width:100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+    }
+    .slide-item img{
+      width:60%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .container{
+      background-color: #fff;
+      width:40%;
+      padding:200px 50px;
+      z-index: 99999;
+    }
+    .container p:nth-child(3){
+      margin-top: 50px;
+    }
+    .container a{
+      display: block;
+      margin-top: 50px;
+    }
+    /* .slide-box1{
+      position: absolute;
+      display: none;
+    }
+    .slide-box2{
+      position: absolute;
+      display: none;
+    }
+    .slide-box3{
+      position: absolute;
+      display: none;
+    }
+    .slide-box4{
+      position: absolute;
+      display: none;
+    } */
+    .active{
+      display: flex;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script defer src="./slideEx3.js"></script>
+</head>
+
+<body>
+  <div class="slide-wrapper">
+    <!-- 좌우 버튼 -->
+    <ul class="button-group">
+      <li class="btn" id="prevBtn">&lt;</li>
+      <li class="btn" id="nextBtn">&gt;</li>
+    </ul>
+    <!-- 슬라이드 박스 -->
+    <section class="slide-item slide-box1">
+      <div class="container">
+      <p>SUBTITLE</p>
+      <p>title1</p>
+      <p>대통령이 궐위된 때 또는 대통령 당선자가 사망하거나 판결 기타의 사유로 </p>
+      <a href="#">더보기</a>
+     </div>
+     <img src="./images/sun1.PNG" alt="sun1">
+    </section>
+    <section class="slide-item slide-box2">
+      <div class="container">
+      <p>SUBTITLE</p>
+      <p>title2</p>
+      <p>대통령이 궐위된 때 또는 대통령 당선자가 사망하거나 판결 기타의 사유로 </p>
+      <a href="#">더보기</a>
+     </div>
+     <img src="./images/sun2.PNG" alt="sun2">
+    </section>
+    <section class="slide-item slide-box3">
+      <div class="container">
+      <p>SUBTITLE</p>
+      <p>title3</p>
+      <p>대통령이 궐위된 때 또는 대통령 당선자가 사망하거나 판결 기타의 사유로 </p>
+      <a href="#">더보기</a>
+     </div>
+     <img src="./images/sun3.PNG" alt="sun3">
+    </section>
+    <section class="slide-item slide-box4">
+      <div class="container">
+      <p>SUBTITLE</p>
+      <p>title4</p>
+      <p>대통령이 궐위된 때 또는 대통령 당선자가 사망하거나 판결 기타의 사유로 </p>
+      <a href="#">더보기</a>
+     </div>
+     <img src="./images/sun4.PNG" alt="sun4">
+    </section>
+  </div>
+  <script>
+      $('.button-group li').on('click',()=>{
+      $('.slide-item').removeClass('active');
+      //event.target 내가 클릭한 바로 그 요소
+      // $(event.target).parent().addClass('active');
+      //event.currentTarget 내가 클릭한 이벤트 리스너가 바인딩 된 그 요소
+      $('.slide-item').addClass('active');
+     });
+  </script>
+</body>
+</html>

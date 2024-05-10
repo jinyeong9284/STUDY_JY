@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>slideEx2</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    body{
+      margin:0;
+      padding:0;
+    }
+    .wrapper{
+      position: relative;
+      width:100vw;
+      height:550px;
+      overflow: hidden;
+    }
+    .wrapper .container{
+      list-style: none;
+      padding:0;
+      margin:0;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .wrapper .container li img{
+      width:100vw;
+      height: 100%;
+      vertical-align: top;
+      object-fit: cover;
+      padding:0;
+      margin:0;
+    }
+    .wrapper .button{
+      padding: 0;
+      width:100%;
+      list-style: none;
+      position:absolute;
+      bottom: 0;
+      justify-content: center;
+      display: flex;
+      text-indent: -9999px;
+      box-sizing: border-box;
+    }
+    .wrapper .button li{
+      width:30px;
+      height: 10px;
+      background-color: #ffffff;
+      margin:5px;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+  <ul class="container">
+    <li><img src="./images/sun1.PNG" alt="sun1"></li>
+    <li><img src="./images/sun2.PNG" alt="sun2"></li>
+    <li><img src="./images/sun3.PNG" alt="sun3"></li>
+    <li><img src="./images/sun4.PNG" alt="sun4"></li>
+  </ul>
+  <ul class="button">
+    <li class="slide active">1</li>
+    <li class="slide">2</li>
+    <li class="slide">3</li>
+    <li class="slide">4</li>
+  </ul>
+  </div>
+  <script>
+     $('.button').on('click',(e)=>{
+        const idx=$(e.target).index();
+        console.log(idx);
+        // $('.img-group').animate({marginLeft:-containerWt*idx+'%'},300,'linear');
+        const containerWt=$('.wrapper').width(); // px로 반환
+        console.log(containerWt);
+        $('.container').animate({marginLeft:-containerWt*idx+'px'},300,'linear');
+      });
+  </script>
+</body>
+</html>

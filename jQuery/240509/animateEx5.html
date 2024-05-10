@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>animateEx5</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      height: 200vh;
+      background-color: skyblue;
+    }
+    .nav-wrapper{
+      position: fixed;
+      height: 100%;
+    }
+    .nav-wrapper .toggle-btn{
+      color:#000;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 2rem;
+      position: absolute;
+      left: 22vw;
+      top:20px;
+    }
+    .nav-wrapper .slide-menu{
+      list-style: none;
+      padding:70px 0;
+      margin: 0;
+      background-color: orange;
+      width:20vw;
+      height: 100%;
+      position: absolute;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <nav class="nav-wrapper">
+    <a href="#" class="toggle-btn">☰</a>
+    <ul class="slide-menu">
+    <li>menu1</li>
+    <li>menu2</li>
+    <li>menu3</li>
+    <li>menu4</li>
+    </ul>
+  </nav>
+  <script>
+    $('.toggle-btn').on('click',()=>{
+      $('.nav-wrapper .slide-menu').animate({
+        left:'-20vw'
+      });
+       $('.nav-wrapper .toggle-btn').animate({
+        left:10
+      });
+    });
+    /* $('.toggle-btn').on('click',()=>{
+    $('.nav-wrapper .slide-menu').animate({
+      left: $('.nav-wrapper .slide-menu').css('left')==='0px'?'-20vw':'0px'
+    },300);
+    $('.nav-wrapper .toggle-btn').animate({
+      left: $('.nav-wrapper .toggle-btn').css('left')==='0px'?'10vw':'0px'
+    },200);
+    $('.nav-wrapper .slide-menu').toggle();
+  }); */
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>scrollEx1</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    body{
+      height: 300vh;
+    }
+    h1{
+      font-size: 3rem;
+    }
+    a.on{
+      position:fixed;
+      width:80px;
+      height: 80px;
+      bottom: 30px;
+      right:30px;
+      background: url(./images/thinking_982997.png) no-repeat 80% / cover;
+      text-indent: -9999px;
+      display: block;
+    }
+    a{
+      display: none;
+      position:fixed;
+      width:80px;
+      height: 80px;
+      bottom: 30px;
+      right:30px;
+      background: url(./images/thinking_982997.png) no-repeat 80% / cover;
+      text-indent: -9999px;
+      display: block;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <h1>top</h1>
+  <a href="#" class="go-to-up">위로</a>
+  <script>
+  $('.go-to-up').on('click',()=>{
+      $('html, body').animate({scrollTop:0},300);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>scrollEx4</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <style>
+    body{
+      margin: 0;
+      padding:0;
+      height: 200vh;
+    }
+    .header-wrapper{
+      background-color: rgb(167, 34, 255);
+      height: 10vh;
+      width:100%;
+      position: fixed;
+    }
+    .header-wrapper .header-logo h1{
+      background-color: #000;
+      color:#fff;
+      width:80px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      position: absolute;
+      margin-left:30px;
+    }
+    .header-wrapper .header-logo .content{
+      position: absolute;
+      left:120px;
+      top:20px;
+      color:#fff;
+    }
+    .header-wrapper .header-logo .menu{
+      position: absolute;
+      right:30px;
+      width:60px;
+      height:60px;
+      border-radius: 50%;
+      text-indent: -9999px;
+      background: url(./images/bars-solid.svg) no-repeat 50% / 30px;
+      background-color: skyblue;
+    }
+    .header-wrapper .box-wrapper{
+      list-style: none;
+      width: 100%;
+      background-color: rgb(142, 16, 192);
+      text-align: center;
+      padding:10px;
+      height: 20vh;
+      display: none;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: absolute;
+      top:80px;
+      justify-content: space-around;
+      
+    }
+    .header-wrapper .box-wrapper a{
+      display: block;
+      color:#fff;
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    h2{
+      margin: 0;
+      padding-top:100px;
+    }
+    .box{
+      height: 100vh;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .box1{
+      background-color: pink;
+      margin:0;
+    }
+    .box2{
+      background-color: rgb(226, 121, 139);
+      margin: 0;
+    }
+    .box3{
+      margin:0;
+      background-color: rgb(211, 111, 127);
+    }
+    .box4{
+      margin:0;
+      background-color: rgb(202, 59, 83);
+    }
+    .active{
+      border-bottom:1px solid #000;
+    }
+    .header-wrapper .header-logo .content.active{
+      display: none;
+    }
+    .header-wrapper .header-logo .menu.active{
+      background-image: url(./images/x-solid.svg);
+    }
+    .header-wrapper .box-wrapper.active{
+      display: flex;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <div class="header-logo">
+    <h1>로고</h1>
+    <p class="content">부드럽게 이동해 봅시다</p>
+    <p class="menu">menu</p>
+    </div>
+    <ul class="box-wrapper">
+      <li><a href="#">box1</a></li>
+      <li><a href="#">box2</a></li>
+      <li><a href="#">box3</a></li>
+      <li><a href="#">box4</a></li>
+    </ul>
+  </div>
+  <h2 class="box slide">slide</h2>
+  <p class="box box1">box1</p>
+  <p class="box box2">box2</p>
+  <p class="box box3">box3</p>
+  <p class="box box4">box4</p>
+  <script>
+    $('.menu').on('click',(e)=>{
+      $('.content').addClass('active');
+      $('.menu').addClass('active');
+      $('.box-wrapper').addClass('active');
+    });
+    $(e.target).toggleClass('active');
+  </script>
+</body>
+</html>

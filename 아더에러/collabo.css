@@ -1,0 +1,362 @@
+@charset "UTF-8";
+
+:root {
+  --color-blue: #0000C5; 
+  --color-gray-bg: #F3F3F3;
+  --color-gray-text: #f7f7f7;
+}
+
+body {
+  margin: 0 auto;
+  line-height: 1.5;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.main-title {
+  font-family: "Jost", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  white-space: nowrap;
+}
+
+.sub-title {
+  font-family: "Jost", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.inner-text-sm {
+  font-family: "Pretendard", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.inner-text-lg {
+  font-family: "Pretendard", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.campain-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 3.125rem;
+  text-transform: uppercase;
+}
+
+.mini-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.btn {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 220px;
+  padding: 15px 0px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: "Pretendard", sans-serif;
+  white-space: nowrap;
+}
+
+.btn-w {
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.btn-bk {
+  color: #fff;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  transition: 0.3s;
+  background-color: var(--color-blue);
+  color: #fff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p span {
+  display: block;
+}
+
+/***** collabo-intro *****/
+.collabo-intro  {
+  height: 90vh;
+  background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 20% 0% ;
+}
+/* .collabo-intro .intro-logo {
+  display: block;
+  opacity: 0.7;
+  width: 300px;
+  margin: 0 auto 30px; 
+} */
+
+/***** collabo-main *****/
+.collabo-main {
+  background-color: #000;
+  padding: 120px 0px;
+  text-align: center;
+}
+
+
+.collabo-main .main-wrapper .shoes {
+  display: block;
+  margin:20px auto 40px;
+  width: 90%;
+  max-width: 800px;
+  padding-right: 8%;
+  transition: 1.5s;
+  animation: shoes infinite 1.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+@keyframes shoes {
+  0%, 100% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  50% {
+    transform: translateX(0) rotate(-2deg);
+  }
+}
+
+.collabo-main .main-wrapper .collabo-logo {
+  width: 165px;
+}
+
+.collabo-main .main-wrapper p {
+  color: #fff;
+  margin: 40px auto;
+}
+
+
+/***** collabo-through *****/
+ .collabo-through {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  padding: 160px 10%;
+} 
+.collabo-through .through-wrapper1 {
+  grid-column: 2 / 5;
+  text-align: left;
+  margin-bottom: 120px;
+}
+.collabo-through .through-wrapper2 {
+  grid-column: 1 / 4;
+  text-align: right;
+}
+.collabo-through .through-wrapper img{
+  /* min-width: 500px; */
+  width: 100%;
+}
+.collabo-through .through-wrapper h3 {
+  padding: 40px 5px 20px;
+}
+.collabo-through .through-wrapper p {
+  padding: 10px 5px;
+  
+}
+
+/***** collabo-campain *****/
+.collabo-campain {
+  background-color: var(--color-gray-bg);
+  text-align: center;
+  padding: 160px 0 160px;
+  margin-bottom: 100px;
+}
+.collabo-campain .campain-wrapper p {
+  padding: 60px 0;
+  margin: 0 auto;
+  
+}
+.collabo-campain .campain-wrapper .btn-wrapper {
+  max-width: 500px;
+  margin:0 auto;
+  padding: 30px 0;
+}
+
+
+/***** tablet *****/
+@media screen and (max-width: 1100px) {
+  body {
+    white-space: wrap;
+  }
+  .main-title{
+    font-size: 50px;
+    white-space: nowrap;
+  }
+  p span {
+    display: inline;
+  }
+  /***** collabo-intro *****/
+  .collabo-intro  {
+    background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 30% 0% ;
+  }
+
+  /***** collabo-main *****/
+  .collabo-main {
+    padding: 100px 0px;
+  }
+  .collabo-main .main-wrapper .collabo-logo {
+    width: 120px;
+  }
+  .collabo-main .main-wrapper p {
+      max-width:700px;
+      padding: 0 40px;
+  }
+  
+
+  /***** collabo-through *****/
+  .collabo-through {
+    padding: 0 0 100px;
+    display: block;
+  } 
+  .collabo-through .through-wrapper img{
+    width: 100%;
+  }
+  .collabo-through .through-wrapper h3 {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .collabo-through .through-wrapper p {
+    padding: 0 40px 10px 40px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    }
+  .collabo-through .through-wrapper1 {
+    margin-bottom: 60px;
+  }
+  
+  /***** collabo-campain *****/
+  .collabo-campain {
+    padding: 100px 0px;
+  }
+  .collabo-campain .campain-title {
+    font-size: 40px;
+    white-space: nowrap;
+    
+  }
+  .collabo-campain .campain-wrapper p {
+    padding: 30px 40px; 
+    max-width: 700px;
+  }
+  .collabo-campain .campain-wrapper .btn-wrapper {
+    display: flex;
+    gap: 10px;
+    margin: 20px auto;
+  }
+}
+
+/***** mobile *****/
+@media screen and (max-width: 430px) {
+  body {
+    white-space: wrap;
+  }
+  .main-title{
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  .sub-title {
+    font-size: 30px;
+  }
+  .inner-text-sm {
+    font-size: 14px;
+  }
+  .inner-text-lg {
+    font-size: 14px;
+  }
+  .campain-title {
+    font-size: 30px;
+  }
+  .mini-title {
+    font-size: 16px;
+  }
+  p span {
+    display: inline;
+  }
+
+.btn {
+  font-size: 14px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+  /***** collabo-intro *****/
+  .collabo-intro  {
+    height: 80vh;
+    background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 30% 0% ;
+  }
+
+  /***** collabo-main *****/
+  .collabo-main {
+    padding: 80px 0px;
+  }
+  .collabo-main .main-wrapper .shoes {
+    padding-right: 14%;
+    margin: 5px auto 30px;
+  }
+  .collabo-main .main-wrapper .collabo-logo {
+    width: 100px;
+  }
+  .collabo-main .main-wrapper p {
+    margin: 40px auto 20px;
+  }
+  
+  /***** collabo-through *****/
+  .collabo-through {
+    padding: 0 0 80px;
+    display: block;
+  } 
+  .collabo-through .through-wrapper img{
+    width: 100%;
+  }
+  .collabo-through .through-wrapper h3 {
+    padding: 20px 0;
+    text-align: center;
+  }
+  .collabo-through .through-wrapper p {
+    padding: 0 40px 5px 40px;
+    text-align: left;
+  }
+  .collabo-through .through-wrapper1 {
+    margin-bottom: 60px;
+  }
+  /***** collabo-campain *****/
+  .collabo-campain {
+    padding: 80px 0px;
+  }
+  .collabo-campain .campain-title span { 
+    display: block;
+  }
+  .collabo-campain .campain-wrapper p {
+    padding: 30px 40px;
+  }
+  .collabo-campain .campain-wrapper .btn-wrapper{
+    padding: 15px 0;
+    width: 220px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+}

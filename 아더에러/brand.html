@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>brand</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+
+  <!-- open graph -->
+  <meta property="og:title" content="ADERERROR">
+  <meta property="og:description" content="아더에러 공식 온라인 사이트">
+  <meta property="og:image"
+    content="https://javajo-project.github.io/ADERERROR-PROJECT/assets/images/global/openGraph.jpg">
+  <meta property="og:url" content="https://javajo-project.github.io/ADERERROR-PROJECT/header+footer.html">
+
+  <!-- reset -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+
+  <!-- font -->
+  <link rel="stylesheet" href="./assets/styles/pretendard.css">
+  <link rel="stylesheet" href="./assets/styles/jost.css">
+
+  <!-- style -->
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/global.css.map">
+  <link rel="stylesheet" href="./assets/styles/global.scss">
+  <link rel="stylesheet" href="./assets/styles/header+footer.css">
+  <link rel="stylesheet" href="./assets/styles/header+footer.css.map">
+
+  <!-- 이 페이지에만 들어가는 style -->
+  <link rel="stylesheet" href="./brand.css" defer>
+
+  <!-- jQuery -->
+  <script src="./assets/Js/jquery-3.7.1.min.js"></script>
+  <script src="./assets/Js/jquery-ui.min.js"></script>
+  <script src="./assets/Js/global.js" defer></script>
+  <script src="./brand.js" defer></script>
+
+  <!-- 곡선 -> 직선 쉐입변경 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
+</head>
+
+<!-- To do list **************************
+0. 태블릿 버전 만들기!!
+max-width : 1100px
+
+1. 버튼
+- 디테일 마저 수정..
+
+3. 블루 마크
+- 이미지 추가(?)
+
+***** 모바일
+
+-->
+
+<body>
+  <!-- mouseEmoji -->
+  <div class="logo-emoji">
+    <img src="./assets/images/global/symbolLogo.png" alt="symbolLogo">
+  </div>
+
+  <!------- header ------->
+  <header class="allPage-header">
+    <!----- nav ----->
+    <nav class="pc-main-nav">
+      <a href="./index.html">
+        <h1 class="logo-img">logo area</h1>
+      </a>
+      <ul class="menu-wrapper">
+        <li class="menu-item"><a href="./brand.html">About +</a></li>
+        <li class="menu-item"><a href="./productlist.html">Significant +</a></li>
+        <li class="menu-item"><a href="./productlist.html">A-ventory +</a></li>
+        <li class="menu-item"><a href="./collabo.html">Collaboration +</a></li>
+      </ul>
+    </nav>
+
+    <div class="mo-main-header">
+      <div class="mo-header-top">
+        <a href="./index.html">
+          <h1><img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b"></h1>
+        </a>
+        <div class="icon-wrapper">
+          <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon _bag.png" alt="bagIcon"></a>
+        </div>
+      </div>
+      <ul class="menu-wrapper">
+        <li><a href="./brand.html">About</a></li>
+        <li><a href="./productlist.html">Significant</a></li>
+        <li><a href="./productlist.html">A-ventory</a></li>
+        <li><a href="./collabo.html">Collaboration</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <!------- section 1 - brand-main-wrapper ------->
+  <section class="brand-main-wrapper">
+    <h1><img class="brand-main-logo" src="./assets/images/global/logo-w.png" alt="logo"></h1>
+    <p class="brand-main-txt">
+      ADER ERROR는 미적 표현을 뜻하는 ‘Aesthetic Drawing’에 'er'을 합친 단어로 <br>
+      ‘다양한 콘텐츠를 제작, 편집하고 공유하는 사람이 모인 집단’이라는 뜻입니다. <br>
+      ADER의 부제인 ERROR는 말 그대로 오류를 뜻하는데 모든 결과는 반복되는 오류 <br>
+      끝에 나온다고 생각해 이를 성장의 의미로 사용했습니다. <br>
+      ADER ERROR는 ERROR를 통해 하나의 콘텐츠를 더 나은 존재로 표현합니다.
+    </p>
+
+    <div class="brand-main-imgList">
+      <img class="brand-main-img" src="./assets/images/brand/brand-main-img.png" alt="brand-main-img">
+    </div>
+  </section>
+
+  <!------- section 1-2 - brand-main-bottom ------->
+  <section class="brand-main-bottom">
+    <div class="brand-mainBottom-wrapper" id="wrapper">
+      <div class="brand-mainBottom-shape" id="shape"></div>
+    </div>
+  </section>
+
+  <!------- section 2 - brand-text-wrapper1 ------->
+  <section class="brand-text-wrapper1">
+    <h1 class="color-changing-text" id="changing-text">
+      ADER ERROR는 2014년 한국을 기반으로 설립된 패션 문화 커뮤니케이션 브랜드입니다.
+      패션뿐 아니라 새로운 시각적 변화에 초점을 맞춰 활동하고 있으며, 공간과 디자인, 패션, 예술 등 다방면의 문화 콘텐츠를 다루고 낯선 경험과 기대를 통해 고객들에게 새로운 경험과 재미를 제안합니다.
+    </h1>
+    <h1 class="fade-in-bgText">
+      ADER ERROR는 2014년 한국을 기반으로 설립된 패션 문화 커뮤니케이션 브랜드입니다.
+      패션뿐 아니라 새로운 시각적 변화에 초점을 맞춰 활동하고 있으며, 공간과 디자인, 패션, 예술 등 다방면의 문화 콘텐츠를 다루고 낯선 경험과 기대를 통해 고객들에게 새로운 경험과 재미를 제안합니다.
+    </h1>
+
+    <p>ADER는 기존의 패션의 카테고리에서 벗어나 모든 장르를 편집하여 독창적인 코어 스타일을 창조합니다. 복종 믹스, 변형, 왜곡을 통해 실루엣을 창조하는 방식으로 복장의 경계를 허물고 조합하여 새로운
+      문화를 시각화 합니다. 기존의 형태를 왜곡하는 행위로 ADER의 시즌 로고 아트워크가 탄생 하였으며, 의복에서도 왜곡의 요소를 활용하여 다채로운 경험을 제공하고 있습니다.
+    <p>장르, 성별의 경계를 허물고 어느 한 분야에서 열정적으로 자신을 표현하는 프로페셔널리스트로서의 청춘들의 모습을 지향하며 기존에 정해진 개념을 재정립하고 다양한 장르의 믹스를 통해 탄생한 새로운 개념의 ‘뉴 컬처’로 주체적인 문화 흐름을 보여줍니다.</p>
+
+    <div class="brand-text-img">
+      <img class="img1" src="./assets/images/brand/brand-text1-img1.png" alt="brand-text1-img1">
+      <img class="img2" src="./assets/images/brand/brand-text1-img2.png" alt="brand-text1-img">
+    </div>
+
+    <a href="#" class="brand-text-btn">
+      <div class="svg-container">
+        <svg class="white-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2" width="16">
+          <path
+            d="M9.36 3.77c.17-.79.34-1.56.51-2.33C7.65.96 5.46.48 3.26 0 2.18 4.99 1.09 9.98 0 14.98c2.22.48 4.41.96 6.64 1.45-.17.79-.34 1.56-.51 2.33 2.21.48 4.4.96 6.6 1.44 1.09-5 2.18-9.98 3.27-14.98-2.22-.48-4.41-.96-6.64-1.45Z"
+            style="fill:#fff;isolation:isolate;stroke-width:0" />
+        </svg>
+        
+        <svg class="hover-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2" width="16">
+          <path
+            d="M9.36 3.77c.17-.79.34-1.56.51-2.33C7.65.96 5.46.48 3.26 0 2.18 4.99 1.09 9.98 0 14.98c2.22.48 4.41.96 6.64 1.45-.17.79-.34 1.56-.51 2.33 2.21.48 4.4.96 6.6 1.44 1.09-5 2.18-9.98 3.27-14.98-2.22-.48-4.41-.96-6.64-1.45Z"
+            style="fill:#0000C5;isolation:isolate;stroke-width:0" />
+        </svg>
+      </div>
+      <span class="text">History Of ADER's Logo</span>
+    </a>
+
+  </section>
+
+  <!------- section 3 - brand-text-wrapper2 ------->
+  <section class="brand-text-wrapper2">
+    <h1>BLUE <span class="brand-textWrapper2-txt">MARK</span></h1>
+    <p>블루 마크는 아더 브랜드의 가품 근절을 통해 소비자를 보호하고 정품인증과 청렴한 <br>
+      문화 의식을 알리기 위한 문화 캠페인입니다. 이를 위해 만들어진 ‘블루 마크 택’은 <br>
+      아더가 제조한 정식 제품임을 보증하는 역할을 합니다. <br>
+      메인컬러인 블루는 ‘청렴함, 순수함, 오리지널리티’의 의미를 함축하고 있습니다.</p>
+
+    <video class="brand-textWrapper2-video" autoplay muted loop>
+      <source src="./assets/images/brand/brand-text2-video.mp4">
+    </video>
+  </section>
+
+  <!------- footer ------->
+  <footer>
+    <div class="pc-main-footer">
+      <div class="footer-companyIntroduction">
+        <div class="companyIntroduction-wrapper">
+          <div class="companyIntroduction-item-logo"><img src="./assets/images/global/logo-w.png" alt="logo-w"></div>
+          <p class="companyIntroduction-item-text">Business License 02-792-2232</p>
+          <p class="companyIntroduction-item-text">Office hour Mon - Fri AM 9:30 - PM 5:00</p>
+        </div>
+        <div class="companyIntroduction-wrapper">
+          <p class="companyIntroduction-item-title">Information</p>
+          <p class="companyIntroduction-item-text">Shipping</p>
+          <p class="companyIntroduction-item-text">Care</p>
+          <p class="companyIntroduction-item-text">Stockists</p>
+          <p class="companyIntroduction-item-text">Size Chart</p>
+          <p class="companyIntroduction-item-text">Refund & Exchabge</p>
+        </div>
+        <div class="companyIntroduction-wrapper">
+          <p class="companyIntroduction-item-title">Company ADER</p>
+          <p class="companyIntroduction-item-text">Business Name FIVE SPACE CO.,LTD </p>
+          <p class="companyIntroduction-item-text">Business License 760-87-01757</p>
+          <p class="companyIntroduction-item-text">office 14, Yeonmujang 9-gil, Seongdong-gu, Seoul, South Korea</p>
+          <p class="companyIntroduction-item-text">MAIL-ORDER LICENSE NO. 2021-서울성동-01588</p>
+          <p class="companyIntroduction-item-text">TEL. 02-792-2232 Office hour Mon - Fri AM 9:30 - PM 5:00</p>
+        </div>
+      </div>
+      <div class="footer-companyContact">
+        <p class="companyContact-language">Language +</p>
+        <ul class="companyContact-companyLogo-wrapper">
+          <li><a href="https://www.instagram.com/ader_error/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/adererror" target="_blank">Facebook</a></li>
+          <li><a href="https://pf.kakao.com/_mQzRxl" target="_blank">Kakao Talk</a></li>
+          <li><a href="https://www.youtube.com/channel/UCu8Oj6fqmD5tG4Nch2ijG4Q" target="_blank">Youtube</a></li>
+        </ul>
+        <p class=”companyContact-copyRight”>©2021 ADER All Rights Reserved</p>
+      </div>
+    </div>
+
+    <div class="mo-main-footer">
+      <img src="./assets/images/global/logo_m.png" alt="logoMainColor" class="logo-mainColor">
+      <div class="topContents">
+        <p class="title">Information</p>
+        <p class="text">Shipping</p>
+        <p class="text">Care</p>
+        <p class="text">Stockists</p>
+        <p class="text">Size Chart</p>
+        <p class="text">Refund & Exchabge</p>
+        <p class="text">Business License 02-792-2232</p>
+        <p class="text">Office hour Mon - Fri AM 9:30 - PM 5:00 </p>
+      </div>
+      <ul class="companyContact-companyLogo-wrapper">
+        <li><a href="https://www.instagram.com/ader_error/" target="_blank"><img
+              src="./assets/images/global/companyLogoInstagram.png" alt="instagram"></a></li>
+        <li><a href="https://www.facebook.com/adererror" target="_blank"><img
+              src="./assets/images/global/companyLogoFacebook.png" alt="facebook"></a></li>
+        <li><a href="https://pf.kakao.com/_mQzRxl" target="_blank"><img
+              src="./assets/images/global/companyLogoKakaoTalk.png" alt="kakaotalk"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCu8Oj6fqmD5tG4Nch2ijG4Q" target="_blank"><img
+              src="./assets/images/global/companyLogoYoutube.png" alt="youtube"></a></li>
+      </ul>
+      <p class=”companyContact-copyRight”>©2021 ADER All Rights Reserved</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

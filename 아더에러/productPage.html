@@ -12,21 +12,28 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
   <!-- open graph -->
-
+  <meta property="og:title" content="ADERERROR">
+  <meta property="og:description" content="아더에러 공식 온라인 사이트">
+  <meta property="og:image"
+    content="https://javajo-project.github.io/ADERERROR-PROJECT/assets/images/global/openGraph.jpg">
+  <meta property="og:url" content="https://javajo-project.github.io/ADERERROR-PROJECT/productPage.html">
   <!-- reset -->
   <link rel="stylesheet" href="./assets/styles/reset.css">
-  <!--  -->
-  <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
   <!-- font -->
   <link rel="stylesheet" href="./assets/styles/pretendard.css">
   <link rel="stylesheet" href="./assets/styles/jost.css">
+  <!-- plugin -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <!-- style -->
   <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/globalVar.css">
   <link rel="stylesheet" href="./productPage.css">
   <!-- jQuuer -->
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
   <script src="./assets/Js/jquery-ui.min.js"></script>
-  <script src="./assets/Js/swiper-bundle.min.js"></script>
+  <!-- plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script defer src="./assets/Js/global.js"></script>
   <script defer src="./productPage.js"></script>
 </head>
@@ -36,9 +43,9 @@
   <div class="logo-emoji">
     <img src="./assets/images/global/symbolLogo.png" alt="symbolLogo">
   </div>
-  <!------- header ------->
+  <!------ header ------->
   <header class="allPage-header">
-    <!----- nav ----->
+    <!---- nav ----->
     <nav class="pc-main-nav">
       <div class="logo-img">logo area</div>
       <ul class="menu-wrapper">
@@ -53,9 +60,9 @@
       <div class="mo-header-top">
         <img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b">
         <div class="icon-wrapper">
-          <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
-          <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
-          <a href="#"><img src="./assets/images/global/icon _bag.png" alt="bagIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon_search.png" alt="searchIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon_user.png" alt="userIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon_bag.png" alt="bagIcon"></a>
         </div>
       </div>
       <ul class="menu-wrapper">
@@ -67,29 +74,9 @@
     </div>
 
   </header>
-  <!------- section - page-main-productContainer ------->
-  <section class="page-main-productContaine">
-    <!----- page-sidebarImages-container ----->
-    <div class="swiper mo-img">
-      <ul class="mo-img-wrapper">
-        <li>
-          <img src="./assets/images/productPage/productPage_Speaker_mainImg-2.png" alt="Speaker1">
-        </li>
-        <li>
-          <img src="./assets/images/productPage/productPage_Speaker_subImg1.png" alt="Speaker2">
-        </li>
-        <li>
-          <img src="./assets/images/productPage/productPage_Speaker_subImg2.png" alt="Speaker3">
-        </li>
-        <li>
-          <img src="./assets/images/productPage/productPage_Speaker_subImg3.png" alt="Speaker4">
-        </li>
-        <li>
-          <img src="./assets/images/productPage/productPage_Speaker_subImg4.png" alt="Speaker5">
-        </li>
-      </ul>
-      <div class="swiper-pagination"></div>
-    </div>
+  <!------ section - page-main-productContainer ------->
+  <section class="page-main-productContainer">
+    <!---- page-sidebarImages-container ----->
     <div class="page-sidebarImages-container">
       <ul class="page-sidebarImages-wrapper">
         <li class="page-sidebarImages-item"><img src="./assets/images/productPage/productPage_Speaker_subImg1.png"
@@ -101,67 +88,76 @@
         <li class="page-sidebarImages-item"><img src="./assets/images/productPage/productPage_Speaker_subImg4.png"
             alt="productPage_Speaker_subImg4"></li>
       </ul>
-      <!----- page-mainContent-container ----->
     </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./assets/images/productPage/productPage_Speaker_mainImg.png" alt="img1"></div>
+        <div class="swiper-slide"><img src="./assets/images/productPage/productPage_Speaker_subImg1.png" alt="img2"></div>
+        <div class="swiper-slide"><img src="./assets/images/productPage/productPage_Speaker_subImg2.png" alt="img3"></div>
+        <div class="swiper-slide"><img src="./assets/images/productPage/productPage_Speaker_subImg3.png" alt="img4"></div>
+        <div class="swiper-slide"><img src="./assets/images/productPage/productPage_Speaker_subImg4.png" alt="img5"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!---- page-mainContent-container ----->
     <div class="page-mainContent-container">
       <div class="page-mainContent-mainTextBox">
-        <h4 class="tag">Beosound A1 Ader Error Edition With Speaker Stand</h4>
-        <div class="information">
-          <p>Z-Blue</p>
-          <p>700,000</p>
+        <div class="sticy">
+          <h4 class="tag">Beosound A1 Ader Error Edition With Speaker Stand</h4>
+          <div class="information">
+            <p>Z-Blue</p>
+            <p>700,000</p>
+          </div>
+          <a href="#" class="selectColor">selectColor영역</a>
+          <div class="size">Size<span>ONE SIZE</span></div>
+          <ul class="clickButton-wrapper">
+            <li class="clickButton-w"><a href="#">장바구니</a></li>
+            <li class="clickButton-b"><a href="#">바로구매</a></li>
+            <li class="clickButton-w none"><a href="#">재입고 알림 SNS</a></li>
+          </ul>
+          <p class="subINformation">해당 제품은 생일 바우처 적용 불가 제품입니다.</p>
         </div>
-        <a href="#" class="selectColor">selectColor영역</a>
-        <div class="size">Size<span>ONE SIZE</span></div>
-        <ul class="clickButton-wrapper">
-          <li class="clickButton-w"><a href="#">장바구니</a></li>
-          <li class="clickButton-b"><a href="#">바로구매</a></li>
-          <li class="clickButton-w none"><a href="#">재입고 알림 SNS</a></li>
-        </ul>
-        <p class="subINformation">해당 제품은 생일 바우처 적용 불가 제품입니다.</p>
       </div>
       <div class="page-mainContent-subTextBox">
         <ul class="subTextBox-wrapper">
           <li class="subTextBox-item">
             <h4 class="subTextBox-item-title">제품상세정보</h4>
-            <p>Made in Korea<br>
-              세미 오버사이즈 핏 폴로 긴팔티셔츠<br>
-              전면 테트리스 로고 패치<br>
-              후면 블루라벨과 시그니처 지그재그 자수<br>
-              *사이즈별 다른 여밈 방향의 버튼 잠금 디테일<br>
-              (Women - XS ~ S, Men - M ~ XL)</p>
+            <p>
+              Made in China<br>
+              전면 중앙 테트리스 디테일<br>
+              최대 배터리 재생 시간 18시간<br>
+              내구성이 뛰어난 알루미늄 커버 및 방수 가죽 스트랩<br>
+              방진 및 방수 등급: IP67<br>
+              스피커 구성: 0.6인치 트위터 1개 3 ½인치 우퍼 1개<br>
+              앰프 : 우퍼 및 트위터용 30W Class D 2개<br>
+              주파수 범위: 55-20.000 Hz<br>
+              최대 음압 레벨 (SPL) @1m: 92 dB SPL<br>
+              베이스 성능: 62 dB SPL<br>
+              무게: 558g</p>
           </li>
           <li class="subTextBox-item">
             <h4 class="subTextBox-item-title">소재</h4>
-            <p>[Main]<br>
-              면 70<br>
-              폴리에스터 30</p>
+            <p>
+              펄 블라스팅 아노다이즈드 알루미늄<br>
+              폴리머<br>
+              소가죽(방수 가죽)
+            </p>
           </li>
           <li class="subTextBox-item">
-            <h4 class="subTextBox-item-title">제품취급유의사항</h4>
-            <p>반드시 뒤집어 손세탁 하십시오<br>
-              단독세탁을 권장합니다<br>
-              강한 손세탁은 옷의 수축 또는 형태 뒤틀림,<br>
-              제품의 손상원인이 될 수 있으니 가벼운 손세탁을 권장합니다<br>
-              드라이클리닝을 하지 마십시오<br>
-              회전식 건조기를 사용하지 마십시오<br>
-              산소계표백제 사용이 불가합니다<br>
-              다림질이 필요할 시 장식/프린트부분을 피해 저온의 가벼운 아이롱을 권장합니다<br>
-              소비자 부주의로 인한 제품 손상은 보상이 되지 않으므로,<br>
-              위의 사항을 필히 준수하십시오</p>
+            <h4 class="subTextBox-item-title">사이즈</h4>
+            <p>
+              <span>ONE SIZE</span><br>
+              스피커<br>
+              높이 4.6cm<br>
+              너비 13.3cm<br>
+              깊이 13.3cm
+            </p>
           </li>
         </ul>
       </div>
-      <div class="page-mainContent-imgWrapper">
-        <div class="page-mainContent-logoImg">
-          <img src="./assets/images/global/logo_b.png" alt="logo_b">
-        </div>
-        <div class="page-mainContent-mainImg">
-          <img src="./assets/images/productPage/productPage_Speaker_mainImg.png" alt="productPage_Speaker_mainImg">
-        </div>
-      </div>
     </div>
   </section>
-  <!------- section - page-product-slideShow product-slideShow ------->
+  <!------ section - page-product-slideShow product-slideShow ------->
   <section class="product-slideShow">
     <h2 class="product-slideShow-text">Related Product +</h2>
     <ul class="product-slideShow-wrapper">
@@ -359,7 +355,7 @@
       </li>
     </ul>
   </section>
-  <!------- footer ------->
+  <!------ footer ------->
   <footer>
     <div class="pc-main-footer">
       <div class="footer-companyIntroduction">

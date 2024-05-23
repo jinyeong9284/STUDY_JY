@@ -9,48 +9,70 @@ body {
   color: #000;
 }
 
-.page-main-productContaine {
+.page-main-productContainer {
+  margin-bottom: 100px;
+  width: var(--full-size);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
+  padding: 0 90px;
 }
-.page-main-productContaine .mo-img {
+.page-main-productContainer .swiper {
   display: none;
+  width: 300px;
+  height: 375px;
+  position: relative;
 }
-.page-main-productContaine .page-sidebarImages-container {
-  margin-top: 130px;
-  margin-left: 20px;
-}
-.page-main-productContaine .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item {
-  margin-bottom: 20PX;
-  width: max(100%, 400px);
-}
-.page-main-productContaine .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item img {
+.page-main-productContainer .swiper .swiper-slide {
   width: 100%;
   height: 100%;
 }
-.page-main-productContaine .page-mainContent-container {
+.page-main-productContainer .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.page-main-productContainer .swiper .swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: end;
+}
+.page-main-productContainer .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item {
+  margin-bottom: 20PX;
+  width: max(100%, 400px);
+}
+.page-main-productContainer .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item img {
+  width: 100%;
+  height: 100%;
+}
+.page-main-productContainer .page-mainContent-container {
   margin-top: 200px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox {
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox {
+  position: relative;
   max-width: 600px;
   min-width: 300px;
-  margin: 0 90px 100px 0;
+  height: 85%;
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: #000;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .tag {
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy {
+  position: sticky;
+  top: 200px;
+}
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .tag {
   font-size: 16px;
-  font-weight: 600px;
+  font-weight: 600;
   margin-bottom: 75px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .information {
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .information {
   display: flex;
   justify-content: space-between;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .selectColor {
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .selectColor {
   text-indent: -99999px;
   display: block;
   width: 14px;
@@ -60,15 +82,15 @@ body {
   margin: 15px 0;
   font-weight: 400;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .size {
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .size {
   font-weight: 600;
-  margin-bottom: 117px;
+  margin-bottom: 100px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .size span {
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .size span {
   text-decoration: underline;
   margin-left: 110px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper li a {
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .clickButton-wrapper li a {
   margin-bottom: 15px;
   height: 44px;
   border-radius: 30px;
@@ -82,97 +104,108 @@ body {
   font-size: 16px;
   color: #000;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper .clickButton-b a {
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .clickButton-wrapper .clickButton-b a {
   background-color: #000;
   color: #fff;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .subINformation {
+.page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .subINformation {
   font-family: "Pretendard", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #000;
   color: #ff0000;
   text-align: center;
+  margin-bottom: 50px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-imgWrapper {
-  margin: 0;
-  width: 100%;
-}
-.page-main-productContaine .page-mainContent-container .page-mainContent-imgWrapper div {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.page-main-productContaine .page-mainContent-container .page-mainContent-imgWrapper div img {
-  width: 100%;
-  height: 100%;
-}
-.page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox {
+.page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox {
   font-family: "Pretendard", sans-serif;
   font-weight: -weight;
   font-size: -size;
   color: #000;
-}
-.page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper {
   max-width: 600px;
+}
+.page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper {
   min-width: 200px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item {
+.page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item {
   margin-bottom: 50px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item:last-child {
+.page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item:last-child {
   margin-bottom: 100px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item .subTextBox-item-title {
+.page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item .subTextBox-item-title {
+  display: block;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 16px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item p {
+.page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item .subTextBox-item-title::after {
+  content: "   +";
+}
+.page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item p {
   line-height: 1.7;
   font-size: 14px;
+  display: none;
+  transition: 0.3s;
 }
 
 /****** tb ******/
 /****** mo ******/
 @media (max-width: 431px) {
-  .page-main-productContaine {
-    display: block;
-  }
-  .page-main-productContaine .mo-img {
-    display: block;
-  }
-  .page-main-productContaine .mo-img .mo-img-wrapper {
-    margin: 0 40px;
-  }
-  .page-main-productContaine .mo-img .mo-img-wrapper li {
+  .page-main-productContainer {
+    margin-bottom: 100px;
     width: 100%;
+    display: block;
+    padding: 0 40px;
   }
-  .page-main-productContaine .mo-img .mo-img-wrapper li img {
-    width: 100%;
-  }
-  .page-main-productContaine .page-sidebarImages-container {
+  .page-main-productContainer .page-sidebarImages-container {
     display: none;
   }
-  .page-main-productContaine .page-mainContent-container {
-    margin-top: 0;
+  .page-main-productContainer .swiper {
+    display: block;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox {
-    margin: 0 40px;
+  .page-main-productContainer .page-mainContent-container {
+    margin-top: 30px;
+  }
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox {
+    position: static;
     max-width: 100%;
     min-width: 100px;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .tag {
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy {
+    position: static;
+  }
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .tag {
     font-size: 14px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .size {
-    margin-bottom: 50px;
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .information {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 10px 0;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .size span {
-    margin-left: 110px;
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .information p:first-child {
+    position: relative;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper li a {
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .information p:first-child::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0000C5;
+  }
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .selectColor {
+    display: none;
+  }
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .size {
+    margin-bottom: 35px;
+  }
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .clickButton-wrapper li a {
     margin-bottom: 15px;
     height: 30px;
     border-radius: 30px;
@@ -180,42 +213,41 @@ body {
     display: grid;
     place-items: center;
     font-size: 14px;
-    font-weight: 500;
-    font-family: "Pretendard", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #000;
+    font-weight: 400;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper li:nth-child(3) {
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .clickButton-wrapper li:nth-child(3) {
     display: none;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper .clickButton-b a {
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .clickButton-wrapper li .clickButton-b a {
     background-color: #000;
     color: #fff;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .subINformation {
+  .page-main-productContainer .page-mainContent-container .page-mainContent-mainTextBox .sticy .subINformation {
     font-family: "Pretendard", sans-serif;
     font-weight: 400;
     font-size: 10px;
     color: #000;
     color: #ff0000;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-imgWrapper {
-    display: none;
+  .page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox {
+    font-family: "Pretendard", sans-serif;
+    font-weight: -weight;
+    font-size: -size;
+    color: #000;
+    max-width: 600px;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox {
-    margin: 40px;
+  .page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper {
+    min-width: 200px;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item {
-    margin-bottom: 20px;
+  .page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item {
+    margin-bottom: 22px;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item .subTextBox-item-title::after {
-    content: "   +";
+  .page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item:last-child {
+    margin-bottom: 100px;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item p {
-    display: none;
-    transition: 0.3s;
+  .page-main-productContainer .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item .subTextBox-item-title {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=productPage.css.map */

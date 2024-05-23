@@ -1,9 +1,40 @@
+# 240523_목
+
+# 240522_수
+**정진영**
+- productlist page 여백 수정
+- index 매거진 세션 부분 효과 작업
+- 피그마 PC 버전 디자인 수정
+
+**하은혜**
+- 피그마에 PC/MO 최종 디자인으로 수정 완료
+- index 로딩 페이지 추가
+
+**문지영**
+- productPage 모바일 슬라이드 이미지 모션 수정 완료
+- 코드리뷰 작성
+- index 3d viedo section 추가
+
 # 240521_화
+**정진영**
+- index page 모바일 버전 작업
+- 가로 스크롤 부분 모바일 버전 디자인 수정 및 구현
+
 **하은혜**
 - brand 모바일/태블릿 완성
+- index page PC.ver 수정 완료
+
+**문지영**
+- productPage 모바일 구현
+- header + footer 수정
+
+**김예진**
+- index zoom-in 스크립트 수정
+- index zoom-in, product list 모바일/태블릿 완성
+- collabo pc 수정
 
 # 240520_월
-**정진영 **
+**정진영**
 - index pc 메인 효과 및 가로 스크롤 사진 크기 등 수정
 - index page 상단 모바일 버전 작업 시작
 

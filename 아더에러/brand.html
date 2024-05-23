@@ -29,13 +29,14 @@
 
   <!-- style -->
   <link rel="stylesheet" href="./assets/styles/global.css">
-  <link rel="stylesheet" href="./assets/styles/global.css.map">
-  <link rel="stylesheet" href="./assets/styles/global.scss">
+  <link rel="stylesheet" href="./assets/styles/globalVar.css">
   <link rel="stylesheet" href="./assets/styles/header+footer.css">
   <link rel="stylesheet" href="./assets/styles/header+footer.css.map">
 
   <!-- 이 페이지에만 들어가는 style -->
   <link rel="stylesheet" href="./brand.css" defer>
+  <link rel="stylesheet" href="./brand-tb.css">
+  <link rel="stylesheet" href="./brand-mo.css">
 
   <!-- jQuery -->
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
@@ -50,17 +51,30 @@
 </head>
 
 <!-- To do list **************************
-0. 태블릿 버전 만들기!!
-max-width : 1100px
+***** index
+***** 모바일 버전
+1. 배경 곡선-직선 이벤트 
+모바일 버전으로 따로 만들어서
+display : none; 
 
-1. 버튼
-- 디테일 마저 수정..
+***** index
+- 배경 이벤트 위치 : 가로 사이즈별로.. 최대한 맞추자 ㅎ
+- 줌인 스크롤 문제 발생(모바일)
 
-3. 블루 마크
-- 이미지 추가(?)
+1. 로딩 페이지 추가
+- 어두운 배경위에 로고 트렌지션 
 
-***** 모바일
+4. Ader's Collection
+- 컨버스 사진 2번째 조금 더 아래로
 
+5. 로고 줌인
+- 스크롤 위치 조정: 위로 스크롤백했을때 타이밍이 안맞음
+
+- 이사이에 3d 넣기 (배경: 블루)
+
+6. 매거진 영역
+- 교체
+- 이벤트 추가
 -->
 
 <body>
@@ -90,9 +104,9 @@ max-width : 1100px
           <h1><img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b"></h1>
         </a>
         <div class="icon-wrapper">
-          <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
-          <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
-          <a href="#"><img src="./assets/images/global/icon _bag.png" alt="bagIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon_search.png" alt="searchIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon_user.png" alt="userIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon_bag.png" alt="bagIcon"></a>
         </div>
       </div>
       <ul class="menu-wrapper">
@@ -150,13 +164,13 @@ max-width : 1100px
 
     <a href="#" class="brand-text-btn">
       <div class="svg-container">
-        <svg class="white-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2" width="16">
+        <svg class="white-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2">
           <path
             d="M9.36 3.77c.17-.79.34-1.56.51-2.33C7.65.96 5.46.48 3.26 0 2.18 4.99 1.09 9.98 0 14.98c2.22.48 4.41.96 6.64 1.45-.17.79-.34 1.56-.51 2.33 2.21.48 4.4.96 6.6 1.44 1.09-5 2.18-9.98 3.27-14.98-2.22-.48-4.41-.96-6.64-1.45Z"
             style="fill:#fff;isolation:isolate;stroke-width:0" />
         </svg>
         
-        <svg class="hover-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2" width="16">
+        <svg class="hover-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2">
           <path
             d="M9.36 3.77c.17-.79.34-1.56.51-2.33C7.65.96 5.46.48 3.26 0 2.18 4.99 1.09 9.98 0 14.98c2.22.48 4.41.96 6.64 1.45-.17.79-.34 1.56-.51 2.33 2.21.48 4.4.96 6.6 1.44 1.09-5 2.18-9.98 3.27-14.98-2.22-.48-4.41-.96-6.64-1.45Z"
             style="fill:#0000C5;isolation:isolate;stroke-width:0" />

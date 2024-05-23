@@ -27,6 +27,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- 공통된 style -->
   <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/globalVar.css">
   <link rel="stylesheet" href="./assets/styles/global.css.map">
   <link rel="stylesheet" href="./assets/styles/global.scss">
   <link rel="stylesheet" href="./assets/styles/header+footer.css">
@@ -64,14 +65,15 @@
           <li class="menu-item"><a href="./collabo.html">Collaboration +</a></li>
         </ul>
       </nav>
-  
       <div class="mo-main-header">
         <div class="mo-header-top">
-          <img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b">
+          <a href="./index.html">
+            <h1><img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b"></h1>
+          </a>
           <div class="icon-wrapper">
-            <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
-            <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
-            <a href="#"><img src="./assets/images/global/icon _bag.png" alt="bagIcon"></a>
+            <a href="#"><img src="./assets/images/global/icon_search.png" alt="searchIcon"></a>
+            <a href="#"><img src="./assets/images/global/icon_user.png" alt="userIcon"></a>
+            <a href="#"><img src="./assets/images/global/icon_bag.png" alt="bagIcon"></a>
           </div>
         </div>
         <ul class="menu-wrapper">
@@ -81,12 +83,12 @@
           <li><a href="./collabo.html">Collaboration</a></li>
         </ul>
       </div>
-  
     </header>
+    
  <!----- collabo-intro -----> 
   <section class="collabo-intro center">
     <div class="intro-wrapper">
-      <!-- <img class="intro-logo" src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo"> -->
+      <img class="intro-logo" src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo">
     <h2 class="main-title">ader error X converse</h2>
     <h2 class="main-title title-move">create next</h2>
   </div>
@@ -95,8 +97,8 @@
   <!----- collabo-main ----->
   <section class="collabo-main">
     <div class="main-wrapper">
-      <img data-aos="zoom-in-up" data-aos-duration="1000" class="shoes" src="./assets/images/collabo/collabo-shoes.png" alt="collaboration shoes" class="main-shoes">
-      <img class="collabo-logo" src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo">
+      <img data-aos="zoom-in-up" data-aos-duration="1000" class="shoes" src="./assets/images/collabo/collabo-shoes.png" alt="collaboration shoes">
+      <h2><img class="collabo-logo" src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo"></h2>
       <p class="inner-text-sm">
         <span>아더에러와 컨버스의 첫 번째 글로벌 협업은 ‘Create Next : The new is not new’라는</span>
         <span>두 브랜드의 슬로건에서 영감을 받아 새로움을 창조하기 위해서는 과거를 돌아본다는 철학을 통해 전개됩니다.</span>
@@ -111,7 +113,7 @@
   <section class="collabo-through">
     <div class="through-wrapper through-wrapper1">
       <img data-aos="fade-left" data-aos-duration="1500" src="./assets/images/collabo/through-img1.png" alt="collaboration img1" class="through-img">
-      <h3 data-aos="fade-left" data-aos-duration="1500"class="sub-title">Through Editism</h3>
+      <h3 data-aos="fade-left" data-aos-duration="1500" class="sub-title">Through Editism</h3>
       <p data-aos="fade-left" data-aos-duration="1500" class="inner-text-lg">
         <span>모든 사물들은 정교하고 긴밀한 연결을 형성한다는 것을 인지하며, </span>
         <span>서로 다른 대상의 접점을 발견하고 합성하여 의외성을 만들어내는 것</span>
@@ -154,27 +156,202 @@
     </div>
   </section>
 
-
    <!------- section - page-product-slideShow product-slideShow ------->
    <section class="product-slideShow">
     <h2 class="product-slideShow-text">Related Product +</h2>
     <ul class="product-slideShow-wrapper">
-      <li class="product-slideShow-item on-blurPrice"><a href="#"><img
-            src="./assets/images/global/product-slideShow-1.png" alt="product-slideShow-img1"></a></li>
-      <li class="product-slideShow-item on-blurPrice"><a href="#"><img
-            src="./assets/images/global/product-slideShow-2.png" alt="product-slideShow-img2"></a></li>
-      <li class="product-slideShow-item on-blurPrice"><a href="#"><img
-            src="./assets/images/global/product-slideShow-3.png" alt="product-slideShow-img3"></a></li>
-      <li class="product-slideShow-item on-blurPrice"><a href="#"><img
-            src="./assets/images/global/product-slideShow-4.png" alt="product-slideShow-img4"></a></li>
-      <li class="product-slideShow-item on-blurPrice"><a href="#"><img
-            src="./assets/images/global/product-slideShow-5.png" alt="product-slideShow-img5"></a></li>
-      <li class="product-slideShow-item on-blurPrice"><a href="#"><img
-            src="./assets/images/global/product-slideShow-6.png" alt="product-slideShow-img6"></a></li>
-      <li class="product-slideShow-item on-blurPrice"><a href="#"><img
-            src="./assets/images/global/product-slideShow-7.png" alt="product-slideShow-img7"></a></li>
-      <li class="product-slideShow-item on-blurPrice"><a href="#"><img
-            src="./assets/images/global/product-slideShow-8.png" alt="product-slideShow-img8"></a></li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-1.png" alt="product-slideShow-img1">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Shapes Crew Sweatshirt</p>
+              <p>139.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-2.png" alt="product-slideShow-img2">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Shapes Jacket</p>
+              <p>215.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-3.png" alt="product-slideShow-img3">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Shapes Shorts</p>
+              <p>105.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-4.png" alt="product-slideShow-img4">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Baseball Hat</p>
+              <p>49.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-5.png" alt="product-slideShow-img5">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Chuck 70</p>
+              <p>129.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-6.png" alt="product-slideShow-img6">
+          <div class="on-blurPrice">
+            <p class="title">Ader Error</p>
+            <div class="product">
+              <p>Nolc logo raglan t-shirt</p>
+              <p>189.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-7.png" alt="product-slideShow-img7">
+          <div class="on-blurPrice">
+            <p class="title">Ader Error</p>
+            <div class="product">
+              <p>Acere shorts</p>
+              <p>269.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-8.png" alt="product-slideShow-img8">
+          <div class="on-blurPrice">
+            <p class="title">Ader Error</p>
+            <div class="product">
+              <p>Wide burnid shopper bag</p>
+              <p>579.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-1.png" alt="product-slideShow-img1">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Shapes Crew Sweatshirt</p>
+              <p>139.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-2.png" alt="product-slideShow-img2">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Shapes Jacket</p>
+              <p>215.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-3.png" alt="product-slideShow-img3">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Shapes Shorts</p>
+              <p>105.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-4.png" alt="product-slideShow-img4">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Baseball Hat</p>
+              <p>49.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-5.png" alt="product-slideShow-img5">
+          <div class="on-blurPrice">
+            <p class="title">Converse X Ader Error</p>
+            <div class="product">
+              <p>Chuck 70</p>
+              <p>129.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-6.png" alt="product-slideShow-img6">
+          <div class="on-blurPrice">
+            <p class="title">Ader Error</p>
+            <div class="product">
+              <p>Nolc logo raglan t-shirt</p>
+              <p>189.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-7.png" alt="product-slideShow-img7">
+          <div class="on-blurPrice">
+            <p class="title">Ader Error</p>
+            <div class="product">
+              <p>Acere shorts</p>
+              <p>269.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="product-slideShow-item on-blurPrice">
+        <a href="#">
+          <img src="./assets/images/global/product-slideShow-8.png" alt="product-slideShow-img8">
+          <div class="on-blurPrice">
+            <p class="title">Ader Error</p>
+            <div class="product">
+              <p>Wide burnid shopper bag</p>
+              <p>579.000</p>
+            </div>
+          </div>
+        </a>
+      </li>
     </ul>
   </section>
 

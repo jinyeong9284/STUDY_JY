@@ -48,16 +48,37 @@ body {
   @include enFont(-weight, -size, )
 }
 
-.page-main-productContaine {
+.page-main-productContainer {
+  margin-bottom: 100px;
+  width: var(--full-size);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-  .mo-img {
+  padding: 0 90px;
+
+  .swiper {
     display: none;
+    width: 300px;
+    height: 375px;
+    position: relative;
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    } 
+    .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      font-size: 10px;
+      font-weight: 400;
+      text-align: end;
+    }
   }
   .page-sidebarImages-container {
-    margin-top: 130px;
-    margin-left: min(90px, 20px);
+    // margin-left: 90px;
 
     .page-sidebarImages-wrapper {
       .page-sidebarImages-item {
@@ -72,110 +93,113 @@ body {
     }
   }
 
+
   .page-mainContent-container {
     margin-top: 200px;
 
     .page-mainContent-mainTextBox {
+      position: relative;
       max-width: 600px;
       min-width: 300px;
-      margin: 0 90px 100px 0;
+      height: 85%;
+      // margin-right: 90px;
       @include enFont(500, 14px, $bColor);
 
-      .tag {
-        font-size: 16px;
-        font-weight: 600px;
-        margin-bottom: 75px;
-      }
+      .sticy {
+        position: sticky;
+        top: 200px;
 
-      .information {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .selectColor {
-        text-indent: -99999px;
-        display: block;
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background-color: $mColor;
-        margin: 15px 0;
-        font-weight: 400;
-      }
-
-      .size {
-        font-weight: 600;
-        margin-bottom: 117px;
-
-        span {
-          text-decoration: underline;
-          margin-left: 110px;
-        }
-      }
-
-      .clickButton-wrapper {
-        li a {
-          margin-bottom: 15px;
-          height: 44px;
-          border-radius: 30px;
-          border: 1px solid $bColor;
-          display: grid;
-          place-items: center;
+        .tag {
           font-size: 16px;
-          font-weight: 500;
-          @include koFont(500, 16px, );
+          font-weight: 600;
+          margin-bottom: 75px;
         }
 
-        .clickButton-b a {
-          background-color: $bColor;
-          color: $wColor;
+        .information {
+          display: flex;
+          justify-content: space-between;
         }
-      }
 
-      .subINformation {
-        @include koFont(400, 14px, );
-        color: #ff0000;
-        text-align: center;
+        .selectColor {
+          text-indent: -99999px;
+          display: block;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background-color: $mColor;
+          margin: 15px 0;
+          font-weight: 400;
+        }
+
+        .size {
+          font-weight: 600;
+          margin-bottom: 100px;
+
+          span {
+            text-decoration: underline;
+            margin-left: 110px;
+          }
+        }
+
+        .clickButton-wrapper {
+          li a {
+            margin-bottom: 15px;
+            height: 44px;
+            border-radius: 30px;
+            border: 1px solid $bColor;
+            display: grid;
+            place-items: center;
+            font-size: 16px;
+            font-weight: 500;
+            @include koFont(500, 16px, );
+          }
+
+          .clickButton-b a {
+            background-color: $bColor;
+            color: $wColor;
+          }
+        }
+
+        .subINformation {
+          @include koFont(400, 14px, );
+          color: #ff0000;
+          text-align: center;
+          margin-bottom: 50px
+        }
       }
     }
 
-    .page-mainContent-imgWrapper {
-      margin: 0;
-      width: 100%;
-
-      div {
-        width: 100%;
-        height: 100%;
-        display: flex;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
 
     .page-mainContent-subTextBox {
       @include koFont(-weight, -size, );
+      max-width: 600px;
 
       .subTextBox-wrapper {
-        max-width: 600px;
         min-width: 200px;
 
         .subTextBox-item {
           margin-bottom: 50px;
+
           &:last-child {
             margin-bottom: 100px;
           }
+
           .subTextBox-item-title {
+            display: block;
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 16px;
+
+            &::after {
+              content: "   +";
+            }
           }
 
           p {
             line-height: 1.7;
             font-size: 14px;
+            display: none;
+            transition: 0.3s;
           }
         }
       }
@@ -184,101 +208,124 @@ body {
 }
 
 /****** tb ******/
-@include tablet {
-}
+@include tablet {}
 
 /****** mo ******/
 @include mobile {
-  .page-main-productContaine {
+  .page-main-productContainer {
+    margin-bottom: 100px;
+    width: 100%;
     display: block;
-    .mo-img {
-      display: block;
-      .mo-img-wrapper {
-        margin: 0 40px;
-        li{
-          width: 100%;
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
+    padding: 0 40px;
+
     .page-sidebarImages-container {
-      display: none;
+     display: none;
     }
-    
+
+    .swiper {
+      display: block;
+    } 
+
     .page-mainContent-container {
-      margin-top: 0;
-      
+      margin-top: 30px;
+
       .page-mainContent-mainTextBox {
-        margin: 0 40px;
+        position: static;
         max-width: 100%;
         min-width: 100px;
-  
-        .tag {
-          font-size: 14px;
-          margin-bottom: 50px;
-        }
-  
-        .size {
-          margin-bottom: 50px;
-  
-          span {
-            margin-left: 110px;
+
+        .sticy {
+          position: static;
+
+          .tag {
+            font-size: 14px;
+            margin-bottom: 35px;
           }
-        }
-  
-        .clickButton-wrapper {
-          li{
-            a {
-              margin-bottom: 15px;
-              height: 30px;
-              border-radius: 30px;
-              border: 1px solid $bColor;
-              display: grid;
-              place-items: center;
-              font-size: 14px;
-              font-weight: 500;
-              @include koFont(500, 16px, );
+
+          .information {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            margin: 10px 0;
+
+            p:first-child {
+              position: relative;
             }
-            &:nth-child(3) {
-              display: none;
-            } 
-          } 
-          .clickButton-b a {
-            background-color: $bColor;
-            color: $wColor;
-          }
-        }
-  
-        .subINformation {
-          @include koFont(400, 10px, );
-          color: #ff0000;
-          text-align: center;
-          margin-bottom: 10px;
-        }
-      }
-  
-      .page-mainContent-imgWrapper {
-        display: none
-      }
-  
-      .page-mainContent-subTextBox {
-        margin: 40px;
-       .subTextBox-wrapper {
-        .subTextBox-item {
-          margin-bottom: 20px;
-          .subTextBox-item-title {
-            &::after {
-              content: "   +";
+
+            p:first-child::after {
+              content: "";
+              position: absolute;
+              right: -25px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: $mColor;
             }
           }
-          p {
+
+          .selectColor {
             display: none;
-            transition: 0.3s;
+          }
+
+          .size {
+            margin-bottom: 35px;
+          }
+
+          .clickButton-wrapper {
+            li {
+              a {
+                margin-bottom: 15px;
+                height: 30px;
+                border-radius: 30px;
+                border: 1px solid $bColor;
+                display: grid;
+                place-items: center;
+                font-size: 14px;
+                font-weight: 400;
+              }
+
+              &:nth-child(3) {
+                display: none;
+              }
+
+
+              .clickButton-b a {
+                background-color: $bColor;
+                color: $wColor;
+              }
+            }
+          }
+
+          .subINformation {
+            @include koFont(400, 10px, );
+            color: #ff0000;
+            text-align: center;
+            margin-bottom: 60px
           }
         }
-       }
+      }
+
+      .page-mainContent-subTextBox {
+        @include koFont(-weight, -size, );
+        max-width: 600px;
+
+        .subTextBox-wrapper {
+          min-width: 200px;
+
+          .subTextBox-item {
+            margin-bottom: 22px;
+
+            &:last-child {
+              margin-bottom: 100px;
+            }
+
+            .subTextBox-item-title {
+              font-size: 14px;
+            }
+          }
+        }
       }
     }
   }

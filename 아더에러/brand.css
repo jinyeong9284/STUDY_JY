@@ -1,29 +1,20 @@
 @charset "utf-8";
 
 body {
-  font-family: "Pretendard", sans-serif;
+  font-family: var(--primary-font-ko);
 }
-
-/***** mouseEmoji *****/
-.logo-emoji {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99999;
-}
-
 /***** section 1 - brand-main-wrapper *****/
 .brand-main-wrapper {
-  width: 100%;
+  width: var(--full-size);
   height: 1200px;
   padding-top: 200px;
-  background-color: #0000C5;
+  background-color: var(--color-main);
   position: relative;
 }
 
 /***** show *****/
 .brand-main-logo {
-  margin: 0 auto;
+  margin: var(--primary-center);
   display: flex;
 
   opacity: 0;
@@ -39,10 +30,10 @@ body {
   margin: auto;
   padding: 70px 0 85px;
   width: 680px;
-  font-size: 18px;
+  font-size: var(--size-lg);
   text-align: center;
-  line-height: 1.8rem;
-  color: #fff;
+  line-height: var(--lineHeight-md);
+  color: var(--color-w);
 
   opacity: 0;
   transition: opacity 0.3s ease-in-out 0.1s;
@@ -53,7 +44,7 @@ body {
 }
 
 .brand-main-img {
-  width: 100%;
+  width: var(--full-size);
 
   opacity: 0;
   transform: translateY(-30px);
@@ -69,19 +60,19 @@ body {
 /***** section 1-2 - brand-mainBottom-wrapper *****/
 .brand-mainBottom-wrapper {
   position: absolute;
-  top: 1100px;
+  top: 125%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: var(--full-size);
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
 .brand-mainBottom-shape {
-  width: 100%;
+  width: var(--full-size);
   height: 350px;
-  background: #000;
+  background: var(--color-b);
   border-radius: 180% 180% 0 0;
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -91,7 +82,7 @@ body {
 .brand-text-wrapper1 {
   padding-top: 100px;
   height: 1350px;
-  background-color: #000;
+  background-color: var(--color-b);
   position: relative;
 }
 
@@ -99,13 +90,12 @@ body {
   width: 68vw;
   margin: 0 120px 82px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: var(--weight-lg);
   line-height: 5rem;
   /* color: gray; */
   display: inline-block;
-
   position: relative;
-  z-index: 9999;
+  z-index: var(--zIndex-4);
 }
 
 /***** 밑에 깔려있는 회색 글자 *****/
@@ -113,7 +103,7 @@ body {
   width: 68vw;
   margin: 0 120px 82px;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: var(--weight-lg);
   line-height: 5rem;
   color: #3d3d3d;
 
@@ -181,13 +171,13 @@ body {
   margin: 32px 120px;
   width: 245px;
   height: 40px;
-  border-radius: 10px;
-  background-color: #0000C5;
-  color: #fff;
+  border-radius: var(--size-xxs);
+  background-color: var(--color-main);
+  color: var(--color-w);
   text-align: center;
   font-size: 18px;
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
+  font-family: var(--primary-font-en);
+  font-weight: var(--weight-sm);
   display: inline-block;
   line-height: 40px;
 
@@ -197,16 +187,14 @@ body {
 .svg-container {
   width: 16px;
   vertical-align: middle;
-  margin: 4px 5px;
+  margin: 4px 5px 4px 0;
   display: inline-block;
   position: relative;
 }
-
-.svg-container .hover-svg {
+.hover-svg {
+  margin: 0;
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 16px;
 }
 
 .text {
@@ -214,8 +202,8 @@ body {
 }
 
 .brand-text-btn:hover {
-  background-color: #fff;
-  color: #0000C5;
+  background-color: var(--color-w);
+  color: var(--color-main);
 }
 
 .brand-text-btn:hover .white-svg {
@@ -223,6 +211,9 @@ body {
 }
 .brand-text-btn:hover .hover-svg {
   display: block;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 /***** section 3 - brand-text-wrapper2 *****/
@@ -234,15 +225,15 @@ body {
 .brand-text-wrapper2 h1 {
   margin: 200px 0 60px;
   font-size: 100px;
-  font-family: "Jost", sans-serif;
+  font-family: var(--primary-font-en);
   font-weight: 800;
   letter-spacing: -3px;
   line-height: 100px;
-  color: #0000C5;
+  color: var(--color-main);
 }
 
 .brand-text-wrapper2 .brand-textWrapper2-txt {
-  border: #0000C5 2px solid;
+  border: var(--color-main) 2px solid;
   border-radius: 25px;
   display: inline-block;
   padding: 8px 18px 8px 10px;
@@ -252,216 +243,11 @@ body {
   margin: auto;
   padding-bottom: 100px;
   width: 680px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: var(--size-lg);
+  font-weight: var(--weight-sm);
   line-height: 1.7rem;
 }
 
 .brand-text-wrapper2 .brand-textWrapper2-video {
   width: 50%;
-}
-
-
-/****************** 모바일 ******************/
-
-/***** section 1 - brand-main-wrapper *****/
-@media screen and (max-width: 430px) {
-.brand-main-wrapper {
-  padding: 160px 40px 0;
-  width: 100%;
-  height: 700px;
-  background-color: #0000C5;
-  position: relative;
-}
-
-.brand-main-logo {
-  width: 100%;
-  margin: 0 auto;
-
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.3s ease-in-out 0.1s, transform 0.35s ease-in-out 0.1s;
-}
-.show {
-  margin: 0;
-  opacity: 1;
-  transform: translateY(0);
-}
-.brand-main-txt br {
-  display: none;
-}
-.brand-main-txt {
-  margin: auto;
-  padding: 45px 0 85px;
-  width: 100%;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.8rem;
-  color: #fff;
-
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out 0.1s;
-}
-.show {
-  opacity: 1;
-}
-.brand-main-imgList {
-  display: none;
-}
-}
-
-/***** 배경 곡선 -> 직선 이벤트 *****/
-/***** section 1-2 - brand-main-bottom *****/
-@media screen and (max-width: 430px) {
-.brand-mainBottom-wrapper {
-  position: absolute;
-  top: 950px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 130%;
-  overflow-x: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.brand-mainBottom-shape {
-  width: 100%;
-  height: 350px;
-  background: #000;
-  border-radius: 180% 180% 0 0;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-}
-
-/***** section 2 - brand-text-wrapper1 *****/
-
-/***** 움직이는 이미지 1개 *****/
-@media screen and (max-width: 430px) {
-.brand-text-img .img1 {
-  width: 230px;
-  position: absolute;
-  top: 25%;
-  left: 57%;
-}
-
-.brand-text-img .img1 {
-  transition: 1.5s;
-  animation: metal infinite 1.45s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-@keyframes metal {
-  0%,
-  100% {
-    transform: translateX(3px) rotate(3deg);
-  }
-
-  50% {
-    transform: translateX(0) rotate(-3deg);
-  }
-}
-}
-
-@media screen and (max-width: 430px) {
-.brand-text-wrapper1 {
-  padding: 0 40px;
-  height: 1050px;
-  background-color: #000;
-  /* position: relative; */
-}
-.color-changing-text {
-  margin: 0 0 30px;
-  width: 100%;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 2.7rem;
-
-  position: relative;
-  z-index: 9999;
-}
-
-/***** 밑에 이미 깔려있는 회색 글자 *****/
-.brand-text-wrapper1 .fade-in-bgText {
-  margin: 0;
-  width: 350px;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 2.7rem;
-  color: #3d3d3d;
-
-  position: absolute;
-  top: 0px;
-  z-index: 1;
-}
-.brand-text-wrapper1 p {
-  margin: 30px 0 0;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.8rem;
-  color: #fff;
-}
-
-.brand-text-btn {
-  margin: 60px 0;
-  width: 245px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: #0000C5;
-  color: #fff;
-  text-align: center;
-  font-size: 18px;
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
-  display: inline-block;
-  line-height: 40px;
-
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.svg-container {
-  width: 16px;
-  vertical-align: middle;
-  margin: 3px 5px;
-  display: inline-block;
-}
-}
-
-/***** section 3 - brand-text-wrapper2 *****/
-@media screen and (max-width: 430px) {
-.brand-text-wrapper2 {
-  margin: 0 40px;
-  height: 950px;
-  text-align: center;
-}
-
-.brand-text-wrapper2 h1 {
-  margin: 90px 0 40px;
-  font-size: 60px;
-  font-family: "Jost", sans-serif;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 50px;
-  color: #0000C5;
-}
-
-.brand-text-wrapper2 .brand-textWrapper2-txt {
-  border: #0000C5 2px solid;
-  border-radius: 15px;
-  display: inline-block;
-  padding: 8px 9px 8px 5px;
-}
-
-.brand-text-wrapper2 p br {
-  display: none;
-}
-.brand-text-wrapper2 p {
-  padding-bottom: 70px;
-  width: 350px;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.brand-text-wrapper2 .brand-textWrapper2-video {
-  width: 100%;
-}
 }

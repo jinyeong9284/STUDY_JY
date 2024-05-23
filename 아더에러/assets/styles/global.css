@@ -225,23 +225,66 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
     gap: 22px;
   }
   /****** footer ******/
+  footer .mo-main-footer {
+    display: none;
+  }
   footer .pc-main-footer {
-    width: 1000px;
+    width: 800px;
+    height: 467px;
+    border-radius: 40px;
+    font-family: "Jost", sans-serif;
+    font-weight: -weight;
+    font-size: 13px;
+    color: #fff;
+    padding: 80px 0;
+    padding: 90px 50px;
   }
   footer .pc-main-footer .footer-companyIntroduction {
     display: flex;
-    gap: 40px;
-    margin-left: 55px;
+    gap: 10px;
+    margin-left: 0;
+  }
+  footer .pc-main-footer .footer-companyIntroduction .companyIntroduction-wrapper:nth-child(1) {
+    margin-right: 15px;
+  }
+  footer .pc-main-footer .footer-companyIntroduction .companyIntroduction-wrapper:nth-child(1) .companyIntroduction-item-logo img {
+    width: 200px;
+    height: 26.2px;
+    margin-bottom: 60px;
+  }
+  footer .pc-main-footer .footer-companyIntroduction .companyIntroduction-wrapper .companyIntroduction-item-title {
+    font-family: "Jost", sans-serif;
+    font-weight: -weight;
+    font-size: 14px;
+    color: #fff;
+  }
+  footer .pc-main-footer .footer-companyIntroduction .companyIntroduction-wrapper .companyIntroduction-item-title::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin: 18px 0;
+  }
+  footer .pc-main-footer .footer-companyIntroduction .companyIntroduction-wrapper .companyIntroduction-item-text {
+    margin: 7.5px 0;
   }
   footer .pc-main-footer .footer-companyContact {
-    width: 800px;
+    width: 700px;
+    height: 55px;
+    border-radius: 55px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 30px;
+    margin: 50px auto 0;
   }
   footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrapper {
     display: flex;
   }
   footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrapper li a {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 /*********** mo ***********/

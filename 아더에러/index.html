@@ -28,8 +28,9 @@
 
   <!------ style ------>
   <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/globalVar.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./index.css" defer>
+  <link rel="stylesheet" href="./index.css">
 
   <!------ jQuery ------>
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
@@ -45,22 +46,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 </head>
 
+<!-- To do list *******
+1. 홈페이지 로딩 페이지
+- 어두운 배경위에 로고 트렌지션
 
-<!-- To do list **************************
-모바일 (max-width:430px)
+************ 모바일 ************************************
+1. 배경 곡선-직선 이벤트 
+모바일 버전으로 따로 
+display : none;
 
-1. 메인 영상 페이지
-- 제목 / 내용 -> 트렌지션 적용
+************ pc 이하 사이즈 ************************************
+- 배경 이벤트 : 가로 사이즈별로.. 최대한 맞춰보자..
 
-2. 콜라보 가로 스크롤 페이지
-- 스크롤시 가로로 긴 텍스트 중앙배치
+************ PC ************************************
+2. 로고 줌인
+- 위로 스크롤백했을때 타이밍이 안맞음 (불가)
 
-3. Ader's collection
-- 컨버스 사진 2번째 조금 아래로 이동
+------ 이사이에 3D 넣기 (배경: 블루) ---------
 
-4. 브랜드 로고 줌인 페이지
-- 스크롤 타이밍 조절 
-- 설명 페이지 올라올 때 트렌지션 적용(위로 더 빠르게)
+3. 매거진 영역
+- 교체
+- 이벤트 추가
 -->
 
 <body>
@@ -88,9 +94,9 @@
       <div class="mo-header-top">
         <a href="./index.html"><h1><img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b"></h1></a>
         <div class="icon-wrapper">
-          <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
-          <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
-          <a href="#"><img src="./assets/images/global/icon _bag.png" alt="bagIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon_search.png" alt="searchIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon_user.png" alt="userIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon_bag.png" alt="bagIcon"></a>
         </div>
       </div>
       <ul class="menu-wrapper">
@@ -105,13 +111,19 @@
   <!------ index main video ------>
   <section class="index-main">
     <iframe src="https://www.youtube.com/embed/aS03HxAoULw?si=waR4iFxHQysnicMS&amp;controls=0&loop=1&mute=1&autoplay=1"
-      title="YouTube video player" frameborder="0"
+      title="YouTube video player" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube">
+    </iframe>
+
     <div class="index-main-text">
-    <h2  data-aos="fade-up" data-aos-duration="3000"><span>NEW</span><span>DROP</span><span>THE</span><span>BLUEISM</span></h2>
-    <p class="show">아더에러와 뱅앤울룹슨의 첫 번째 글로벌 협업은 혁신 정신을 바탕으로 새로운 문화를 제안한다는 가치를 공유하는 두 브랜드의 만남을 통해 성사 되었습니다.</p>
-    <p class="show">'The Blueism'은 사운드를 기반으로 한 크리에이티브를 통해 두 브랜드가 함께 선보이고자 하는 새로운 움직임을 의미하며, 아더에러와 뱅앤올룹슨은 베오사운드 A1 스피커를 매개체로 새로운 영감의 창을 형성, 확장된 물결을 만들어 나가고자 합니다.
+    <h2><span data-aos="fade-up" data-aos-duration="550">NEW</span>
+      <span data-aos="fade-up" data-aos-duration="800">DROP</span><span data-aos="fade-up" data-aos-duration="950">THE</span><span data-aos="fade-up" data-aos-duration="1000">BLUEISM</span>
+    </h2>
+
+    <!-- p는 script 로 제어 -->
+    <p class="show1">아더에러와 뱅앤울룹슨의 첫 번째 글로벌 협업은 혁신 정신을 바탕으로 새로운 문화를 제안한다는 가치를 공유하는 두 브랜드의 만남을 통해 성사 되었습니다.</p>
+    <p class="show2">'The Blueism'은 사운드를 기반으로 한 크리에이티브를 통해 두 브랜드가 함께 선보이고자 하는 새로운 움직임을 의미하며, 아더에러와 뱅앤올룹슨은 베오사운드 A1 스피커를 매개체로 새로운 영감의 창을 형성, 확장된 물결을 만들어 나가고자 합니다.
     </p>
     </div>
   </section>
@@ -149,13 +161,14 @@
         </div>
         <img src="./assets/images/index/lookbook-1.jpg" alt="lookbook1" class="imgbig">
         <img src="./assets/images/index/lookbook-2.jpg" alt="lookbook2" class="imgbig">
+     
       </div>
       <div class="index-collabo-horizontalwrapper1">
         <p class="index-collabo-horizontaltext text">ADER ERROR X BANG& OLUFSEN</p>
         <img src="./assets/images/index/lookbook-3.jpg" alt="lookbook3" class="imgsmall">
-        <img src="./assets/images/index/lookbook-4.jpg" alt="lookbook4"  class="imgsmall">
-        <img src="./assets/images/index/lookbook-5.jpg" alt="lookbook5"  class="imgsmall">
-        <img src="./assets/images/index/lookbook-6.jpg" alt="lookbook6"  class="imgsmall">
+        <img src="./assets/images/index/lookbook-4.jpg" alt="lookbook4" class="imgsmall">
+        <img src="./assets/images/index/lookbook-5.jpg" alt="lookbook5" class="imgsmall">
+        <img src="./assets/images/index/lookbook-6.jpg" alt="lookbook6" class="imgsmall">
         <!-- <img src="./assets/images/index/lookbook-7.jpg" alt="lookbook3"> -->
         <!-- <img src="./assets/images/index/lookbook-8.jpg" alt="lookbook4"> -->
       </div>
@@ -187,8 +200,7 @@
       </div>
       <div class="index-product-list2">
         <div class="speakerimg">
-          <a class="index-product" href="./productPage.html"><img src="./assets/images/index/index-product-list2.jpg"
-              alt="img2" class="index-img-speaker"></a>
+          <a class="index-product" href="./productPage.html"><img class="bag" src="./assets/images/index/index-product-list2.jpg" alt="img2"></a>
         </div>
         <a href="./productPage.html" class="productname">ADER x B&O Speaker Bag</a>
       </div>
@@ -209,15 +221,11 @@
     </div>
   </section>
 
-  <section id="zoom-in">
-    <img class="logo" src="./assets/images/global/logo-b.svg" alt="logo">
-  </section>
-
   <!------- index zoom in ------->
-  <section id="zoom-in">
+  <section class="zoom-in">
     <img class="logo" src="./assets/images/global/logo-b.svg" alt="logo">
   </section>
-  <section id="slogan">
+  <section class="slogan">
     <div class="slogan-wrapper">
       <img src="./assets/images/global/A-logo.png" alt="A-logo">
       <p><span>우리 브랜드는 옷보다 이를 통해 표현하는 스토리가 중요합니다.</span>
@@ -225,11 +233,90 @@
         <span>그런 면에서 우리는 패션을 좋아하지만 ‘불완전’한 존재들이죠.</span>
         <span>그래서 ADERERROR가 패션으로 많이 알려져있지만</span>
         <span>전면에 나서고 싶지 않은 이유도 그 때문입니다.</span>
+      </div>
+    </section>
+    
+ <!------- index 3d video------->
+  <section class="index-3d-video">
+    <div class="slide-wrapper">
+      <div class="slide-track">
+        <p>ADER brand slogan 'but near missed things' implies our philosophy that we focus on the expression of any things that we missed in everyday.</p>
+        <p>ADER brand slogan 'but near missed things' implies our philosophy that we focus on the expression of any things that we missed in everyday.</p>
+        <p>ADER brand slogan 'but near missed things' implies our philosophy that we focus on the expression of any things that we missed in everyday.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div id="carousel">
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/ttndYK2mQJk?si=DdexFsVEnk_6dk-I&amp;controls=0&loop=1&mute=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/bAZQ_nC7X_s?si=J7N3xEwaKtrHpcvr&amp;controls=0&loop=1&mute=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/lO8OZZoXluI?si=ug8BijOyEm2YibhM&amp;controls=0&loop=1&mute=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/jehhxViFgTw?si=1WX5qALZNQdAG7NP&amp;controls=0&loop=1&mute=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/1AroYKg-sJo?si=-SSGaD9WJPxpaLPk&amp;controls=0&loop=1&mute=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/8lX3AWHntUE?si=-Y7FnmT_yX-CHgnN&amp;controls=0&loop=1&mute=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/t5gvRno4S2M?si=57PdeCTaFbtbEIKj&amp;controls=0&loop=1&mute=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/u1NV7Ovg_6A?si=a22Xy_4da5EM5lCH&amp;controls=0&loop=1&mute=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/2Qwc7voq_hY?si=pFlo4b-Na0WGx7PW&amp;controls=0&loop=1&mute=1&autoplay=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+      </div>
     </div>
   </section>
-
   <!------- index magazine ------->
   <section class="index-magazine">
+    <div class="index-magazine-container">
+      <div class="index-magazine-wrapper">
     <img src="./assets/images/global/symbolLogo.png" alt="symbolLogo" class="sSymbolLogo">
     <img src="./assets/images/global/symbolLogo.png" alt="symbolLogo" class="lSymbolLogo">
     <div class="grid-img-wrapper">
@@ -239,7 +326,7 @@
       <img src="./assets/images/index/index-magazine-img4.png" alt="index-magazine-img4" class="img4">
       <img src="./assets/images/index/index-magazine-img5.png" alt="index-magazine-img5" class="img5">
       <img src="./assets/images/index/index-magazine-img6.png" alt="index-magazine-img6" class="img6">
-    </div>
+    </div></div></div>
     <img src="./assets/images/global/logo-w.png" alt="logo-w" class="textLogo">
   </section>
   

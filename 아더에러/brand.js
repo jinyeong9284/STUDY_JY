@@ -55,7 +55,7 @@ gsap.to("#shape", {
     markers: false
   },
   width: "120%",
-  height: "600px",
+  height: "700px",
   borderRadius: "0%",
   duration: 2
 });

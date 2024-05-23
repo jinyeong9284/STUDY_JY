@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+
+/****************** 모바일 ******************/
+
+/***** section 1 - brand-main-wrapper *****/
+@media screen and (max-width: 431px) {
+  .brand-main-wrapper {
+    padding: 160px 40px 0;
+    width: 100%;
+    height: 750px;
+    background-color: #0000C5;
+    position: relative;
+  }
+  
+  .brand-main-logo {
+    width: 100%;
+    margin: 0 auto;
+  
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-in-out 0.1s, transform 0.35s ease-in-out 0.1s;
+  }
+  .show {
+    margin: 0;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .brand-main-txt br {
+    display: none;
+  }
+  .brand-main-txt {
+    margin: auto;
+    padding: 45px 0 85px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.8rem;
+    color: #fff;
+  
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.1s;
+  }
+  .show {
+    opacity: 1;
+  }
+  .brand-main-imgList {
+    display: none;
+  }
+  }
+  
+  /***** 배경 곡선 -> 직선 이벤트 *****/
+  /***** section 1-2 - brand-main-bottom *****/
+  @media screen and (max-width: 431px) {
+  .brand-mainBottom-wrapper {
+    position: absolute;
+    top: 900px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .brand-mainBottom-shape {
+    width: 100%;
+    height: 250px;
+    background: #000;
+    border-radius: 120% 120% 0 0;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  }
+  
+  /***** section 2 - brand-text-wrapper1 *****/
+  
+  /***** 움직이는 이미지 2개 *****/
+  @media screen and (max-width: 431px) {
+  .img1 {
+    display: none;
+  }
+  .img2 {
+    display: none;
+  }
+  }
+  
+  @media screen and (max-width: 431px) {
+  .brand-text-wrapper1 {
+    padding: 0 40px;
+    height: 1050px;
+    background-color: #000;
+    /* position: relative; */
+  }
+  .color-changing-text {
+    margin: 0 0 30px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 2.7rem;
+  
+    position: relative;
+    z-index: 9999;
+  }
+  
+  /***** 밑에 이미 깔려있는 회색 글자 *****/
+  .brand-text-wrapper1 .fade-in-bgText {
+    margin: 0;
+    width: 350px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 2.7rem;
+    color: #3d3d3d;
+  
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+  }
+  .brand-text-wrapper1 p {
+    margin: 30px 0 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8rem;
+    color: #fff;
+  }
+  
+  .brand-text-btn {
+    margin: 60px 0;
+  }
+  }
+  
+  /***** section 3 - brand-text-wrapper2 *****/
+  @media screen and (max-width: 431px) {
+  .brand-text-wrapper2 {
+    margin: 0 40px;
+    height: 950px;
+    text-align: center;
+  }
+  
+  .brand-text-wrapper2 h1 {
+    margin: 90px 0 40px;
+    font-size: 60px;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 50px;
+    color: #0000C5;
+  }
+  
+  .brand-text-wrapper2 .brand-textWrapper2-txt {
+    border: #0000C5 2px solid;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 8px 9px 8px 5px;
+  }
+  
+  .brand-text-wrapper2 p br {
+    display: none;
+  }
+  .brand-text-wrapper2 p {
+    padding-bottom: 70px;
+    width: 350px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  
+  .brand-text-wrapper2 .brand-textWrapper2-video {
+    width: 100%;
+  }
+  }

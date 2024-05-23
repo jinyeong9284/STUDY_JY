@@ -52,6 +52,12 @@
     .horizontal-container .sticky-box .horizontal-inner-box .row1{
       background-color: #03AE02;
     }
+    .horizontal-container .sticky-box .horizontal-inner-box .row2{
+      background-color: #145314;
+    }
+    .horizontal-container .sticky-box .horizontal-inner-box .row3{
+      background-color: #6cdf6c;
+    }
   </style>
   <script src="../assets/jquery-3.7.1.min.js"></script>
 </head>
@@ -78,15 +84,28 @@
   <section class="box">
     <h2>box3</h2>
   </section>
-  <section class="box">
-    <h2>box4</h2>
-  </section>
   <script>
     const horizontalContainer=document.querySelector('.horizontal-container');
     const stickyBox= document.querySelector('.sticky-box');
     const innerBox=document.querySelector('.horizontal-inner-box');
 
-    // addEventListener('scroll',scrolled);
+    const calcHt=(item)=>{
+      // scrollWidth : 스크롤바에 의해 감춰진 영역 포함 반환
+      //document.documentElement.clientWidth : 실제로 들어가게 될 영역의 너비와 높이 값을 반환
+      return item.scrollWidth - document.documentElement.clientWidth + document.documentElement.clientHeight;
+    }
+    horizontalContainer.style.height=`${calcHt(innerBox)}px`;
+    console.log(calcHt(innerBox));
+
+    const scrolled=()=>{
+      console.log('stickyBox.offsetTop : ',stickyBox.offsetTop);
+      innerBox.style.transform=`translateX(-${stickyBox.offsetTop}px)`;
+    }
+    /* 
+    JS.offsetTop; 상대값. offset의 가장 가까운 포지션 값을 기준. 없는 경우 body 기준
+    jQuery.offset().top; 절대값 반환. body 기준
+    */
+    addEventListener('scroll',scrolled);
   </script>
 </body>
 </html>

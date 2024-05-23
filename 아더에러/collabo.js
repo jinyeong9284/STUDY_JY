@@ -1,5 +1,4 @@
-
-    // main-text 
+    // collabo-intro
     document.addEventListener('DOMContentLoaded',function(event){
       var dataText = [ "create next", "the new is not new", "Through Editism", "Through Archiving"];
       

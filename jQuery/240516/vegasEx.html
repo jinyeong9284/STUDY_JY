@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>vegasEx</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- reset -->
+  <link rel="stylesheet" href="../assets/styles/reset.css">
+  <!-- fonts -->
+  <!-- plugIn -->
+  <link rel="stylesheet" href="./vegas.min.css">
+  <!-- 내가 작업한 스타일 -->
+  <style>
+    .container{
+      width:70vw;
+      height: 70vw;
+      border-radius: 50%;
+      border:3px solid #000;
+      margin:100px auto;
+      position: relative;
+    }
+    .container .btn{
+      border:3px solid #000;
+      font-weight: bold;
+      width:15vw;
+      height: 15vw;
+      line-height: 15vw;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 1.2rem;
+      box-sizing: border-box;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      z-index: 9999;
+    }
+    .container .btn:hover{
+      background-color: #000;
+      color:#fff;
+    }
+    .container .vegas-timer{
+      top:0;
+      width:70vw;
+      height: 70vw;
+    }
+    .container .vegas-timer-progress{
+      background-color: #000;
+      opacity:0.2;
+    }
+  </style>
+  <!-- jQuery -->
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <!-- plugIn -->
+  <script src="./vegas.min.js"></script>
+  <!-- <script src="./vegas.js"></script> -->
+  <!-- 내가 작업한 script -->
+  <!-- <script src="" defer></script> -->
+  <script>
+    // $(function() {})
+    $(document).ready(function(){
+    $('.container').vegas({
+    delay: 7000,
+    timer: true,
+    shuffle: true,
+    firstTransition: 'fade',
+    firstTransitionDuration: 5000,
+    transition: 'slideDown2',
+    transitionDuration: 2000,
+    overlay:'./overlays/01.png',
+    slides: [
+    { src: './images/img1.PNG' },
+    { src: './images/img2.PNG' },
+    { src: './images/img3.PNG' },
+    { src: './images/img4.PNG' }
+    ]
+    });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <a href="#" class="btn">버튼</a>
+  </div>
+</body>
+</html>

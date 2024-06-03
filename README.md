@@ -1,4 +1,76 @@
-<h1><href="https://github.com/jinyeong9284/STUDY_JY/tree/main/JAVASCRIPT/240422">240422</h1></a>
+<h1>240522</h1>
+
+
+<h1>240521</h1>
+gsap 학습 및 예제 실습
+팀프로젝트 : index 모바일 버전 작업, 가로 스크롤 부분 모바일 버전 디자인 수정 및 구현
+
+<h1>240520</h1>
+gsap 학습 및 예제 실습
+팀프로젝트 : index pc 메인 효과 및 가로 스크롤 사진 크기 등 수정, 상단 모바일 버전 작업
+
+<h1>240517</h1>
+jQuery : parallax 페이지 학습 및 실습
+팀프로젝트 : productlist 모바일 버전 완료 및 nav 영역 주소 추가
+
+<h1>240516</h1>
+jQuery : swiper 및 vegas 기능 학습
+팀프로젝트 : index page 60% html,css,js 구현 완료 및 이벤트 추가, productlist 모바일 버전 수정
+
+<h1>240515</h1>
+jQuery : 간단한 가로 스크롤 및 마우스 좌표 이벤트 학습
+팀프로젝트 : productlist page js 구형 및 page 완성, index page 50% html 및 css, js 구현, scrollTrigger 기능 학습 및 활용
+
+<h1>240514</h1>
+jquery : scroll 이벤트 예제 실습
+팀프로젝트 : 퍼블리싱 가이드 회의, 서브페이지 퍼블리싱 시작(productlist page html 및 css 구현)
+
+<h1>240513</h1>
+jQuery : scroll 이벤트 예제 실습
+팀프로젝트 : 진행방향 회의 및 퍼블리싱 가이드 정함, 디자인 완성 및 마크업 작업
+
+<h1>240510</h1>
+jQuery : offset, scrollTo 이벤트 학습
+팀프로젝트 : 디자인 수정(브랜드, 회사소개 페이지 완료)
+
+<h1>240509</h1>
+jQuery : animate 및 slide 이벤트 예제 실습 및 학습
+팀프로젝트 : 디자인 수정(상세페이지, 상품 리스트 페이지 완료)
+
+<h1>240508</h1>
+jQuery : animate 및 fade, fadeTo, Slide 이벤트 학습
+팀프로젝트 : 메인 페이지 구성 및 구성 페이지 디자인 시작
+
+<h1>240507</h1>
+자바스크립트 : 함수 및 퀴즈 문제 풀기
+JQuery : Class 및 prepenTo, appendTo, toggle 학습
+팀프로젝트 : 프로젝트 회의(팀 리더 및 깃허브 관리자 선정 및 브랜드 선정, 페이지 구성)
+
+<h1>240501</h1>
+자바스크립트 : DOM객체 및 event 함수 학습
+
+<h1>240430<h1>
+자바스크립트 : 함수 예제 실습 및 배열 filter, find, forEach, map, reduce 학습
+
+<h1>240429</h1>
+자바스크립트 : setInterval 및 배열 및 함수 예제 실습 및 학습
+
+<h1>240427</h1>
+자바스크립트 책 함수 부분 문제 및 예제 실습
+
+<h1>240426</h1>
+자바스크립트 : 배열 및 함수 예제 학습, 팀별로 퀴즈 내고 문제풀기
+
+<h1>240425</h1>
+자바스크립트 : break, continue 키워드 및 Math 객체 밒 object에 대해 학습
+
+<h1>240424</h1>
+자바스크립트 : for, switch, while 조건문 학습
+
+<h1>240423</h1>
+자바스크립트 : If, Switch 조건문 및 논리,비교 증감, 데이터형비교 연산자 학습
+
+<h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/JAVASCRIPT/240422">240422</h1></a>
 자바스크립트 : codepen 사이트를 사용한 맛보기, 대입 문자열 산술 연산자, 변수, 데이터 타입 학습
 
 <h1><a href="https://github.com/jinyeong9284/STUDY_JY/tree/main/HTML/240419">240419</h1></a>

@@ -1,55 +1,153 @@
-<h1>240522</h1>
+<h1>240701</h1>
+개인프로젝트3 : 주차장 예약 시스템 디자인 및 상세 설명 페이지 구현
 
+<h1>240629</h1>
+개인프로젝트3 : 주차장 예약 시스템 디자인 수정 및 구현
+
+<h1>240628</h1>
+개인프로젝트2 : 상세 설명 디자인 및 HTML, CSS, JS 구현<br>
+세진브론즈빌 팀프로젝트 디자인 완료 보고서 수정
+
+<h1>240627</h1>
+개인프로젝트2 : 전체적인 정리 및 마무리
+
+<h1>240626</h1>
+개인프로젝트2 : 반응형 작업 수정
+
+<h1>240625</h1>
+개인프로젝트2 : review 세션 HTML, CSS, JS 구현 및 전체적으로 반응형 수정
+
+<h1>240624</h1>
+개인프로젝트2 : preview 세션 및 ency 세션, boss 세션 HTML, CSS, JS 구현
+
+<h1>240622</h1>
+개인프로젝트2 : 카드 세션 HTML, CSS 구조 수정 및 JS 구현
+
+<h1>240621</h1>
+개인프로젝트2 : 숫자 세션 및 pick 세션 JS 구현 및 카드 세션 HTML, CSS 구현
+
+<h1>240620</h1>
+개인프로젝트2 : 숫자 세션 및 pick 세션 HTML,CSS 구현
+
+<h1>240619</h1>
+개인프로젝트2 : 글자 세션 및 랜덤 이미지 세션 HTML, CSS, JS 구현
+
+<h1>240618</h1>
+개인프로젝트2 : 상단 nav 및 상단 메인 세션 HTML, CSS, JS 구현
+
+<h1>240617</h1>
+개인프로젝트2 : 피그마에 디자인 및 구상
+
+<h1>240614</h1>
+개인프로젝트 1 : 상세설명 페이지 HTML, CSS, JS 구현
+
+<h1>240613</h1>
+개인프로젝트1 : 상세설명 페이지 피그마에 디자인
+
+<h1>240612</h1>
+개인프로젝트1 : footer HTML, CSS, JS 구현 및 마무리 작업
+
+<h1>240611</h1>
+개인프로젝트1 : 강아지 갤러리 세션 및 강아지 움직이는 세션 HTML, CSS, JS 구현
+
+<h1>240610</h1>
+개인프로젝트1 : 모바일 앱 세션 JS 구현, 가로 스크롤 세션 HTML, CSS, JS 구현
+
+<h1>240607</h1>
+개인 프로젝트1 : 이미지 확대 HTML, CSS, JS 및 모바일 앱 세션 HTML, CSS 구현
+
+<h1>240605</h1>
+React : 주차장 예약 시스템 구현 학습 및 마무리<br>
+개인 프로젝트1 : 상단 nav 및 상단 메인 세션 HTML, CSS, JS 구현
+
+<h1>240604</h1>
+React : 주차장 예약 시스템 구현 학습<br>
+개인 프로젝트1 : 피그마 디자인 및 효과 구상
+
+<h1>240603</h1>
+React : Ajax를 활용한 사이트 구현 예제 실습<br>
+포트폴리오 : 전체적인 마무리 작업
+
+<h1>240531</h1>
+React : img 넣는 방식 학습 및 예제 실습<br>
+포트폴리오 : 서브페이지 퍼블리싱
+
+<h1>240530</h1>
+React : props, event, state 학습<br>
+포트폴리오 : 메인 페이지 퍼블리싱
+
+<h1>240529</h1>
+React : const, map, operation, props, module 학습 및 예제 실습<br>
+포트폴리오 : 메인 페이지 퍼블리싱
+
+<h1>240528</h1>
+React : Component 및 styled-component 개념 숙지 및 기초 학습<br>
+포트폴리오 : 피그마 서브페이지 디자인
+
+<h1>240527</h1>
+JavaScript : React 들어가기전 filter, map, spread 연산자, 구조분해할당, 삼항연산자 및 단락회로평가 학습<br>
+포트폴리오 : 피그마 메인 페이지 디자인
+
+<h1>240524</h1>
+팀프로젝트 : 발표준비 및 발표, 포트폴리오 디자인 구상<br>
+
+<h1>240523</h1>
+jQuery : Ajax, JSON 파일 만드는 법 학습 및 실습<br>
+팀프로젝트 : JSON과 Ajax를 활용한 productlist 페이지 구현 , 발표준비
+
+<h1>240522</h1>
+gsap 학습 및 예제 실습
+팀프로젝트 : productlist 페이지 여백 수정, index 매거진 세션부분 효과 작업, 피그마 PC 버전 디자인 수정
 
 <h1>240521</h1>
-gsap 학습 및 예제 실습
+gsap 학습 및 예제 실습<br>
 팀프로젝트 : index 모바일 버전 작업, 가로 스크롤 부분 모바일 버전 디자인 수정 및 구현
 
 <h1>240520</h1>
-gsap 학습 및 예제 실습
+gsap 학습 및 예제 실습<br>
 팀프로젝트 : index pc 메인 효과 및 가로 스크롤 사진 크기 등 수정, 상단 모바일 버전 작업
 
 <h1>240517</h1>
-jQuery : parallax 페이지 학습 및 실습
+jQuery : parallax 페이지 학습 및 실습<br>
 팀프로젝트 : productlist 모바일 버전 완료 및 nav 영역 주소 추가
 
 <h1>240516</h1>
-jQuery : swiper 및 vegas 기능 학습
+jQuery : swiper 및 vegas 기능 학습<br>
 팀프로젝트 : index page 60% html,css,js 구현 완료 및 이벤트 추가, productlist 모바일 버전 수정
 
 <h1>240515</h1>
-jQuery : 간단한 가로 스크롤 및 마우스 좌표 이벤트 학습
+jQuery : 간단한 가로 스크롤 및 마우스 좌표 이벤트 학습<br>
 팀프로젝트 : productlist page js 구형 및 page 완성, index page 50% html 및 css, js 구현, scrollTrigger 기능 학습 및 활용
 
 <h1>240514</h1>
-jquery : scroll 이벤트 예제 실습
+jquery : scroll 이벤트 예제 실습<br>
 팀프로젝트 : 퍼블리싱 가이드 회의, 서브페이지 퍼블리싱 시작(productlist page html 및 css 구현)
 
 <h1>240513</h1>
-jQuery : scroll 이벤트 예제 실습
+jQuery : scroll 이벤트 예제 실습<br>
 팀프로젝트 : 진행방향 회의 및 퍼블리싱 가이드 정함, 디자인 완성 및 마크업 작업
 
 <h1>240510</h1>
-jQuery : offset, scrollTo 이벤트 학습
+jQuery : offset, scrollTo 이벤트 학습<br>
 팀프로젝트 : 디자인 수정(브랜드, 회사소개 페이지 완료)
 
 <h1>240509</h1>
-jQuery : animate 및 slide 이벤트 예제 실습 및 학습
+jQuery : animate 및 slide 이벤트 예제 실습 및 학습<br>
 팀프로젝트 : 디자인 수정(상세페이지, 상품 리스트 페이지 완료)
 
 <h1>240508</h1>
-jQuery : animate 및 fade, fadeTo, Slide 이벤트 학습
+jQuery : animate 및 fade, fadeTo, Slide 이벤트 학습<br>
 팀프로젝트 : 메인 페이지 구성 및 구성 페이지 디자인 시작
 
 <h1>240507</h1>
-자바스크립트 : 함수 및 퀴즈 문제 풀기
-JQuery : Class 및 prepenTo, appendTo, toggle 학습
+자바스크립트 : 함수 및 퀴즈 문제 풀기<br>
+JQuery : Class 및 prepenTo, appendTo, toggle 학습<br>
 팀프로젝트 : 프로젝트 회의(팀 리더 및 깃허브 관리자 선정 및 브랜드 선정, 페이지 구성)
 
 <h1>240501</h1>
 자바스크립트 : DOM객체 및 event 함수 학습
 
-<h1>240430<h1>
+<h1>240430</h1>
 자바스크립트 : 함수 예제 실습 및 배열 filter, find, forEach, map, reduce 학습
 
 <h1>240429</h1>

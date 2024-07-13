@@ -1,3 +1,6 @@
+<h1>240713</h1>
+git hub 메인 read me 꾸미기 및 munikund read me 양식 수정
+
 <h1>240712</h1>
 개인프로젝트4 : Header 영역 및 main banner 영역 HTML, CSS 구현 완료
 
